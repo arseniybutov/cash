@@ -1,0 +1,11 @@
+{
+  "status": {
+    "rq_tm": "2020-07-27T12:59:07Z",
+    "order_number": "2132562220200622165100",
+    "order_form_url": "https://sberbank.ru/qr/?dynamicQr=3a3d4baf63eb44739a569d1bda673b63",
+    "error_code": "000000",
+    "rq_uid": "cbc72766badd4aa6ab1eb3dae39e281f",
+    "order_id": "3a3d4baf63eb44739a569d1bda673b63",
+    "order_state": "CREATED"
+  }
+}

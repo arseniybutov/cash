@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description=""
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="uz_fiscaldrive"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.uz.fiscaldrive.UZFiscalDriveAPIConnector" description="connector class"/>
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.axiohm.DocumentPrinterAxiohm" description="document printer class"/>
+
+
+    <property key="url" value="http://127.0.0.1:3448/rpc/api"/>
+
+    <property key="port" value="COM6" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="115200" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="feedLength" value="80" type="integer" description="Длинна промотки перед отрезкой"/>
+    <property key="qrSize" value="8" type="integer" description="Размер QR-кода"/>
+
+    <property key="serialNumber" value="" description="Серийный номер виртуальной кассы" />
+
+</moduleConfig>

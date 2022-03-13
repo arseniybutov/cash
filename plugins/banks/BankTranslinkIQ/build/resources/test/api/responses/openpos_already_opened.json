@@ -1,0 +1,5 @@
+{
+  "resultCode": "ANOTHER_OPERATION_IN_PROGRESS",
+  "resultMessage": "Session is already open, close it before opening a new one",
+  "resultTime": "20200506132015"
+}

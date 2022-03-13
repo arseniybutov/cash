@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="bank" visible="true" description=""
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="sberbank_qr" />
+    <property key="serviceClass" value="ru.crystals.pos.bank.sberbankqr.BankSberbankQRImpl" />
+
+    <!--Уникальный идентификатор терминала (выдается Сбербанком)-->
+    <property key="terminalId" value="" />
+    <!--IdQR устройства, на котором сформирован заказ (выдается Сбербанком)-->
+    <property key="idQR" value="" />
+
+</moduleConfig>

@@ -1,0 +1,8 @@
+{
+  "header": {
+    "command": "REMOVECARD"
+  },
+  "params": {
+    "text": "Данная карта не обслуживается"
+  }
+}

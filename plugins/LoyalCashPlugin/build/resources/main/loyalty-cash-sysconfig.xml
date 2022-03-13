@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xsi:schemaLocation="http://www.springframework.org/schema/beans            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
+        xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        >
+
+    <!-- Пул соединений с БД discount -->
+    <bean id="discountDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="org.postgresql.Driver"/>
+        <property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/discount"/>
+        <property name="user" value="postgres"/>
+        <property name="password" value="postgres"/>
+        <property name="minPoolSize" value="1"/>
+        <property name="maxPoolSize" value="10"/>
+        <property name="maxStatements" value="20"/>
+        <property name="maxIdleTime" value="1800"/>
+    </bean>
+
+    <bean id="loyaltyCash" class="ru.crystals.pos.loyal.cash.service.LoyalServiceImpl"
+          init-method="start">
+
+        <!-- Через эту штуку будем сохранять/читать TX лояльности в/из БД -->
+        <property name="loyTxDao" ref="loy-tx-dao"/>
+
+        <!-- А через эту штуку будем добывать из БД инфу о существующих активных РА -->
+        <property name="actionsDao" ref="actions-dao"/>
+
+        <!-- Кэш рекламных акций; заполняется в момент старта активными (и будущими акциями) -->
+        <property name="cache" ref="actions-cache"/>
+
+        <!-- Различная информация о существующих РА -->
+        <property name="actionsIntrospector" ref="actions-introspector"/>
+
+        <!--Доступ к локальным значениям оптовых ограничений-->
+        <property name="wrDao" ref="wrDao"/>
+
+
+        <!-- Большинство из того, что идет ниже, должно отмереть в скором времени -->
+
+        <property name="properties" ref="properties"/>
+        <property name="techProcess" ref="techProcessAsync"/>
+        <property name="listeners">
+            <list>
+                <ref bean="techProcess"/>
+            </list>
+        </property>
+
+        <property name="transferManager" ref="discountResultsTransferManager"/>
+    </bean>
+
+    <bean id="discountResultsTransferManager"
+          class="ru.crystals.pos.loyal.cash.transport.discountresults.TransferManager"
+          init-method="start">
+        <property name="loyTransactionReSendTimeout" value="60"/>
+        <property name="maxLoytransactionCountInPack" value="100"/>
+        <property name="registry" ref="registry"/>
+        <property name="processingDiscountServiceURL" value="SET-ProcessingDiscount/ProcessingDiscountWS?wsdl"/>
+
+        <!-- Через эту штуку будем сохранять/читать TX лояльности в/из БД -->
+        <property name="loyTxDao" ref="loy-tx-dao"/>
+
+    </bean>
+
+    <bean id="ActionsFilesReader" class="ru.crystals.pos.loyal.cash.transport.actions.ActionsFilesReader" init-method="start" destroy-method="stop">
+        <property name="service" ref="loyaltyCash"/>
+        <property name="properties" ref="properties"/>
+        <property name="registry" ref="registry"/>
+
+        <property name="trsAuxDao" ref="loy-aux-transport-dao"/>
+    </bean>
+
+    <bean id="actions-introspector" class="ru.crystals.pos.loyal.cash.service.ActionIntrospectorImpl" init-method="postConstruct"
+          destroy-method="preDestroy">
+        <property name="jdbcProperties">
+            <props>
+                <prop key="user">postgres</prop>
+                <prop key="password">postgres</prop>
+            </props>
+        </property>
+        <property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/discount"/>
+    </bean>
+
+    <bean id="loy-tx-dao" class="ru.crystals.pos.loyal.cash.persistence.HibernateBackedLoyTxDao" init-method="postConstruct"
+          destroy-method="preDestroy">
+        <property name="dataSource" ref="discountDataSource"/>
+        <property name="mapping">
+            <list>
+                <value>ru.crystals.discount.processing.entity.LoyAdvActionInPurchaseEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyBonusPositionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyBonusTransactionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyChequeCouponEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyPurchaseCardEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyDiscountCardEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyDiscountPositionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyQuestionaryEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyTransactionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyProcessingCouponEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyPurchaseEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyPurchaseCardEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyPurchasePaymentEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyPurchasePositionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyBonusDiscountTransactionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyBonusSberbankTransactionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyBonusPlastekTransactionEntity</value>
+				<value>ru.crystals.discount.processing.entity.LoyGiftNoteEnity</value>
+				<value>ru.crystals.discount.processing.entity.LoyGiftNoteByConditionEnity</value>
+				<value>ru.crystals.discount.processing.entity.LoyTokenSiebelTransactionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoySetApiPluginTransactionEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyUpdateCounterEntity</value>
+                <value>ru.crystals.discount.processing.entity.LoyChequeAdvertiseEntity</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="show_sql">false</prop>
+                <prop key="format_sql">true</prop>
+                <prop key="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
+                <prop key="hibernate.hbm2ddl.auto">false</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
+                <prop key="hibernate.id.new_generator_mappings">false</prop>
+            </props>
+        </property>
+        <!-- Инициализация в отдельном потоке -->
+        <property name="threadStart" value="true"/>
+    </bean>
+
+    <bean id="actions-dao-hibernate" class="ru.crystals.pos.loyal.cash.service.HibernateBackedCashAdvertisingActionDao" init-method="postConstruct"
+          destroy-method="preDestroy">
+        <property name="dataSource" ref="discountDataSource"/>
+        <property name="mapping">
+            <list>
+                <value>ru.crystals.discounts.AdvertisingActionEntity</value>
+                <value>ru.crystals.discounts.ActionPluginEntity</value>
+                <value>ru.crystals.discounts.ActionPluginPropertyEntity</value>
+                <value>ru.crystals.discounts.CoverageAreaEntity</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="show_sql">false</prop>
+                <prop key="format_sql">true</prop>
+                <prop key="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
+                <prop key="hibernate.hbm2ddl.auto">false</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
+            </props>
+        </property>
+        <!-- Инициализация в отдельном потоке -->
+        <property name="threadStart" value="true"/>
+    </bean>
+
+    <bean id="actions-dao" class="ru.crystals.pos.loyal.cash.service.JdbcBackedCashAdvertisingActionDao" init-method="postConstruct"
+          destroy-method="preDestroy" primary="true">
+
+        <property name="sqlDriverClass" value="org.postgresql.Driver"/>
+        <property name="dbUrl" value="jdbc:postgresql://localhost:5432/discount"/>
+        <property name="login" value="postgres"/>
+        <property name="password" value="postgres"/>
+        <property name="connectionPoolSize" value="1"/>
+
+        <property name="delegate" ref="actions-dao-hibernate"/>
+    </bean>
+
+    <bean id="loy-aux-transport-dao" class="ru.crystals.pos.loyal.cash.transport.persistence.HibernateBackedActionsTransportAuxiliariesDao"
+          init-method="postConstruct" destroy-method="preDestroy">
+        <property name="dataSource" ref="discountDataSource"/>
+        <property name="mapping">
+            <list>
+                <value>ru.crystals.pos.loyal.LastDiscountIDEntity</value>
+                <value>ru.crystals.pos.loyal.DiscountGUIDEntity</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="show_sql">false</prop>
+                <prop key="format_sql">true</prop>
+                <prop key="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
+                <prop key="hibernate.hbm2ddl.auto">false</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
+            </props>
+        </property>
+        <!-- Инициализация в отдельном потоке -->
+        <property name="threadStart" value="true"/>
+    </bean>
+
+    <bean id="actions-cache" class="ru.crystals.pos.loyal.cash.service.AdvActionsCacheImpl" init-method="postConstruct" destroy-method="preDestroy">
+        <!-- через эту штуку будем добывать из БД инфу о существующих активных РА -->
+        <property name="actionsDao" ref="actions-dao"/>
+
+        <!-- Инициализация в отдельном потоке -->
+        <property name="threadStart" value="true"/>
+
+        <!--
+            Чисто тюнинговая вещь: этот флаг указывает инициализировать ли кэш РА при старте кассы "легковесными" версиями РА
+            (только GUID + период действия) - для ускорения старта кассы, либо же сразу же полноценными (полная информация о РА)
+        -->
+        <property name="initOnlyWithGuids" value="false"/>
+    </bean>
+
+    <bean id="loy-feedback-dao" class="ru.crystals.pos.loyal.cash.persistence.HibernateBackedLoyFeedbackDao" init-method="postConstruct" destroy-method="preDestroy">
+        <property name="dataSource" ref="discountDataSource"/>
+        <property name="mapping">
+            <list>
+                <value>ru.crystals.discount.processing.entity.LoyExtProviderFeedback</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="show_sql">false</prop>
+                <prop key="format_sql">true</prop>
+                <prop key="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
+                <prop key="hibernate.hbm2ddl.auto">false</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="loy-stale-txes-cleaner" class="ru.crystals.pos.loyal.cash.maintenance.StaleLoyTransactionsCleaner" init-method="start">
+        <property name="cleanerIntervalInSeconds" value="3600"/>
+        <property name="cleanerInitialDelayInSeconds" value="30"/>
+        <property name="maxRecordsToRemoveAtOnce" value="1000"/>
+    </bean>
+
+    <bean id="stale-actions-cleaner" class="ru.crystals.pos.loyal.cash.maintenance.StaleActionsCleaner" init-method="start">
+        <property name="cleanerIntervalInSeconds" value="3600"/>
+        <property name="cleanerInitialDelayInSeconds" value="30"/>
+        <property name="maxRecordsToRemoveAtOnce" value="1000"/>
+        <property name="daysAfterFinishToRemove" value="1"/>
+    </bean>
+</beans>

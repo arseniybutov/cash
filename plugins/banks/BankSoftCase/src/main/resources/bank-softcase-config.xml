@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="bank" visible="true" description="SoftCase)"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="provider" value="softcase" />
+	<property key="serviceClass" value="ru.crystals.pos.bank.softcase.BankSoftCaseServiceImpl" />
+	
+    <property key="terminalIp" value="172.16.130.20" />
+	<property key="terminalTcpPort" value="3232" />
+	
+	<property key="terminalID" value="1" />
+	<property key="useCashNumberAsTerminalID" value="false" />
+	
+	<property key="processing" value="banks/softcase/" />
+	<property key="charset" value="utf-8" />
+	
+	<property key="responseTimeout" value="200000" />
+	<property key="usePartialReversal" value="false" />
+	<property key="printNegativeSlip" value="false"/>
+
+</moduleConfig>

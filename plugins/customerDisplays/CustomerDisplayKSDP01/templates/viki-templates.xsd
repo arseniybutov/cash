@@ -1,0 +1,75 @@
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+						 targetNamespace="http://crystals.ru/pos/customerdisplay/ksdp01/templates/parser"
+						 xmlns="http://crystals.ru/pos/customerdisplay/ksdp01/templates/parser"
+						 elementFormDefault="qualified">
+						 
+<xs:element name="templates">
+  	<xs:complexType>
+	  <xs:sequence>
+	    <xs:element ref="screen" minOccurs="1" maxOccurs="unbounded"/>
+	  </xs:sequence>
+	</xs:complexType>    
+  </xs:element>
+  
+  <xs:element name="screen">
+  	<xs:complexType>
+  		<xs:sequence>
+            <xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+	    </xs:sequence>
+        <xs:attribute name="name" type="xs:string"/>
+    </xs:complexType>    
+  </xs:element> 
+  
+  <xs:element name="item">
+  	<xs:complexType>
+  	  <xs:attribute name="type" type="contentType"/>
+  	  <xs:attribute name="x" type="xs:integer"/>
+  	  <xs:attribute name="y" type="xs:integer"/>
+	  <xs:attribute name="zOrder" type="xs:integer"/> 
+	  <xs:attribute name="width" type="xs:integer"/>
+	  <xs:attribute name="height" type="xs:integer"/>
+	  <xs:attribute name="backgroundcolor" type="color"/> 
+	  <xs:attribute name="textcolor" type="color"/>
+	  <xs:attribute name="font" type="font"/>
+	  <xs:attribute name="fontsize" type="fontSize"/>
+	  <xs:attribute name="align" type="align"/>
+	  <xs:attribute name="element" type="xs:string"/>
+    </xs:complexType>    
+  </xs:element> 
+  
+  <xs:simpleType name="align">
+  	<xs:restriction base="xs:string">
+  	  <xs:enumeration value="right"/>
+  	  <xs:enumeration value="left"/>
+  	  <xs:enumeration value="center"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="contentType">
+  	<xs:restriction base="xs:string">
+  	  <xs:enumeration value="img"/>
+  	  <xs:enumeration value="text"/>
+  	  <xs:enumeration value="element"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="font">
+  	<xs:restriction base="xs:string">
+  	  <xs:enumeration value="viki"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="fontSize">
+  	<xs:restriction base="xs:string">
+  	  <xs:enumeration value="FS10x16"/>
+  	  <xs:enumeration value="FS12x24"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="color">
+  	<xs:restriction base="xs:integer">
+  	  <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="15"/>
+  	</xs:restriction>
+  </xs:simpleType>
+</xs:schema>

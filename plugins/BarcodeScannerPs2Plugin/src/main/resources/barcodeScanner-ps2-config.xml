@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true"
+              description="Драйвер сканера через порты PS/2 и USB" xmlns="http://crystals.ru/cash/settings"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="ps2"/>
+    <property key="serviceClass" value="ru.crystals.pos.barcodescanner.ps2.BarcodeScannerPs2ServiceImpl"/>
+
+    <property key="barcodePrefix"/>
+
+    <property key="barcodeSuffix">
+        <property value="10"/>
+    </property>
+
+    <property key="ean13LeadingZero" value="false"/>
+    <property key="ean13ControlNumber" value="false"/>
+    <property key="ean8ControlNumber" value="false"/>
+    <property key="upcaLeadingZero" value="false"/>
+    <property key="upcaControlNumber" value="false"/>
+    <property key="upceLeadingZero" value="false"/>
+    <property key="upceControlNumber" value="false"/>
+    <property key="caseSensitive" value="true"/>
+
+</moduleConfig>

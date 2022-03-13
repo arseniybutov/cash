@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true"
+              description="MSTAR-650TK" xmlns="http://crystals.ru/cash/settings">
+
+    <property key="provider" value="mstar650tk"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.mstar.Mstar"/>
+
+    <property key="port" value="COM1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="115200" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="useFlowControl" value="false"/>
+
+    <property key="printPosNum" value="true"/>
+    <property key="printGoodsName" value="true"/>
+    <property key="printItem" value="false"/>
+</moduleConfig>

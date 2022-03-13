@@ -1,0 +1,12 @@
+jar.archiveName = 'fiscalPrinter-pulseFA.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+    branch = 'SCO, LENTA_SCO, BELARUS_SCO'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:plugins:FiscalPrinterPirit')
+    testCompile libs.junit
+}

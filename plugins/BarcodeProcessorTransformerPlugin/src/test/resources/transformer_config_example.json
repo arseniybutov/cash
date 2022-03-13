@@ -1,0 +1,52 @@
+{
+  "masks": [
+    {
+      "description": "Пример ШК-трансформера",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "200"
+        },
+        {
+          "name": "ean13",
+          "length": "13"
+        },
+        {
+          "name": "serialNumber",
+          "length": 7
+        },
+        {
+          "name": "price",
+          "length": 7
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "ean13"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          },
+          "properties": [
+            {
+              "name": "SomePropertyWithFixedValue",
+              "value": "some fixed value"
+            },
+            {
+              "name": "SerialNumberFromBarcodeProperty",
+              "value": {
+                "source": "field",
+                "value": "serialNumber"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

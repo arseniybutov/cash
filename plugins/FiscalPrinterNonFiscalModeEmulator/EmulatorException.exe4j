@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="4.5" transformSequenceNumber="1">
+  <directoryPresets config="D:/SVNAll/SetRetail10_JBOSS7/SetRetail10_Cash/plugins/FiscalPrinterNonFiscalModeEmulator" />
+  <application name="Генератор ошибок эмулятора ФР" distributionSourceDir="./">
+    <languages>
+      <principalLanguage id="en" customLocalizationFile="" />
+    </languages>
+  </application>
+  <executable name="EmulatorException" type="2" iconSet="false" iconFile="" executableDir="." redirectStderr="true" stderrFile="EmulatorException Error.log" stderrMode="append" redirectStdout="true" stdoutFile="EmulatorException Output.log" stdoutMode="append" failOnStderrOutput="false" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="true" globalSingleInstance="false" amd64="false">
+    <messageSet />
+    <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" companyName="" productVersion="" />
+  </executable>
+  <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
+    <text>
+      <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+      <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+    </text>
+  </splashScreen>
+  <java mainClass="ru.crystals.pos.fiscalprinter.nonfiscalmode.remote.RemoteControl" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true" minVersion="1.6" maxVersion="" allowBetaVM="true" jdkOnly="false">
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <classPath>
+      <archive location="./EmulatorException.jar" failOnError="false" />
+      <archive location="./CashDS.jar" failOnError="false" />
+      <archive location="./DataStructsModule.jar" failOnError="false" />
+      <archive location="./fiscalPrinterModule.jar" failOnError="false" />
+    </classPath>
+    <nativeLibraryDirectories />
+  </java>
+  <includedFiles />
+  <unextractableFiles />
+</exe4j>
+

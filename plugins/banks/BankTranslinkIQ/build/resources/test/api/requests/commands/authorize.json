@@ -1,0 +1,12 @@
+{
+  "header": {
+    "command": "AUTHORIZE"
+  },
+  "params": {
+    "amount": 1000,
+    "cashBackAmount": 0,
+    "currencyCode": "643",
+    "documentNr": "129663",
+    "panL4Digit": "8261"
+  }
+}

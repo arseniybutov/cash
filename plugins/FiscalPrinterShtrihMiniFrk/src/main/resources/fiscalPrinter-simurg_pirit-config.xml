@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true" description="Simurg and Pirit" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="simurg_pirit"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+
+    <property key="port" value="COM1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="115200" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="feedLength" value="80" type="integer" description="Длинна промотки перед отрезкой"/>
+    <property key="qrSize" value="8" type="integer" description="Размер QR-кода"/>
+
+    <property key="fiscalPort" value="COM4" type="port" visible="true" description="Порт фискализатора"/>
+    <property key="fiscalBaudRate" value="115200" type="integer" visible="true" description="Скорость порта фискализатора (бит/с)"/>
+    <property key="fiscalPositionName" value="Позиция НДС 15%" description="Название фискальной позиции НДС 15%"/>
+    <property key="fiscalPositionNameNoNDS" value="Позиция НДС 0%" description="Название фискальной позиции НДС 0%"/>
+
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.shtrihminifrk.simurg.SimurgFiscalConnector" description="connector class"/>
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.axiohm.DocumentPrinterSewoo" description="document printer class"/>
+</moduleConfig>

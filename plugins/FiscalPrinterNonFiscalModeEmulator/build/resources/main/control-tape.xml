@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document xmlns="http://crystals.ru/pos/fiscalprinter/templates/parser">
+    <section id="header">
+        <line font="small">
+            <element precision="0" value="ShopName" clip="true" width="36" filler="space" align="center"/>
+        </line>
+        <line font="small">
+            <element value="ShopAddress" clip="true" width="36" filler="space" align="center"/>
+        </line>
+        <line font="small">
+            <text value=" " clip="true" width="36" filler="space" align="left"/>
+        </line>
+        <line font="small">
+            <element width="42" value="controltape" filler="equalsign" clip="true" align="center"/>
+        </line>
+        <line font="small">
+            <element value="datetime" width="22" filler="space" align="left" clip="true"/>
+        </line>
+        <line font="small">
+            <text value="УНП:" width="4" filler="space" align="left" clip="true"/>
+            <element value="inn" width="20" filler="space" align="right" clip="true"/>
+        </line>
+        <line font="small">
+            <text value="Заводской No:" width="13" filler="space" align="left" clip="true"/>
+            <element value="regnumber" width="16" filler="space" align="right" clip="true"/>
+        </line>
+        <line font="small">
+            <text value="  " width="0" filler="space" align="left"/>
+        </line>
+
+        <line font="small">
+            <text value="Кассир: " width="9" filler="space" align="left"/>
+            <element value="cashier" clip="true" width="25" filler="space" align="left" prefix="space"/>
+        </line>
+    </section>
+    <section id="position">
+        <list>
+            <line font="small">
+                <element width="30" value="documenttype" clip="true" align="center" filler="dash"/>
+            </line>
+            <line font="small">
+                <element width="22" value="datetime" clip="true" align="left" filler="space"/>
+                <text width="8" value="Док No. " align="left" filler="space"/>
+                <element value="numshift" width="4" filler="space" align="left" leadingzero="4"/>
+                <element value="numberfield" width="5" prefix="point" align="left" leadingzero="4"/>
+                <element width="20" value="cashier" clip="true" filler="space" align="right" prefix="space"/>
+            </line>
+            <list>
+                <line font="small">
+                    <element value="name" clip="true" width="15" filler="space" align="left"/>
+                    <element value="summ" width="25" formatthousand="true" prefix="space" filler="space" align="right"/>
+                    <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                </line>
+                <line font="small">
+                    <condition name="Нет скидки на позицию">
+                        <operand key="equal">
+                            <varLogical>
+                                <element value="discount" width="0" align="left"/>
+                            </varLogical>
+                            <varLogical>
+                                <numeral value="0"/>
+                            </varLogical>
+                        </operand>
+                    </condition>
+                    <text value="   НДС:" width="7" align="left"/>
+                    <element value="tax" width="6" precision="2" prefix="space" align="left"/>
+                    <text width="1" value="%"/>
+                </line>
+                <line font="small">
+                    <condition name="Есть скидка на позицию">
+                        <operand key="more">
+                            <varLogical>
+                                <element value="discount" width="0" align="left"/>
+                            </varLogical>
+                            <varLogical>
+                                <numeral value="0"/>
+                            </varLogical>
+                        </operand>
+                    </condition>
+                    <text value="   НДС:" width="7" align="left"/>
+                    <element value="tax" width="6" precision="2" prefix="space" align="left"/>
+                    <text width="1" value="%" clip="true"/>
+                    <text width="14" value="СУММА СКИДКИ:" prefix="space" align="center" clip="true"/>
+                    <element value="discount" width="19" formatthousand="true" prefix="space" filler="space" align="right"/>
+                    <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                </line>
+            </list>
+            <footer>
+                <line font="small">
+                    <condition name="отмена продажи">
+                        <operand key="equal">
+                            <varLogical>
+                                <logicalElement value="isAnull"/>
+                            </varLogical>
+                            <varLogical>
+                                <boolean value="true"/>
+                            </varLogical>
+                        </operand>
+                    </condition>
+                    <element value="summstring" width="17" align="left"/>
+                    <element value="numshift" width="4" filler="space" align="left" leadingzero="4"/>
+                    <element value="numberfield" width="5" prefix="point" align="left" leadingzero="4"/>
+                    <text value="ОТМЕНЕН!" clip="true" width="9" prefix="space" align="left"/>
+                </line>
+                <list>
+                    <line font="small">
+                        <element width="30" value="paytype" align="left"/>
+                        <element width="20" value="summ" formatthousand="true" clip="true" align="right"/>
+                        <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                    </line>
+                </list>
+                <header>
+                    <line font="small">
+                        <condition name="Скидка с чека">
+                            <operand key="more">
+                                <varLogical>
+                                    <element value="summDiscount" width="0" align="left"/>
+                                </varLogical>
+                                <varLogical>
+                                    <numeral value="0"/>
+                                </varLogical>
+                            </operand>
+                        </condition>
+                        <text value="СУММА ПО ЧЕКУ:" clip="true" width="14" filler="space" align="left"/>
+                        <element width="18" value="startsumm" formatthousand="true" filler="space" clip="true" align="right"/>
+                        <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                    </line>
+                    <line font="small">
+                        <condition name="Скидка с чека">
+                            <operand key="more">
+                                <varLogical>
+                                    <element value="summDiscount" width="0" align="left"/>
+                                </varLogical>
+                                <varLogical>
+                                    <numeral value="0"/>
+                                </varLogical>
+                            </operand>
+                        </condition>
+                        <text value="СКИДКА С ЧЕКА:" clip="true" width="14" filler="space" align="left"/>
+                        <element width="18" value="summDiscount" formatthousand="true" filler="space" clip="true" align="right"/>
+                        <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                    </line>
+                    <line font="small">
+                        <condition name="операции кроме отмены продажи">
+                            <operand key="equal">
+                                <varLogical>
+                                    <logicalElement value="isAnull"/>
+                                </varLogical>
+                                <varLogical>
+                                    <boolean value="false"/>
+                                </varLogical>
+                            </operand>
+                        </condition>
+                        <element value="summstring" clip="true" width="15" filler="space" align="left"/>
+                        <element width="20" value="summ" formatthousand="true" filler="space" clip="true" align="right"/>
+                        <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                    </line>
+                </header>
+                <footer>
+                    <line font="small">
+                        <condition name="Печатать сдачу">
+                            <operand key="more">
+                                <varLogical>
+                                    <element value="changeCash" width="0" align="left"/>
+                                </varLogical>
+                                <varLogical>
+                                    <numeral value="0"/>
+                                </varLogical>
+                            </operand>
+                        </condition>
+                        <text value="Сдача:" width="6" align="left" clip="true"/>
+                        <element width="20" value="changeCash" formatthousand="true" clip="true" align="right"/>
+                        <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                    </line>
+                    <list>
+                        <line font="small">
+                            <text width="10" value="Сумма НДС " align="left"/>
+                            <element width="2" value="tax" align="left"/>
+                            <text width="2" value="%:" align="left"/>
+                            <element width="20" value="taxsum" formatthousand="true" clip="true" align="right"/>
+                            <text value="руб" clip="true" width="4" prefix="space" align="right"/>
+                        </line>
+                    </list>
+                </footer>
+            </footer>
+        </list>
+    </section>
+    <section id="footer">
+        <line font="small">
+            <element value="datetime" width="22" filler="space" align="left" clip="true"/>
+        </line>
+        <line font="small">
+            <text value=" " width="0" filler="space"/>
+        </line>
+        <line font="small">
+            <element width="0" value="controltape_end" clip="true" filler="equalsign" align="center"/>
+        </line>
+    </section>
+    <collectionConditions>
+        <condition name="Печатать сдачу">
+            <operand key="more">
+                <varLogical>
+                    <element value="changeCash" width="0" align="left"/>
+                </varLogical>
+                <varLogical>
+                    <numeral value="0"/>
+                </varLogical>
+            </operand>
+        </condition>
+        <condition name="Скидка с чека">
+            <operand key="more">
+                <varLogical>
+                    <element value="summDiscount" width="0" align="left"/>
+                </varLogical>
+                <varLogical>
+                    <numeral value="0"/>
+                </varLogical>
+            </operand>
+        </condition>
+        <condition name="дк">
+            <operand key="equal">
+                <varLogical>
+                    <element value="isDiscCard" width="0" align="left"/>
+                </varLogical>
+                <varLogical>
+                    <boolean value="true"/>
+                </varLogical>
+            </operand>
+        </condition>
+        <condition name="отмена продажи">
+            <operand key="equal">
+                <varLogical>
+                    <logicalElement value="isAnull"/>
+                </varLogical>
+                <varLogical>
+                    <boolean value="true"/>
+                </varLogical>
+            </operand>
+        </condition>
+        <condition name="операции кроме отмены продажи">
+            <operand key="equal">
+                <varLogical>
+                    <logicalElement value="isAnull"/>
+                </varLogical>
+                <varLogical>
+                    <boolean value="false"/>
+                </varLogical>
+            </operand>
+        </condition>
+        <condition name="Есть скидка на позицию">
+            <operand key="more">
+                <varLogical>
+                    <element value="discount" width="0" align="left"/>
+                </varLogical>
+                <varLogical>
+                    <numeral value="0"/>
+                </varLogical>
+            </operand>
+        </condition>
+        <condition name="Нет скидки на позицию">
+            <operand key="equal">
+                <varLogical>
+                    <element value="discount" width="0" align="left"/>
+                </varLogical>
+                <varLogical>
+                    <numeral value="0"/>
+                </varLogical>
+            </operand>
+        </condition>
+    </collectionConditions>
+</document>
+
+

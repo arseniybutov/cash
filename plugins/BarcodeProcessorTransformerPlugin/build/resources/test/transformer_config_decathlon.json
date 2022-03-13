@@ -1,0 +1,84 @@
+{
+  "masks": [
+    {
+      "description": "ШК мастерской Декатлон",
+      "fields": [
+        {
+          "name": "shopNumber",
+          "length": "6"
+        },
+        {
+          "name": "operationCode",
+          "value": "999"
+        },
+        {
+          "name": "increment",
+          "length": 6
+        },
+        {
+          "name": "controlDigit",
+          "length": 1
+        },
+        {
+          "name": "price",
+          "length": 8
+        },
+        {
+          "name": "currency",
+          "length": 3
+        },
+        {
+          "name": "quantity",
+          "length": 3
+        }
+      ],
+      "result": {
+        "productRef": {
+          "item": "1000000001"
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          },
+          "attributes": {
+            "allowDiscounts": false
+          },
+          "properties": [
+            {
+              "name": "BrandOwner",
+              "value": "11"
+            },
+            {
+              "name": "WorkshopVoucher",
+              "value": {
+                "source": "function",
+                "value": {
+                  "name": "join",
+                  "parameters": [
+                    {
+                      "source": "field",
+                      "value": "shopNumber"
+                    },
+                    {
+                      "source": "field",
+                      "value": "operationCode"
+                    },
+                    {
+                      "source": "field",
+                      "value": "increment"
+                    },
+                    {
+                      "source": "field",
+                      "value": "controlDigit"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

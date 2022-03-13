@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document xmlns="http://crystals.ru/pos/fiscalprinter/templates/parser">
+    <section>
+        <line>
+            <text value="Оплата по QR-коду"/>
+        </line>
+        <line>
+            <element value="operationDateTime"/>
+        </line>
+        <line>
+            <text value="Сумма (руб.): "/>
+            <element value="amount"/>
+        </line>
+        <line>
+            <text value="QR_ID: "/>
+            <element value="qrId"/>
+        </line>
+    </section>
+</document>

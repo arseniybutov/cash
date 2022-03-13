@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig
+    xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+    settingsGroup="equipment"
+    visible="true"
+    description="Epson"
+    xmlns="http://crystals.ru/cash/settings"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="epsondm110"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.epson.dm110.CDEpsonDM110Plugin"/>
+    <property key="port" value="/dev/ttyS0" type="port" visible="true" description="Port"/>
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Speed (bit/s)"/>
+    <property key="rowsCount" value="2"/>
+    <property key="columnsCount" value="20"/>
+    <property key="encoding" value="cp866"/>
+    <property key="physicalDeviceDescription" value="Display Epson DM110"/>
+    <property key="physicalDeviceName" value="Display Epson DM110"/>
+</moduleConfig>

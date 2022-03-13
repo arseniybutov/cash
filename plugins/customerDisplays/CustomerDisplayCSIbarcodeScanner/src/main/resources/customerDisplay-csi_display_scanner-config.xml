@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig 
+		xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" 
+		settingsGroup="equipment" 
+		visible="true" 
+		description="CSI Scanner"
+		xmlns="http://crystals.ru/cash/settings" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<property key="provider" value="csi_display_scanner"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.csibarcodescanner.CustomerDisplayPluginImpl"/>
+	<property key="configClass" value="ru.crystals.pos.customerdisplay.csibarcodescanner.LineDisplayBarcodeScannerConfig"/>
+    <property key="port" value="COM90" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="physicalDeviceDescription" value="CSI Display Scanner"/>
+    <property key="physicalDeviceName" value="CSI Display Scanner"/>
+
+	<property key="barcodePrefix" value="" />
+	<property key="barcodeSuffix" value="" />
+
+	<property key="ean13LeadingZero" value="false" />
+	<property key="ean13ControlNumber" value="false" />
+	<property key="ean8ControlNumber" value="false" />
+	<property key="upcaLeadingZero" value="false" />
+	<property key="upcaControlNumber" value="false" />
+	<property key="upceLeadingZero" value="false" />
+	<property key="upceControlNumber" value="false" />
+</moduleConfig>

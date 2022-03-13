@@ -1,0 +1,11 @@
+{
+  "header": {
+    "command": "CLOSEDOC"
+  },
+  "params": {
+    "operations": [
+      "A0000000041010"
+    ],
+    "documentNr": "129663"
+  }
+}

@@ -1,0 +1,13 @@
+jar.archiveName = 'barcodeProcessor-markdown.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = "modules/barcodeProcessor/plugins";
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS')
+
+    testCompile libs.junit,
+            project(':SetRetail10_Commons:TestUtils')
+}

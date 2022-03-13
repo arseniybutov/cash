@@ -1,0 +1,22 @@
+{
+  "fiscalCountry": "[0] = Germany",
+  "fiscalisationDocumentNumber": 8475,
+  "fiscalisationDocumentRevision": 2,
+  "errorDescription": null,
+  "signature": "HFaURcMZXMXse18JBEXr3/DsD4yo3IzvmIjLLs3C3Bt7IHNhsXpMm/zLG4+onMV9p+JNOyFEHYbHnHKsl+VKFQ==",
+  "userMessage": null,
+  "requestTime": "2021-03-05T22:00:09.7931913+03:00",
+  "requestCompletionTime": "2021-03-05T22:00:10.1103481+03:00",
+  "AdditionalFields": {
+    "QrCodeDataString": "V0;3/1;Kassenbeleg-V1;AvTraining^0.69_0.00_0.00_0.00_0.00^5.00:Unbar;8475;15988;2021-03-05T19:00:09.000Z;2021-03-05T19:00:10.000Z;ecdsa-plain-SHA256;utcTime;HFaURcMZXMXse18JBEXr3/DsD4yo3IzvmIjLLs3C3Bt7IHNhsXpMm/zLG4+onMV9p+JNOyFEHYbHnHKsl+VKFQ==;MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsvma5yPJVe9k+skzDBzKHZ7GZtC12jsnnubUiZPaJycKuGeNx1GwX+pd/+UTpYGAyrvGRWXx5fbvf5zN1Pycuw==",
+    "TransactionStartTime": 1614970809,
+    "TransactionEndTime": 1614970810,
+    "ProcessData": "QXZUcmFpbmluZ14wLjY5XzAuMDBfMC4wMF8wLjAwXzAuMDBeNS4wMDpVbmJhcg==",
+    "ProcessType": "Kassenbeleg-V1",
+    "TseSerial": "e66573e9e6e52ddb63dc46de2a71d21e60f1e766f7468ebfd9c9acaa2befb4ef",
+    "TseTimeFormat": "utcTime",
+    "TseHashAlgorithm": "ecdsa-plain-SHA256",
+    "TsePublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsvma5yPJVe9k+skzDBzKHZ7GZtC12jsnnubUiZPaJycKuGeNx1GwX+pd/+UTpYGAyrvGRWXx5fbvf5zN1Pycuw==",
+    "TseSignatureCounter": 15988
+  }
+}

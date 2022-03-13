@@ -1,0 +1,18 @@
+jar.archiveName = 'fiscalPrinter-retailForce.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+
+dependencies {
+
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            server_libs.set10dto,
+            libs.json,
+            libs.logging
+    testCompile libs.junit
+    testCompile 'org.springframework:spring-test:5.2.3.RELEASE'
+}

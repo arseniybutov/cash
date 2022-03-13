@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="offer.card">Предложите покупателю получить карту &quot;Вкусомания&quot;.</entry>
+    <entry key="button.text.offer.card">Выдать карту</entry>
+    <entry key="button.text.cancel">Отменить</entry>
+    <entry key="spinner.text">Обработка карты...</entry>
+    <entry key="generic.error.text">Ошибка при операции с картой Siebel.</entry>
+    <entry key="invalid.card.try.another.one">Карта не принадлежит Siebel, попробуйте другую карту.</entry>
+</properties>

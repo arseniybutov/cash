@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project default="create_plugin" name="Builder for KeyboardPs2WincorPlugin">
+
+    <property name="version" value="10.0.1"/>
+    <property name="path" value="..\CashLoaderTouch\update\keyboard-ps2wincor"/>
+    <property name="config" value="keyboard-ps2wincor-config.xml"/>
+    
+    <target name="create_plugin">   
+        <mkdir dir="${path}"/>  
+        <jar destfile="${path}\keyboard-ps2wincor-${version}.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>               
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="bin">
+                <exclude name="**/*.cfg.xml"/>
+                <exclude name="**/*config.xml"/>
+            </fileset>
+        </jar>
+        <copy file="src/${config}" tofile="${path}\${config}"/>
+    </target>           
+    
+</project>

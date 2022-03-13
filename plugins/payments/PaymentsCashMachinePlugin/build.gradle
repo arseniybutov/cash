@@ -1,0 +1,12 @@
+jar.archiveName = 'payments-cashMachine.jar'
+
+packaging {
+    branch = 'POS, LENTA';
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:VisualInterface'),
+        project(':SetRetail10_Cash:modules:CashDS'),
+		project(':SetRetail10_Commons:PaymentsCashMachineEntity'),
+        project(':SetRetail10_Cash:modules:CashMachine')
+}

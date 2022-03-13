@@ -1,0 +1,55 @@
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+						 targetNamespace="http://crystals.ru/pos/customerdisplay/templates/parser"
+						 xmlns="http://crystals.ru/pos/customerdisplay/templates/parser"
+						 elementFormDefault="qualified">
+						 
+<xs:element name="templates">
+  	<xs:complexType>
+	  <xs:sequence>
+	    <xs:element ref="screen" minOccurs="1" maxOccurs="unbounded"/>
+	  </xs:sequence>
+	</xs:complexType>    
+  </xs:element>
+  
+  <xs:element name="screen">
+  	<xs:complexType>
+  		<xs:sequence>
+            <xs:element ref="line" minOccurs="0" maxOccurs="unbounded"/>
+	    </xs:sequence>
+        <xs:attribute name="name" type="xs:string"/>
+    </xs:complexType>    
+  </xs:element> 
+  
+  <xs:element name="line">
+  	<xs:complexType>
+  		<xs:sequence>
+            <xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+	    </xs:sequence>
+    </xs:complexType>    
+  </xs:element> 
+  
+  <xs:element name="item">
+  	<xs:complexType>
+  	  <xs:attribute name="type" type="contentType"/>
+  	  <xs:attribute name="row" type="xs:integer"/>
+	  <xs:attribute name="width" type="xs:integer"/>
+	  <xs:attribute name="align" type="align"/>
+	  <xs:attribute name="element" type="xs:string"/>
+    </xs:complexType>    
+  </xs:element> 
+  
+  <xs:simpleType name="align">
+  	<xs:restriction base="xs:string">
+  	  <xs:enumeration value="right"/>
+  	  <xs:enumeration value="left"/>
+  	  <xs:enumeration value="center"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="contentType">
+  	<xs:restriction base="xs:string">
+  	  <xs:enumeration value="text"/>
+  	  <xs:enumeration value="element"/>
+  	</xs:restriction>
+  </xs:simpleType>
+</xs:schema>

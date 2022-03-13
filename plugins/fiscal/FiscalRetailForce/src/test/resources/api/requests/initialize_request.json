@@ -1,0 +1,24 @@
+{
+  "UniqueClientId": "5c13392b-5951-4053-a05a-c536771ca475",
+  "DocumentGuid": "5efa5306-fe53-452d-9c81-68329475eee0",
+  "DocumentId": "2021-02-02T05:31:08.9450964+01:00",
+  "CreateDate": "2021-02-02T05:31:08.9450964+01:00",
+  "BookDate": "2021-02-02T05:31:08.9450964+01:00",
+  "DocumentNumber": null,
+  "CancellationDocument": false,
+  "DocumentReference": null,
+  "IsTraining": true,
+  "DocumentType": "[1000] = NullReceipt",
+  "DocumentTypeCaption": null,
+  "User": {
+    "Id": "1234",
+    "Caption": "Testuser"
+  },
+  "AllocationGroups": [],
+  "Partner": null,
+  "FiscalResponse": null,
+  "FiscalDocumentNumber": 1,
+  "FiscalDocumentRevision": 1,
+  "Positions": [],
+  "Payments": []
+}

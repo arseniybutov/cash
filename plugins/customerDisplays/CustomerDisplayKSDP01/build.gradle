@@ -1,0 +1,30 @@
+jar.archiveName = 'customerDisplay-dp01.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CustomerDisplayModule'),
+            project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+            libs.io,
+            libs.logging
+    testCompile libs.junit
+}
+
+/**
+  branch может быть : 'common' или '' - для всех касс
+  и для конкретных типов касс:
+      'POS'
+      'TOUCH'
+      'LENTA'
+      'BELARUS'
+      'SCO'
+       **/
+jar { 
+    //exclude('vikivision.png') 
+}        
+       
+       
+jar.doLast {
+    if (project.hasProperty("distrPath")) {
+        //branch, fromDir, todir, includes, excludes
+        dist.deployFiles('common', 'templates', 'modules/customerDisplay/templates', ['**/*.*'],[]);
+    }
+}

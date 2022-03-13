@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="bank" visible="true" description=""
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="provider" value="raiffeisen_sbp" />
+	<property key="serviceClass" value="ru.crystals.pos.bank.raiffeisensbp.BankRaiffeisenSBPImpl" />
+
+    <!--Ключ доступа-->
+    <property key="secretKey" value="" />
+    <!--Счет юр. лица-->
+    <property key="account" value="" />
+    <!--Идентификатор зарегистрированного партнёра в СБП-->
+    <property key="sbpMerchantId" value="" />
+    <!--Параметр для указания срока действия QR-кода в минутах-->
+    <property key="qrExpiration" value="5" />
+
+</moduleConfig>

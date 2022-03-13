@@ -1,0 +1,16 @@
+{
+  "header": {
+    "command": "UNLOCKDEVICE"
+  },
+  "params": {
+    "posOperation": 1,
+    "amount": 1000,
+    "cashBackAmount": 0,
+    "currencyCode": "643",
+    "idleText": "Вставьте карту",
+    "language": "RU",
+    "ecrVersion": "v.12.4.5",
+    "operatorId": "оператор",
+    "operatorName": "Имя, фамилия"
+  }
+}

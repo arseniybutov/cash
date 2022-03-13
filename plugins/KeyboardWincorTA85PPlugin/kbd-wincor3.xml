@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard-data Model="Wincor-Nixdorf_TA61" Name="Wincor3" CountX="12" CountY="7">
+  <kbdAlphaNumeric>
+    <ScanCode X="329" Y="243">65</ScanCode>
+    <Ch>7</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="329" Y="298">71</ScanCode>
+    <Ch>4</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="329" Y="353">10</ScanCode>
+    <Ch>1</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="329" Y="408">85</ScanCode>
+    <Ch>0</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="381" Y="243">66</ScanCode>
+    <Ch>8</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="381" Y="298">72</ScanCode>
+    <Ch>5</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="381" Y="353">77</ScanCode>
+    <Ch>2</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="381" Y="408">86</ScanCode>
+    <Ch>0</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="433" Y="243">67</ScanCode>
+    <Ch>9</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="433" Y="298">73</ScanCode>
+    <Ch>6</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="433" Y="353">90</ScanCode>
+    <Ch>3</Ch>
+  </kbdAlphaNumeric>
+  <kbdAlphaNumeric>
+    <ScanCode X="433" Y="408">87</ScanCode>
+    <Ch>,</Ch>
+  </kbdAlphaNumeric>
+  <kbdControl>
+    <Command>kbdEnter</Command>
+    <Ch>Ввод</Ch>
+    <ScanCode X="537" Y="353">80</ScanCode>
+    <ScanCode X="537" Y="408">89</ScanCode>
+    <ScanCode X="589" Y="353">81</ScanCode>
+    <ScanCode X="589" Y="408">78</ScanCode>
+  </kbdControl>
+  <kbdFunction>
+    <Command>kbdSubtotal</Command>
+    <Ch>Расчет</Ch>
+    <ScanCode X="537" Y="298">75</ScanCode>
+    <ScanCode X="589" Y="298">76</ScanCode>
+  </kbdFunction>
+  <kbdFunction>
+    <Command>kbdPaymentType</Command>
+    <Ch>Оплаты</Ch>
+    <ScanCode X="537" Y="188">120</ScanCode>
+    <ScanCode X="589" Y="188">121</ScanCode>
+  </kbdFunction>
+  <kbdFunction>
+    <Command>kbdDiscount</Command>
+    <Ch>Скидки</Ch>
+    <ScanCode X="537" Y="133">42</ScanCode>
+    <ScanCode X="589" Y="133">45</ScanCode>
+  </kbdFunction>
+  <kbdFunction>
+    <Command>kbdGoods</Command>
+    <Ch>Товары</Ch>
+    <ScanCode X="537" Y="80">122</ScanCode>
+    <ScanCode X="589" Y="80">123</ScanCode>
+  </kbdFunction>
+  <kbdControl>
+    <Command>kbdLeft</Command>
+    <Ch>Влево</Ch>
+    <ScanCode X="17" Y="408">43</ScanCode>
+  </kbdControl>
+  <kbdControl>
+    <Command>kbdUp</Command>
+    <Ch>Вверх</Ch>
+    <ScanCode X="69" Y="353">40</ScanCode>
+  </kbdControl>
+  <kbdControl>
+    <Command>kbdDown</Command>
+    <Ch>Вниз</Ch>
+    <ScanCode X="69" Y="408">109</ScanCode>
+  </kbdControl>
+  <kbdControl>
+    <Command>kbdRight</Command>
+    <Ch>Вправо</Ch>
+    <ScanCode X="121" Y="408">96</ScanCode>
+  </kbdControl>
+  <kbdControl>
+    <Command>kbdCancel</Command>
+    <Ch>Отмена</Ch>
+    <ScanCode X="173" Y="353">97</ScanCode>
+    <ScanCode X="173" Y="408">82</ScanCode>
+    <ScanCode X="225" Y="353">98</ScanCode>
+    <ScanCode X="225" Y="408">83</ScanCode>
+  </kbdControl>
+  <kbdFunction>
+    <Command>kbdMenu2</Command>
+    <Ch>Меню2</Ch>
+    <ScanCode X="433" Y="80">56</ScanCode>
+    <ScanCode X="485" Y="80">84</ScanCode>
+  </kbdFunction>
+  <kbdFunction>
+    <Command>kbdMenu1</Command>
+    <Ch>Меню1</Ch>
+    <ScanCode X="329" Y="80">54</ScanCode>
+    <ScanCode X="381" Y="80">55</ScanCode>
+  </kbdFunction>
+</Keyboard-data>

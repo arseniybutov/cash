@@ -1,0 +1,16 @@
+{
+  "eventName": "ONSELECT",
+  "properties": {
+        "displayText": "Выберите валюту из списка",
+    "options": [
+          "643",
+          "978",
+          "840"
+    ]
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

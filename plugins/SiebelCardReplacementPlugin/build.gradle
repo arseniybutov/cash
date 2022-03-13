@@ -1,0 +1,18 @@
+description = 'Модуль процесса замены дисконтной карты Siebel'
+
+jar.archiveName = "siebel-replace-card.jar"
+
+packaging {
+    branch = 'POS, BELARUS, LENTA'
+    type = 'plugin'
+    deployPath = 'modules/cards/'
+    jarInclude = '*.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+            project(':SetRetail10_Cash:modules:SiebelBridge'),
+            project(':SetRetail10_Cash:modules:VisualInterface'),
+            libs.logging
+}

@@ -1,0 +1,8 @@
+jar.archiveName = "bank-sberbank.jar"
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), 
+            project(':SetRetail10_Cash:modules:BankModule'),
+            libs.logging
+    testCompile libs.junit
+}

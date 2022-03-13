@@ -1,0 +1,31 @@
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="ПИРИТ РБ"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="maxCharRowMap">
+        <property key="NORMAL" value="44"/>
+        <property key="SMALL" value="77"/>
+    </property>
+
+    <property key="commands">
+        <property key="CUT" value="19"/>
+        <property key="FULL_CUT" value="1A"/>
+        <property key="STATUS" value="1D D3 4F"/>
+        <property key="DRAWER_STATUS" value="11 DD"/>
+    </property>
+    <property key="printerStatusMap">
+        <property key="1A 21" value="OPEN_COVER"/>
+        <property key="2F 22" value="END_PAPER"/>
+        <property key="3E23" value="FATAL"/>
+    </property>
+
+    <property key="missingSymbolsReplacement">
+        <property key="«" value="&quot;"/>
+        <property key="»" value="&quot;"/>
+    </property>
+
+    <property key="drawerStatusMap">
+        <property key="false" value="04"/>
+    </property>
+
+</moduleConfig>

@@ -1,0 +1,16 @@
+jar.archiveName = "nfcReader-acr122u.jar"
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/nfcReader/'
+    jarInclude = '*.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.io,
+            libs.logging
+    testCompile libs.junit,
+            project(':SetRetail10_Commons:TestUtils')
+}

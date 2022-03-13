@@ -1,0 +1,9 @@
+jar.archiveName = 'barcodeScanner-viaScale.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), 
+            project(':SetRetail10_Cash:modules:BarcodeScannerModule'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+            libs.logging
+    testCompile libs.junit
+}

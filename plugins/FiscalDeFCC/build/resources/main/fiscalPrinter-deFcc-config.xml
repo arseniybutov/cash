@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="CashBoxSystem"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="deFcc"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+    <property key="port" value="PDF" type="port" visible="true" description="Printer port"/>
+
+    <property key="login" value="" description="FCC agent login"/>
+    <property key="password" value="" description="FCC agent password"/>
+    <property key="ersSecret" value="" description="ErsSecret"/>
+    <property key="uniqueClientId" value="" description="Unique client id"/>
+    <property key="registrationToken" value="" description="Registration token"/>
+    <property key="connectorAddress" value="" description="Connector agent url"/>
+
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.de.fcc.FCConnector" description="connector class"/>
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.epson.DocumentPrinterEpson" description="document printer class"/>
+
+</moduleConfig>
+
+
+
+
+
+

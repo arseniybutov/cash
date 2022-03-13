@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true"
+              description="Дефолтный плагин рекласы"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Provider name -->
+    <property key="provider" value="default"/>
+
+    <property key="serviceClass" value="ru.crystals.pos.advertising.AdvertisingPluginDefault"/>
+
+    <!-- Path -->
+    <property key="contentPath" value="modules/advertising/templates/content/"/>
+
+    <!-- Check content period -->
+    <property key="periodCheckContent" value="60"/>
+
+    <!-- Playtime -->
+    <property key="playTime" value="10"/>
+</moduleConfig>

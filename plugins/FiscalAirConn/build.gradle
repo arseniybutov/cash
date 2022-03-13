@@ -1,0 +1,18 @@
+jar.archiveName = 'fiscalPrinter-az-airconn.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile libs.apacheCommons,
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.io,
+            libs.json,
+            libs.jeromq,
+            libs.jetty92,
+            libs.logging
+    testCompile libs.junit
+}

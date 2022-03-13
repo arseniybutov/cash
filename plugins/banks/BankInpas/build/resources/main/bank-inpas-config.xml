@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="bank" visible="true" description="Инпас"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="inpas"/>
+    <property key="serviceClass" value="ru.crystals.pos.bank.inpas.smartsale.InpasBankServiceImpl"/>
+    
+    <property key="usePartialReversal" value="false"/>
+    <property key="bankPaysPrint" value="true"/>
+    <property key="cancelPossible" value="true"/>
+    <property key="dailyLog" value="true"/>
+    <property key="innerSlip" value="false"/>
+    <property key="innerSlipCount" value="2"/>
+
+    <property key="dataBits" value="8"/>
+    <property key="stopBits" value="0"/>
+    <property key="parity" value="NONE"/>
+    <property key="port" value="COM1"/>
+<!--    <property key="port" value="/dev/ttyS0"/>-->
+    <property key="terminalID" value="40000004"/>
+    <property key="baudRate" value="115200"/>
+   
+</moduleConfig>

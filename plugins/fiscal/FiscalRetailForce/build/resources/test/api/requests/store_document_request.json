@@ -1,0 +1,62 @@
+{
+  "uniqueClientId": "5c13392b-5951-4053-a05a-c536771ca475",
+  "documentGuid": "b8dd838f-66da-4b5d-9dbc-89555289c538",
+  "documentId": "1c26576c-ac9e-4e56-8081-875ce1941b91",
+  "createDate": "2021-03-05T22:00:09.663+03:00",
+  "bookDate": "2021-03-05T22:00:09.663+03:00",
+  "cancellationDocument": false,
+  "isTraining": true,
+  "documentType": "[0] = Receipt",
+  "user": {
+    "id": "1234",
+    "caption": "Testuser"
+  },
+  "fiscalResponse": {
+    "fiscalCountry": "[0] = Germany",
+    "fiscalisationDocumentNumber": 8475,
+    "fiscalisationDocumentRevision": 1,
+    "signature": "mVSrLFpZwicIdSEccpZzKzKUaGjQFdurcUphm9HWW2vVHxbXibo5YBE/LXDJygbHymQ/u2HK4kOIACLyZEiutQ==",
+    "requestTime": "2021-03-05T19:00:09.1595244Z",
+    "requestCompletionTime": "2021-03-05T19:00:09.6316611Z",
+    "AdditionalFields": {
+      "TransactionStartTime": 1614970809,
+      "TransactionEndTime": 0,
+      "TseSerial": "e66573e9e6e52ddb63dc46de2a71d21e60f1e766f7468ebfd9c9acaa2befb4ef",
+      "TseTimeFormat": "utcTime",
+      "TseHashAlgorithm": "ecdsa-plain-SHA256",
+      "TsePublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsvma5yPJVe9k+skzDBzKHZ7GZtC12jsnnubUiZPaJycKuGeNx1GwX+pd/+UTpYGAyrvGRWXx5fbvf5zN1Pycuw==",
+      "TseSignatureCounter": 15987
+    }
+  },
+  "fiscalDocumentNumber": 8475,
+  "fiscalDocumentRevision": 1,
+  "fiscalDocumentStartTime" : 1620719730,
+  "positions": [
+    {
+      "positionNumber": 0,
+      "cancellationPosition": false,
+      "Type": 0,
+      "itemCaption": "Blume grün",
+      "useSubItemVatCalculation": false,
+      "quantity": 1.0,
+      "itemId": "000714",
+      "baseNetValue": 3.61,
+      "baseGrossValue": 4.3,
+      "baseTaxValue": 0.69,
+      "vatIdentification": 1,
+      "vatPercent": 19.0,
+      "netValue": 3.61,
+      "grossValue": 4.3,
+      "taxValue": 0.69
+    }
+  ],
+  "payments": [
+    {
+      "amount": 4.3,
+      "isCash": true,
+      "paymentType" : "cash",
+      "currencyIsoCode": "EUR",
+      "caption" : "Наличными"
+    }
+  ]
+}

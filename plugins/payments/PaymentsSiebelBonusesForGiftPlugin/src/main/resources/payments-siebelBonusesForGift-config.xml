@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns="http://crystals.ru/cash/settings">
+    <property value="true" key="returnPossible"/>
+    <property value="ru.crystals.pos.payments.SiebelBonusesForGiftPaymentEntity" key="paymentTypeClass"/>
+    <property value="Бонусы на подарок" key="paymentTypeName"/>
+    <property value="8" key="paymentTypeFiscalNum"/>
+    <property value="БЕЗНАЛИЧНЫМИ" key="paymentTypeNameFFD100"/>
+    <property value="1" key="paymentTypeFiscalNumFDD100"/>
+    <property value="false" key="useCashDrawer"/>
+    <property value="false" key="changePaymentAmount"/>
+    <property value="-1" key="paymentTypeQuantity"/>
+    <property value="-1" key="paymentTypeAmount"/>
+    <property value="2" key="dimension"/>
+    <property key="visualContainer" value="ru.crystals.pos.visualization.payments.siebelbonusesforgift.integration.SiebelBonusesForGiftPluginAdapter"/>
+    <property key="visualRangList" value="5"/>
+    <!--   Допускается ли ввод кассиром -->
+    <property key="allowUserInput" value="false"/>
+</moduleConfig>

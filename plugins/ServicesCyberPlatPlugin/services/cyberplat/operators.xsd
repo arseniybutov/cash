@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://crystals.ru/cash/services/cyberplat/operators"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:element name="operators">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="operator" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="name" type="xsd:string" />
+							<xsd:element name="processor">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="request" minOccurs="3"
+											maxOccurs="3">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="url" type="xsd:string" />
+												</xsd:sequence>
+												<xsd:attribute name="name" type="xsd:string" />
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="receipts">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="parameter" minOccurs="0"
+											maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:attribute name="name" type="xsd:string" />
+												<xsd:attribute name="value" type="xsd:string" />
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="id" type="xsd:int" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

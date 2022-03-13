@@ -1,0 +1,13 @@
+{
+  "eventName": "ONMSGBOX",
+  "properties": {
+      "displayText": "Проверьте подпись покупателя на чеке",
+      "boxButtons": "OK",
+      "reasonType": "signatureCheck"
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

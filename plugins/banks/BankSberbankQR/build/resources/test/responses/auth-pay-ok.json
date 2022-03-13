@@ -1,0 +1,6 @@
+{
+  "access_token": "cbc72766-badd-4aa6-ab1e-b3dae39e281f",
+  "expires_in": "86400",
+  "scope": "https://api.sberbank.ru/qr/order.pay",
+  "token_type": "bearer"
+}

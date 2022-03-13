@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="GEG Kraftway KB78 M12"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="provider" value="geg_kraftwaykb78m12" />
+	<property key="serviceClass" value="ru.crystals.pos.keyboard.geg.kraftwaykb78m12.KraftwayKB78ServiceImpl" />
+
+	<property key="useKeyLockMap" value="true"/>
+
+	<property key="cardPrefix">
+		<property value="37" />
+	</property>
+	
+	<property key="cardSufix">
+		<property value="63" />
+	</property>
+
+	<property key="cardPrefix2">
+		<property value="59" />		
+	</property>
+
+	<property key="cardSufix2">
+		<property value="63" />
+	</property>
+
+</moduleConfig>

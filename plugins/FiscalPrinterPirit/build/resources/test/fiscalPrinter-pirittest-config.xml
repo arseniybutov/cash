@@ -1,0 +1,24 @@
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="ПИРИТ РБ"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="pirittest"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.pirit.Test"/>
+    <property key="pluginProvider" value="ru.crystals.belarus.fiscalprinter.pirit.TestProvider"/>
+
+    <property key="port" value="COM2" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="57600" type="integer" visible="true" description="Скорость (бит/с)"/>
+
+    <property key="printPosNum" value="false"/>
+    <property key="printGoodsName" value="false"/>
+    <property key="printItem" value="true"/>
+
+    <property key="useBeep" value="true"/>
+
+    <!--Read timeout в милисекундах-->
+    <property key="commandsReadTimeout">
+        <property key="0x00" value="20000" />
+        <property key="0x21" value="30000" />
+        <property key="0x22" value="40000" />
+    </property>
+</moduleConfig>

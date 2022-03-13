@@ -1,0 +1,142 @@
+{
+  "masks": [
+    {
+      "description": "Весовой товар 21",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "21"
+        },
+        {
+          "name": "barcode",
+          "length": 5
+        },
+        {
+          "name": "sum",
+          "length": 5
+        },
+        {
+          "name": "_",
+          "length": 1
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "barcode"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "function",
+            "value": {
+              "name": "calculatePriceAndQuantity",
+              "parameters": {
+                "price": {
+                  "source": "product",
+                  "value": "price"
+                },
+                "sum": {
+                  "source": "field",
+                  "value": "sum"
+                }
+              },
+              "return": "price"
+            }
+          },
+          "quantity": {
+            "source": "function",
+            "value": {
+              "name": "calculatePriceAndQuantity",
+              "parameters": {
+                "price": {
+                  "source": "product",
+                  "value": "price"
+                },
+                "sum": {
+                  "source": "field",
+                  "value": "sum"
+                }
+              },
+              "return": "quantity"
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Весовой товар 22",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "22"
+        },
+        {
+          "name": "barcode",
+          "length": 5
+        },
+        {
+          "name": "sum",
+          "length": 5
+        },
+        {
+          "name": "_",
+          "length": 1
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "barcode"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "function",
+            "value": {
+              "name": "calculatePriceAndQuantity",
+              "parameters": {
+                "price": {
+                  "source": "product",
+                  "value": "price"
+                },
+                "precision": {
+                  "source": "product",
+                  "value": "precision"
+                },
+                "sum": {
+                  "source": "field",
+                  "value": "sum"
+                }
+              },
+              "return": "price"
+            }
+          },
+          "quantity": {
+            "source": "function",
+            "value": {
+              "name": "calculatePriceAndQuantity",
+              "parameters": {
+                "price": {
+                  "source": "product",
+                  "value": "price"
+                },
+                "precision": {
+                  "source": "product",
+                  "value": "precision"
+                },
+                "sum": {
+                  "source": "field",
+                  "value": "sum"
+                }
+              },
+              "return": "quantity"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="NCR Dynakey"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="provider" value="ncr_dynakey" />
+	<property key="serviceClass" value="ru.crystals.pos.keyboard.ncr.dynakey.DynakeyKeyboardServiceImpl" />
+
+	<property key="useKeyLockMap" value="true"/>
+
+    <property key="cardPrefix">
+        <property value="61"/>
+    </property>
+    
+    <property key="cardSufix">
+        <property value="10"/>
+    </property>
+    
+    <property key="cardPrefix2">
+        <property value="45"/>
+    </property>
+    
+    <property key="cardSufix2">
+        <property value="10"/>
+    </property>
+	
+    <property key="keyLockPrefix">
+        <property value="8"/>
+    </property>
+    
+    <property key="keyLockSufix">
+        <property value="8"/>
+    </property>
+
+</moduleConfig>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for Set-DC-Seller module</comment>
+
+    <entry key="client.id.title">номер анкеты</entry>
+    <entry key="enter.client.id.msg">введите номер анкеты</entry>
+    
+    <entry key="client.guid.has.to.be.a.number">GUID картоносца должен быть числом</entry>
+    <entry key="client.by.guid.is.absent">Не найден клиент с GUID:[{0}]</entry>
+
+    <entry key="internal.card.activated">Данная карта была активирована ранее. Отсканируйте другую карту</entry>
+</properties>

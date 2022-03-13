@@ -1,0 +1,65 @@
+jar.archiveName = 'wsExporter.jar'
+
+packaging {
+    type = 'module'
+    deployPath = "modules/wsExporter";
+}
+
+dependencies {
+    conf.providedLibs project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct')
+    testCompile libs.junit
+}
+
+jar.doLast{
+    if (project.hasProperty("distrPath")) {
+        //branch, fromDir, todir, includes, excludes
+        dist.deployFiles('common', 'src/main/resources', 'modules/wsExporter', ['*.properties', '*.wsdl'],[]);
+        dist.deployFiles('common', 'src/main/resources/wsdl', 'modules/wsExporter/wsdl', ['*.properties', '*.wsdl'],[]);
+    }
+}
+
+//buildscript {
+//    repositories {
+//        maven {
+//            url 'http://dl.bintray.com/content/djmijares/gradle-plugins'
+//        }
+//        mavenCentral()
+//    }
+//
+//    dependencies {
+//        classpath 'org.gradle.jacobo.plugins:gradle-wsdl-plugin:1.7.4'
+//    }
+//}
+//
+//repositories {
+//    mavenCentral()
+//}
+//apply plugin: 'wsdl'
+//
+//dependencies {
+//    jaxws 'com.sun.xml.ws:jaxws-tools:2.2.8-promoted-b131'
+//    jaxws 'com.sun.xml.ws:jaxws-rt:2.2.8-promoted-b131'
+//}
+//
+//wsdl {
+//    wsdlFolder = "src/main/resources/wsdl"
+//    schemaFolder = "src/main/resources/schema"
+//    episodeFolder = "src/main/resources/schema/episodes"
+//    nameRules = [:]
+//    episodes = []
+//    wsimport {
+//        sourceDestinationDirectory = "src/main/java"
+//        verbose = true
+//        keep = true
+//        xnocompile = true
+//        fork = false
+//        xdebug = false
+//        target = "2.1"
+//        wsdlLocation = "FILL_IN_BY_SERVER"
+//        encoding = "UTF-8"
+//        ext.package = "ru.crystals.ws"
+//    }
+//}
+
+

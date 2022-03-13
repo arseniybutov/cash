@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig
+        xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+        settingsGroup="equipment"
+        visible="true"
+        description="BizerbaCS300"
+        xmlns="http://crystals.ru/cash/settings"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="bizerba_cs300"/>
+    <property key="serviceClass" value="ru.crystals.scales.bizerba.BizerbaCS300ServiceImpl"/>
+
+    <property key="port" value="COM1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Скорость (бит/с)"/>
+
+    <property key="dataBits" value="7" type="integer" visible="true" description="Биты данных"/> <!-- Допустимые значения: 5, 6, 7 или 8 -->
+    <property key="stopBits" value="1" type="integer" visible="true" description="Стоповые биты"/> <!-- Допустимые значения: 1, 2 или 1.5 -->
+    <property key="parity" value="ODD" type="String" visible="true" description="Четность"/> <!-- Допустимые значения: NONE, ODD, EVEN, MARK, SPACE -->
+    <!--<property key="flowControl" value="RTSCTS_IN" type="String" visible="true" description="Управление потоком"/> &lt;!&ndash; Допустимые значения: NONE, RTSCTS_IN, RTSCTS_OUT, XONXOFF_IN или XONXOFF_OUT &ndash;&gt;-->
+
+</moduleConfig>

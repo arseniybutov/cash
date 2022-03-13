@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../cash-settings.xsd"
+    settingsGroup="equipment" visible="true"
+    description="Драйвер сканера через последовательный порт" xmlns="http://crystals.ru/cash/settings"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">              
+    
+    <property key="provider" value="serial"/>
+    <property key="serviceClass" value="ru.crystals.pos.barcodescanner.serial.BarcodeScannerSerialServiceImpl"/>
+    <property key="configClass" value="ru.crystals.pos.barcodescanner.serial.BarcodeScannerConfig"/>
+        
+    <property key="devices"  description="Доступные устройства" visible="true">
+        <property key="scanner1" description="Сканер1" visible="true">
+            <property key="port" value="COM1" type="port" visible="true" description="Порт" />
+            <property key="baudRate" value="9600" type="baudRate" visible="true" description="Скорость (бит/с)" />
+            <property key="dataBits" value="8" />
+            <property key="stopBits" value="1" />
+            <property key="parity" value="0" />
+            
+            <property key="barcodePrefix" value="" />
+            <property key="barcodeSuffix" value="" />
+          
+            <property key="ean13LeadingZero" value="false" />
+            <property key="ean13ControlNumber" value="false" />
+            <property key="ean8ControlNumber" value="false" />
+            <property key="upcaLeadingZero" value="false" />
+            <property key="upcaControlNumber" value="false" />
+            <property key="upceLeadingZero" value="false" />
+            <property key="upceControlNumber" value="false" />
+            <property key="timeOut" value="25"/>
+        </property>        
+    </property>
+    
+</moduleConfig>

@@ -1,0 +1,9 @@
+{
+  "eventName": "ONCARDREMOVE",
+  "properties": null,
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

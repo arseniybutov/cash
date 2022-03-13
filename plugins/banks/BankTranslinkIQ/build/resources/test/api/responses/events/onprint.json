@@ -1,0 +1,11 @@
+{
+  "eventName": "ONPRINT",
+  "properties": {
+    "receiptText": "\n\n           Random Response\nТорговец: name\nАдрес: Vil\n\nТерминал: T2543543\nТорговец: T35453435435435\n\nНабор 1 \"Visa\"                     AZN\nОперации:    1                    9.99\nОтменено:    0                    0.00\nИТОГО:       1                    9.99\n\nИтого                              AZN\nОперации:    1                    9.99\nОтменено:    0                    0.00\nИТОГО:       1                    9.99\n______________________________________\n                   29.04.2020 14:16:29\n\n"
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

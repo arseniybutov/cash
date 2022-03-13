@@ -1,0 +1,15 @@
+jar.archiveName = 'fiscalPrinter-uzFiscalDriveApi.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.json,
+            libs.json_rpc,
+            libs.logging
+    testCompile libs.junit
+}

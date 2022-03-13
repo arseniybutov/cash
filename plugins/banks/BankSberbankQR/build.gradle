@@ -1,0 +1,10 @@
+jar.archiveName = "bank-sberbank-qr.jar"
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:BankModule'),
+            libs.logging
+    testCompile libs.junit
+    testCompile group: 'org.springframework', name: 'spring-test', version: '5.2.6.RELEASE'
+    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: '1.2.3'
+}

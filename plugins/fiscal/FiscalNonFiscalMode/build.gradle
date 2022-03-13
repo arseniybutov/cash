@@ -1,0 +1,12 @@
+jar.archiveName = 'fiscalPrinter-nonfiscalmode.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            libs.logging
+    testCompile libs.junit
+}

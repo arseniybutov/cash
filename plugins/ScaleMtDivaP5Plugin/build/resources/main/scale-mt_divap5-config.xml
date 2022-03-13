@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment"
+	visible="true" description="Весы Mettler Toledo Diva P5" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <property key="provider" value="mt_divap5"/>
+    <property key="serviceClass" value="ru.crystals.pos.scale.mt.divap5.MtDivaP5ScaleServiceImpl"/>
+    
+    <property key="port" value="COM1"/>   
+    <property key="baudRate" value="9600" description="Скорость (бит/с)"/>
+    <property key="dataBits" value="7"/>
+    <property key="stopBits" value="1"/>
+    <property key="parity" value="2"/>
+    
+</moduleConfig>

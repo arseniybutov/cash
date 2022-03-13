@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="service" description="CyberPlat" xmlns="http://crystals.ru/cash/settings"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="provider" value="cyberplat" />
+	<property key="serviceClass" value="ru.crystals.pos.services.cyberplat.CyberplatServiceImpl" />
+
+	<!-- Код дилера -->
+	<property key="dealerCode" value="17031" />
+
+	<!-- Код точки приёма -->
+	<property key="acquiringPointCode" value="17032" />
+
+	<!-- Код оператора -->
+	<property key="operatorCode" value="17034" />
+
+	<!-- Папка услуги на кассе -->
+	<property key="serviceFolder" value="services/cyberplat/" />
+
+	<!-- Пароль для закрытого ключа -->
+	<property key="password" value="1111111111" />
+
+	<!-- Cерийный номер открытого банковского ключа -->
+	<property key="bankKeySerialNumber" value="64182" />
+
+	<!-- Данные телефонных номеров -->
+	<property key="numcapacity" value="numcapacity.xml" />
+
+	<!-- Данные операторов -->
+	<property key="operators" value="operators.xml" />
+
+	<!-- Комиссия (в процентах) -->
+	<property key="commission" value="0" />
+
+	<!-- Минимальная сумма комиссии (в копейках) -->
+	<property key="minCommission" value="0" />
+
+	<!-- Максимальная сумма комиссии (в копейках) -->
+	<property key="maxCommission" value="unbounded" />
+
+</moduleConfig>

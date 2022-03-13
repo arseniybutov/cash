@@ -1,0 +1,7 @@
+jar.archiveName = 'customerDisplay-firich.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CustomerDisplayModule'),
+            libs.logging
+    testCompile libs.junit
+}

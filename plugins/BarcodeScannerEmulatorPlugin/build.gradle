@@ -1,0 +1,14 @@
+jar.archiveName = 'barcodeScanner-emulator.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:BarcodeScannerModule'),
+            libs.logging
+    testCompile libs.junit
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.crystals.pos.barcodescanner.emulator.BarcodeEmulatorClient'
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "masks": [
+    {
+      "description": "ШК уценки",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "997"
+        },
+        {
+          "name": "ean13",
+          "length": 13
+        },
+        {
+          "name": "reasonCode",
+          "length": 2
+        },
+        {
+          "name": "price",
+          "length": 7
+        },
+        {
+          "name": "_",
+          "length": 2
+        },
+        {
+          "name": "_",
+          "value": "1"
+        }
+      ],
+      "inputRestrictions": {
+        "scannerOnly": true
+      },
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "ean13"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          },
+          "correctionReasonCode": {
+            "source": "field",
+            "value": "reasonCode"
+          }
+        }
+      }
+    }
+  ]
+}

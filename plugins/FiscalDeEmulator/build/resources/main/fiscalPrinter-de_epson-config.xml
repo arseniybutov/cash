@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="Epson TM-T88IV"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="de_epson"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+    <property key="port" value="PDF" type="port" visible="true" description="Printer port"/>
+
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.de.emulator.DeEmulatorConnector" description="connector class"/>
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.epson.DocumentPrinterEpson" description="document printer class"/>
+
+</moduleConfig>

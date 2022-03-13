@@ -1,0 +1,32 @@
+{
+  "masks": [
+    {
+      "description": "ШК трансформер (минимальныая конфигурация)",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "9999"
+        },
+        {
+          "name": "ean13",
+          "length": 13
+        },
+        {
+          "name": "controlDigit",
+          "length": 1
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "ean13"
+          }
+        },
+        "position" : {
+
+        }
+      }
+    }
+  ]
+}

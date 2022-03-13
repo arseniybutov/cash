@@ -1,0 +1,40 @@
+{
+  "masks": [
+    {
+      "description": "Штучный товар 25",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "25"
+        },
+        {
+          "name": "barcode",
+          "length": 7
+        },
+        {
+          "name": "quantity",
+          "length": 3
+        },
+        {
+          "name": "_",
+          "length": 1
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "barcode"
+          }
+        },
+        "position": {
+          "quantity": {
+            "source": "field",
+            "value": "quantity"
+          },
+          "scale": 0
+        }
+      }
+    }
+  ]
+}

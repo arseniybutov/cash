@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" xmlns="http://crystals.ru/cash/settings"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">			
+
+	<property key="paymentTypeClass" value="ru.crystals.pos.payments.CashMachinePaymentEntity"/>
+  	<property key="paymentTypeName" value="Наличные (Купюроприемник)"/>
+  	<property key="paymentTypeFiscalNum" value="0"/>
+	<property key="paymentTypeNameFFD100" value="НАЛИЧНЫЕ"/>
+	<property key="paymentTypeFiscalNumFDD100" value="0"/>
+  	<property key="useCashDrawer" value="false"/>
+	<property key="changePaymentAmount" value="true"/>
+  	<property key="returnPossible" value="true"/>
+  	<property key="paymentTypeQuantity" value="-1"/>
+   	<property key="paymentTypeAmount" value="-1"/>
+   	<property key="dimension" value="2"/>
+  	
+  	<property key="visualContainer" value="ru.crystals.pos.visualization.payments.cashmachine.CashMachinePaymentContainer"/>
+  	<property key="visualRangList" value="0"/>
+	<property key="paymentsForReturn" />  	
+</moduleConfig>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for Set5-DC-Seller module</comment>
+
+    <entry key="client.id.title">application Number</entry>
+    <entry key="enter.client.id.msg">enter the applicaton number</entry>
+    <entry key="offline.error">Server offline. Card will not be added.</entry>
+    <entry key="card.number.is.empty">The card number is EMPTY!</entry>
+	
+</properties>

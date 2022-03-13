@@ -1,0 +1,15 @@
+jar.archiveName = 'payments-cftEGCCard.jar'
+
+packaging {
+    branch = 'POS, BELARUS, LENTA';
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:VisualInterface'),
+            project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:Payments'),
+            project(':SetRetail10_Commons:PaymentsCFTEGCEntity'),
+            project(':SetRetail10_Cash:modules:CFTBridgeModule'),
+            libs.logging
+    testCompile libs.junit
+}

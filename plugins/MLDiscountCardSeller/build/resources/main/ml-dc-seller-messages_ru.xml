@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for ML-DC-Seller module</comment>
+
+    <entry key="client.id.title">ML Номер анкеты</entry>
+    <entry key="enter.client.id.msg">Введите номер анкеты</entry>
+    
+    <entry key="card.number.is.empty">Номер карты пуст!</entry>
+    
+</properties>

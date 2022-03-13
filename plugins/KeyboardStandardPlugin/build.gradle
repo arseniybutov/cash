@@ -1,0 +1,14 @@
+jar.archiveName='keyboard-standard.jar'
+
+packaging {    
+    type = 'plugin'
+    deployPath = 'modules/keyboard/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:KeyboardModule')
+    compile project(':SetRetail10_Cash:modules:CashDS')
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            libs.logging
+    testCompile libs.junit
+}

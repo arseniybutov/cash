@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project default="create_plugin" name="Builder for GoodsGiftCardPlugin">
+
+	<property name="version" value="10.0.2" />
+	<property name="pathUpdate" value="../../modules/CashLoader/update/" />
+	<property name="path" value="${pathUpdate}goods-giftCard" />
+	<property name="pathCommons" value="../../../SetRetail10_Commons/" />
+	<property name="pathEntity" value="${pathCommons}/GoodsGiftCardEntity/" />
+	<property name="config" value="goods-giftCard-config.xml" />
+
+	<target name="create_plugin">
+		<mkdir dir="${path}" />
+		<jar destfile="${path}/goods-giftCard-${version}.jar" filesetmanifest="mergewithoutmain">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Class-Path" value="." />
+			</manifest>
+			<fileset dir="bin">
+				<exclude name="**/*.cfg.xml" />
+				<exclude name="**/*config.xml" />
+			</fileset>
+			<fileset dir="src">
+				<include name="**/*.java" />
+			</fileset>
+			<fileset dir="${pathEntity}/bin">
+				<exclude name="**/*.cfg.xml" />
+				<exclude name="**/*config.xml" />
+			</fileset>
+			<fileset dir="${pathEntity}/src">
+				<include name="**/*.java" />
+			</fileset>
+		</jar>
+		<copy file="src/${config}" tofile="${path}/${config}" />
+	</target>
+
+</project>

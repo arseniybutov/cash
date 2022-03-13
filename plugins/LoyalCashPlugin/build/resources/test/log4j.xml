@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="console-trace" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="trace"/>
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %c - %m%n"/>
+            <!--param name="ConversionPattern" value="%r [%t] %p %c %x - %m%n"/-->
+        </layout>
+    </appender>
+
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="error"/>
+        <param name="Target" value="System.err"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p - %m%n"/>
+        </layout>
+    </appender>
+
+    <logger name="ru.crystals.loyal">
+        <level value="TRACE"/>
+        <appender-ref ref="console-trace"/>
+    </logger>
+
+    <logger name="ru.crystals.pos">
+        <level value="TRACE"/>
+        <appender-ref ref="console-trace"/>
+    </logger>
+
+    <root>
+        <priority value="ALL"/>
+        <appender-ref ref="console"/>
+    </root>
+
+</log4j:configuration>

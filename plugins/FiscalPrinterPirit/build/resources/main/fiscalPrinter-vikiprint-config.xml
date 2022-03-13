@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="ПИРИТ"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="vikiprint"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.pirit.vikiprint.VikiPrint"/>
+
+    <property key="port" value="COM2" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="57600" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="useFlowControl" value="false"/>
+
+    <property key="printPosNum" value="true"/>
+    <property key="printGoodsName" value="true"/>
+    <property key="printItem" value="false"/>
+
+    <!--TODO проверить способность-->
+    <property key="useBeep" value="false"/>
+
+</moduleConfig>

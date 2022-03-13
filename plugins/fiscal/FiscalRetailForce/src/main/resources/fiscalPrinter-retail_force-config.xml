@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description=""
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="retail_force"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.retailforce.RFFiscalConnector"/>
+
+    <property key="url" value="http://localhost:7678" description="Адрес установленной RetailForce Fiscalisation Service"/>
+
+    <property key="identification" value="" description="Идентификатор налогоплательщика"/>
+    <property key="cloudApiKey" value=""/>
+    <property key="cloudApiSecret" value=""/>
+
+    <property key="terminalNumber" value="" description="Номер терминала, если отличается от номера кассы"/>
+    <property key="storeNumber" value="" description="Номер магазина, если отличается от номера магазина Set Retail"/>
+
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.epson.DocumentPrinterEpson"/>
+    <property key="port" value="TM-T88IV" type="port"/>
+
+</moduleConfig>

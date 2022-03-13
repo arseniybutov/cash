@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true" description="NCR" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="posiflex_pd2600_com"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.posiflex.pd2600.CustomerDisplayPosiflexSerialImpl"/>
+    <property key="physicalDeviceDescription" value="Posiflex PD-2600 (COM)"/>
+    <property key="physicalDeviceName" value="Posiflex PD-2600 (COM)"/>
+    <property key="port" value="COM6" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="false" description="Скорость (бит/с)"/>
+    <property key="dataBits" value="8"/>
+    <property key="stopBits" value="1"/>
+    <property key="parity" value="0"/>
+</moduleConfig>

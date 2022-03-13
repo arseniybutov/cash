@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for Customers-DC-Seller module</comment>
+
+    <entry key="client.id.title">application Number</entry>
+    <entry key="enter.client.id.msg">enter the applicaton number</entry>
+
+    <entry key="error.invalid.range">Card number not in permissible range</entry>
+    <entry key="error.card.exists">Card is already registered</entry>
+    <entry key="error.virtual.card">Card number in virtual card range</entry>
+    <entry key="error.offline">Service unavailable</entry>
+    <entry key="error.other">This card can't be purchased</entry>
+</properties>

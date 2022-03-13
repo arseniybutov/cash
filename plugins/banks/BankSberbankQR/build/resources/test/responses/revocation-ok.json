@@ -1,0 +1,9 @@
+{
+  "status": {
+    "rq_tm": "2020-07-27T12:59:07Z",
+    "error_code": "000000",
+    "rq_uid": "cbc72766badd4aa6ab1eb3dae39e281f",
+    "order_id": "3a3d4baf63eb44739a569d1bda673b63",
+    "order_state": "REVOKED"
+  }
+}

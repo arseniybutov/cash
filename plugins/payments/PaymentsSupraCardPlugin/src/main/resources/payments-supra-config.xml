@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleConfig xmlns="http://crystals.ru/cash/settings">
+    <!--
+        Конфигурационный файл оплаты картой "Supra".
+        Этот конфиг дублирован в SetRetail10_Server/Installation/set10_conf/standalone/configuration/modules/payment-type-manager/payment-supra-config.xml
+        Этот комментарий нельзя разместить выше, потому что иначе парсер не может распарсить этот конфигурационный файл, что приводит
+        к невозможности загрузить реестр типов оплат и касса при подитоге будет сообщать об отсутствии способов оплат чека.
+    -->
+    <property key="returnPossible" value="false"/>
+    <property key="paymentTypeClass" value="ru.crystals.pos.payments.SupraPaymentEntity"/>
+    <property key="paymentTypeName" value="Карта Супра"/>
+    <property key="paymentTypeFiscalNum" value="3"/>
+    <property key="paymentTypeFiscalNumFDD100" value="1"/> <!--Электронная оплата (id 1 [SRTB-1551]) -->
+    <property key="paymentTypeNameFFD100" value="БЕЗНАЛИЧНЫМИ"/>
+    <property key="useCashDrawer" value="false"/>
+    <property key="changePaymentAmount" value="true"/>
+    <property key="paymentTypeQuantity" value="-1"/>
+    <property key="paymentTypeAmount" value="-1"/>
+    <property key="dimension" value="2"/>
+    <property key="allowUserInput" value="false"/>
+</moduleConfig>

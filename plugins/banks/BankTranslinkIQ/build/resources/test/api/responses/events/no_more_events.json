@@ -1,0 +1,9 @@
+{
+  "eventName": null,
+  "properties": null,
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Queue empty.",
+    "resultTime": "20200508093958"
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig
+		xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+		settingsGroup="equipment"
+		visible="true"
+		description="Подключение весов Масса-К по протоколу 100"
+		xmlns="http://crystals.ru/cash/settings"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="massa-k_protocol100"/>
+    <property key="serviceClass" value="ru.crystals.pos.scale.massak.protocol100.MassaKProtocol100Impl"/>
+
+    <property key="port" value="/dev/ttyACM0" type="port" visible="true" description="Порт"/>
+
+</moduleConfig>

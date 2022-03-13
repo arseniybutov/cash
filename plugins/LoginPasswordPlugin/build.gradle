@@ -1,0 +1,14 @@
+jar.archiveName = 'login-password.jar'
+
+packaging {
+    type = 'plugin'
+    branch = 'POS, LENTA, BELARUS'
+    deployPath = "modules/login/plugins";
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:VisualInterface'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.logging
+    testCompile libs.junit
+}

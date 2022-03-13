@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Header/>
+    <S:Body>
+        <ns2:exportPurchase xmlns:ns2="http://sales.ws.pos.crystals.ru/">
+            <ns2:purchases count="1">
+                <purchase amount="103.5" cash="2" discountAmount="0.0" number="8" operationType="true" saletime="2014-10-10T14:41:49.569+04:00"
+                        shift="3" shop="34654" tabNumber="25" userName="Иванов И.И.">
+                    <positions>
+                        <position amount="3.5" barCode="1" cost="3.5" costWithDiscount="3.5" count="1.0" departNumber="1" discountValue="0.0"
+                                goodsCode="1" nds="18.0" ndsClass="NDS" ndsSum="0.53" order="0"/>
+                        <position amount="100.0" barCode="2" cost="100.0" costWithDiscount="100.0" count="1.0" departNumber="1" discountValue="0.0"
+                                goodsCode="2" nds="18.0" ndsClass="NDS" ndsSum="15.25" order="0"/>
+                    </positions>
+                    <payments>
+                        <payment amount="103.5" typeClass="CashPaymentEntity"/>
+                    </payments>
+                    <discountCards/>
+                </purchase>
+            </ns2:purchases>
+        </ns2:exportPurchase>
+    </S:Body>
+</S:Envelope>

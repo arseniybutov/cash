@@ -1,0 +1,26 @@
+jar.archiveName = "bank-softcase.jar"
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), 
+            project(':SetRetail10_Cash:modules:BankModule'),
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'), 
+            project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+            libs.logging
+    testCompile libs.junit
+}
+
+/**
+  branch может быть : 'common' или '' - для всех касс
+  и для конкретных типов касс:
+      'POS'
+      'TOUCH'
+      'LENTA'
+      'BELARUS'
+      'SCO'
+       **/
+jar.doLast {
+    if (project.hasProperty("distrPath")) {
+        //branch, fromDir, todir, includes, excludes
+        dist.deployFiles('common', 'templates', 'modules/bank/templates', ['**/*.xml', '**/*.xsd'],[]);
+    }
+}

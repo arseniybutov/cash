@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="offer.card">Offer &quot;Vkusomania&quot; card to the customer?</entry>
+    <entry key="button.text.offer.card">Offer card</entry>
+    <entry key="button.text.cancel">Cancel</entry>
+    <entry key="spinner.text">Replacing card...</entry>
+    <entry key="generic.error.text">Failed to replace card</entry>
+    <entry key="invalid.card.try.another.one">The card you entered does not belong to Siebel. Please scan another card.</entry>
+</properties>

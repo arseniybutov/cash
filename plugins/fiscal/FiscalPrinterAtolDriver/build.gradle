@@ -1,0 +1,16 @@
+jar.archiveName = 'fiscalPrinter-atolDriver.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            libs.atol,
+            libs.barcode4j,
+            libs.logging
+    testCompile libs.junit
+}

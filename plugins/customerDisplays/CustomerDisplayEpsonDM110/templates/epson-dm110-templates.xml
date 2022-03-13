@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xmlns="http://crystals.ru/pos/customerdisplay/templates/parser"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://crystals.ru/pos/customerdisplay/templates/parser fec-templates.xsd">
+    <screen name="addPositionStart">
+        <line>
+            <item type="element" row="1" width="10" align="left" element="productName"/>
+            <item type="element" row="12" width="10" align="right" element="productPrice"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Total"/>
+            <item type="element" row="11" width="10" align="right" element="checkSumm"/>
+        </line>
+    </screen>
+    <screen name="addPositionEnd">
+        <line>
+            <item type="element" align="left" element="productName"/>
+            <item type="element" element="productQnty"/>
+            <item type="element" align="right" element="positionSumm"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Total"/>
+            <item type="element" row="18" width="10" align="right" element="checkSumm"/>	  
+        </line>	  
+    </screen>
+	
+    <screen name="discountNotification">
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Rabatt"/>
+            <item type="element" row="11" width="10" align="right" element="discountSumm"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Total"/>
+            <item type="element" row="11" width="10" align="right" element="checkTotalSumm"/>
+        </line>
+    </screen>
+	
+    <screen name="addPaymentStart">
+        <line>
+            <item type="element" row="1" width="20" align="left" element="paymentName"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Zahlen"/>
+            <item type="element" row="11" width="10" align="right" element="checkTotalSumm"/>
+        </line>
+    </screen>
+	
+    <screen name="addPaymentEnd">
+        <line>
+            <item type="element" row="1" width="10" align="left" element="paymentName"/>
+            <item type="element" row="11" width="10" align="right" element="paymentSumm"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Zahlen"/>
+            <item type="element" row="11" width="10" align="right" element="toPaySumm"/>
+        </line>
+    </screen>
+	
+    <screen name="checkTotalNotification">
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Bezahlt"/>
+            <item type="element" row="11" width="10" align="right" element="paymentSumm"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Rückgeld"/>
+            <item type="element" row="11" width="10" align="right" element="changeSum"/>
+        </line>
+    </screen>
+	
+    <screen name="addPositionReturnStart">
+        <line>
+            <item type="element" row="1" width="10" align="left" element="productName"/>
+            <item type="element" row="11" width="10" align="right" element="productPrice"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Um zurückzukehren"/>
+            <item type="element" row="11" width="10" align="right" element="checkSumm"/>
+        </line>
+    </screen>
+    <screen name="addPositionReturnEnd">
+        <line>	
+            <item type="element" align="left" element="productName"/>
+            <item type="element" element="productQnty"/>
+            <item type="element" align="right" element="positionSumm"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="14" align="left" element="Um zurückzukehren"/>
+            <item type="element" row="11" width="10" align="right" element="checkSumm"/>	  
+        </line>	  
+    </screen>
+	
+    <screen name="addPositionReturnByPos">
+        <line>
+            <item type="element" align="left" element="productName"/>
+            <item type="element" element="productQnty"/>
+            <item type="element" align="right" element="positionSumm"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="20" align="left" element="Position zurück"/>	  
+        </line>
+    </screen>
+	
+    <screen name="addPaymentReturnEnd">
+        <line>
+            <item type="element" row="1" width="10" align="left" element="productName"/>
+            <item type="element" row="11" width="10" align="right" element="productPrice"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Um zurückzukehren"/>
+            <item type="element" row="11" width="10" align="right" element="checkSumm"/>
+        </line>
+    </screen>
+	
+ 
+    <screen name="CheckTotalReturnNotification">
+        <line>
+            <item type="text" row="1" width="10"
+                  align="left" element=""/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10"
+                  align="left" element="Rückkehr"/>
+            <item type="element" row="11" width="10"
+                  align="right" element="checkTotalSumm"/>
+        </line>
+    </screen>
+	
+    <screen name="deletePosition">
+        <line>
+            <item type="text" row="1" width="10" align="left" element=""/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Total"/>
+            <item type="element" row="11" width="10" align="right" element="checkSumm"/>
+        </line>		  
+    </screen>
+  
+    <screen name="deletePositionReturn">
+        <line>
+            <item type="text" row="1" width="10" align="left" element=""/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10" align="left" element="Um zurückzukehren"/>
+            <item type="element" row="11" width="10" align="right" element="checkSumm"/>
+        </line>
+    </screen>
+	
+    <screen name="addProductNotification">
+        <line>
+            <item type="element" row="1" width="20"
+                  align="right" element="message"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10"
+                  align="left" element="Total"/>
+            <item type="element" row="11" width="10"
+                  align="right" element="checkSumm"/>
+        </line>
+    </screen>
+	
+    <screen name="productInformation">
+        <line>
+            <item type="element" row="1" width="20"
+                  align="left" element="productName"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10"
+                  align="left" element="Preis"/>
+            <item type="element" row="11" width="10"
+                  align="right" element="productPrice"/>
+        </line>
+    </screen>
+	
+    <screen name="checkCanceledNotification">
+        <line>
+            <item type="text" row="1" width="20"
+                  align="left" element="Stornierung"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="14"
+                  align="left" element="Betrag"/>
+            <item type="element" row="11" width="10" 
+                  align="right" element="checkSumm"/>
+        </line>	
+    </screen>
+  
+    <screen name="checkDeferredNotification">
+        <line>
+            <item type="text" row="1" width="20"
+                  align="left" element="Verschoben"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="10"
+                  align="left" element="Betrag"/>
+            <item type="element" row="11" width="10" 
+                  align="right" element="checkSumm"/>
+        </line>	  
+    </screen>
+    <screen name="welcomeNotification">
+        <line>
+            <item type="text" row="1" width="20"
+                  align="left" element="Willkommen"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="20"
+                  align="left" element="zurück"/>
+        </line>
+    </screen>
+    <screen name="serviceNotification">
+        <line>
+            <item type="text" row="1" width="5"
+                  align="left" element="Kasse"/>
+        </line>
+        <line>
+            <item type="text" row="1" width="12"
+                  align="left" element="Geschlossen"/>
+        </line>
+    </screen>
+    <screen name="textNotification">
+        <line>
+            <item type="element" row="1" width="20"
+                  align="left" element="str1"/>
+        </line>
+        <line>
+            <item type="element" row="1" width="20"
+                  align="left" element="str2"/>
+        </line>
+    </screen>
+    <screen name="phoneNotification">
+        <line>
+            <item type="element" row="1" width="20"
+                  align="right" element="phone"/>
+        </line>
+    </screen>
+</templates>	

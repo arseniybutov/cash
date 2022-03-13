@@ -1,0 +1,9 @@
+jar.archiveName = 'fiscalPrinter-nfd.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.jpos,
+            libs.logging
+    testCompile libs.junit
+}

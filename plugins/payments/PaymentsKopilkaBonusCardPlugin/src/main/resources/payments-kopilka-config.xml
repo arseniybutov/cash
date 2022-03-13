@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig
+        xmlns="http://crystals.ru/cash/settings">
+
+    <property key="paymentTypeClass" value="ru.crystals.pos.payments.KopilkaPaymentEntity"/>
+    <property key="paymentTypeName" value="Оплата по бонусной карте Копилка"/>
+    <property key="paymentTypeFiscalNum" value="7"/>
+    <property key="paymentTypeNameFFD100" value="БЕЗНАЛИЧНЫМИ"/>
+    <property key="paymentTypeFiscalNumFDD100" value="1"/>
+    <property key="useCashDrawer" value="false"/>
+    <property key="changePaymentAmount" value="true"/>
+    <property key="returnPossible" value="true"/>
+    <property key="paymentTypeQuantity" value="-1"/>
+    <property key="paymentTypeAmount" value="-1"/>
+    <property key="dimension" value="2"/>
+
+    <property key="visualContainer"
+              value="ru.crystals.pos.visualization.payments.kopilkabonuscard.integration.KopilkaBonusCardPaymentPluginAdapter"/>
+    <property key="visualRangList" value="5"/>
+    <!--   Допускается ли ввод кассиром -->
+    <property key="allowUserInput" value="true"/>
+</moduleConfig>

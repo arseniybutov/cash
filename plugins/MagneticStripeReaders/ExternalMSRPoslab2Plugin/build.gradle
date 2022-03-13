@@ -1,0 +1,10 @@
+jar.archiveName = 'externalMSR-poslab2.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/externalMSR/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), project(':SetRetail10_Cash:modules:ExternalMSRModule')
+}

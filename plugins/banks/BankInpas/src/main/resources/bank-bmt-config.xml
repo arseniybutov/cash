@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="bank" visible="true" description="Инпас"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="bmt"/>
+    <property key="serviceClass" value="ru.crystals.pos.bank.bmt.BMTBank"/>
+
+    <property key="dailyLog" value="true"/>
+
+    <property key="terminalIp" value="127.0.0.1"/>
+    <property key="terminalTcpPort" value="27015"/>
+    <property key="terminalID" value="12345678"/>
+
+</moduleConfig>

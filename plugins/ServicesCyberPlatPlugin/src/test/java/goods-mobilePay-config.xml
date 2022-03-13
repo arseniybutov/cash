@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns="http://crystals.ru/cash/settings">				
+
+	<!-- Имя класса сущности товара -->
+	<property key="productTypeClass" value="ru.crystals.pos.catalog.ProductMobilePayEntity"/>
+	
+	<!-- Имя класса позиции -->
+	<property key="positionClass" value="ru.crystals.pos.check.PositionMobilePayEntity"/>
+	
+	<!-- Наименование типа товара -->
+  	<property key="productTypeName" value="Оплата мобильной связи"/>  	
+  	
+  	<!-- Сворачивание товара в чеке -->
+  	<property key="collapsible" value="false"/>
+  	
+  	<!-- Имя класса процессинга штрих-кода -->
+  	<property key="barcodeProcessor" value="ru.crystals.pos.barcodeprocessing.processors.MobilePayProductProcessor"/>
+  	
+  	<!-- Имя класса конфигурации маски штрих-кода -->
+  	<property key="maskConfig" value="ru.crystals.pos.barcodeprocessing.processors.MobilePayMaskConfig"/>
+  	
+  	<!-- Описание маски штрих-кода -->
+  	<property key="prefix" value="TN">		
+  		<property key="phoneStartIndex" value="2" />
+		<property key="phoneLength" value="10" />
+		<property key="sumStartIndex" value="12" />
+		<property key="sumLength" value="5" />
+  	</property>
+	
+	<!-- Имя класса контейнера визуализации -->
+  	<property key="visualContainer" value="ru.crystals.pos.visualization.products.mobilepay.MobilePayProductContainer"/>
+	
+	<!-- Изменение количества в чеке -->  	
+  	<property key="changeQnty" value="false"/>
+  	
+  	<!-- Разрешен возврат данного типа товара -->  	
+  	<property key="returnPossible" value="false"/>
+  	
+  	<!-- Свойство товара (для продажи отдельными чеками) -->
+  	<property key="onlyMeInCheck" value="false"/>
+  	
+  	<!-- Применять расчет скидок к типу товара -->
+  	<property key="isDiscountApplicable" value="false"/>
+  	
+  	<!-- Максимальное количество в чеке -->
+  	<property key="maxQnty" value="10000"/>
+  	
+  	<!-- Имя класса десериализатора AMF -->  	
+  	<property key="amfDeserializer" value="ru.crystals.pos.catalog.service.transport.ProductMobilePayEntityDeserializer"/>
+  	
+  	<!-- Телефон тех. поддержки -->
+	<property key="maintenancePhoneNumber" value="8 (800) 100-100-8" />
+	
+</moduleConfig>

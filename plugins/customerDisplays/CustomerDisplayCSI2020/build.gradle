@@ -1,0 +1,8 @@
+jar.archiveName = 'customerDisplay-csi_2020.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CustomerDisplayModule'), 
+            project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+            libs.logging
+    testCompile libs.junit
+}

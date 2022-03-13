@@ -1,0 +1,8 @@
+jar.archiveName = 'customerDisplay-kraftway_cdk3100.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CustomerDisplayModule'), 
+            project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+            libs.logging
+    testCompile libs.junit
+}

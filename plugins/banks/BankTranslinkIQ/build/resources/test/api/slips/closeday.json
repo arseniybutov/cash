@@ -1,0 +1,6 @@
+{
+  "eventName": "ONPRINT",
+  "properties": {
+    "receiptText": "          End of Day report\n--------------------------------------\n\n\n           Random Response\nMerchant: name\nAddress: Vil\n\nTerminal ID: T2543543\n\nNo successful transactions were made\n______________________________________\nOK                 2020-04-22 18:30:16\n\n"
+  }
+}

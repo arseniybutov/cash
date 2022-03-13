@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns="http://crystals.ru/cash/settings">				
+
+	<property key="paymentTypeClass" value="ru.crystals.pos.payments.BankCardPaymentEntity"/>
+	<property key="paymentTypeName" value="Банковская карта"/>
+	<!-- <property key="paymentTypeFiscalName" value="БаНкОвСкАя КаРтА"/> -->
+	<property key="paymentTypeFiscalNum" value="1"/>
+	<property key="paymentTypeNameFFD100" value="БЕЗНАЛИЧНЫМИ"/>
+	<property key="paymentTypeFiscalNumFDD100" value="1"/>
+	<property key="useCashDrawer" value="false"/>
+	<property key="changePaymentAmount" value="true"/>
+  	<property key="returnPossible" value="true"/>
+  	<property key="paymentTypeQuantity" value="-1"/>
+   	<property key="paymentTypeAmount" value="-1"/>
+   	<property key="dimension" value="2"/>
+  	
+  	<property key="visualContainer" value="ru.crystals.pos.visualization.payments.bankcard.BankCardPaymentContainer"/>
+  	<property key="visualRangList" value="1"/>
+	
+</moduleConfig>

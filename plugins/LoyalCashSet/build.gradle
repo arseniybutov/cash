@@ -1,0 +1,14 @@
+description = 'Наши (SET10) поставщики "услуг лояльности"'
+
+jar.archiveName = 'loy-provider-set10.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:Loyal:SET-LoyalStructures'),
+            project(':SetRetail10_Cash:plugins:LoyalCashApi'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+	        project(':SetRetail10_Commons:Loyal:SET-LoyalCalculation')
+            libs.logging
+    testCompile libs.junit,
+            loyalty_plugins,
+            project(':SetRetail10_Commons:Loyal:SET-LoyalCalculation-Test')
+}

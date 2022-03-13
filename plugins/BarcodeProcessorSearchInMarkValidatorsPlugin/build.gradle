@@ -1,0 +1,14 @@
+jar.archiveName = 'barcodeProcessor-searchinvalidators.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = "modules/barcodeProcessor/plugins";
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:modules:ExciseValidation')
+
+    testCompile libs.junit,
+            project(':SetRetail10_Commons:TestUtils')
+}

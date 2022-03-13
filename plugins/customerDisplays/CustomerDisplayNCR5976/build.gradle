@@ -1,0 +1,8 @@
+jar.archiveName = 'customerDisplay-ncr5976.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CustomerDisplayModule'),
+            libs.logging,
+            libs.jpos
+    testCompile libs.junit
+}

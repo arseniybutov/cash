@@ -1,0 +1,16 @@
+jar.archiveName = 'goods-pieceweight.jar'
+
+packaging {
+    branch = 'POS, BELARUS, LENTA';
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'), 
+		project(':SetRetail10_Cash:modules:CatalogGoods'), 
+		project(':SetRetail10_Commons:DataStructsModule'), 
+		project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+		project(':SetRetail10_Cash:modules:VisualInterface'),
+		project(':SetRetail10_Commons:GoodsPieceWeightEntity'),
+            libs.logging
+    testCompile libs.junit
+}

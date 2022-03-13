@@ -1,0 +1,17 @@
+jar.archiveName = 'fiscalPrinter-nonfiscalmode_emulator.jar'
+
+packaging {    
+    type = 'plugin'
+    branch = 'SCO, LENTA_SCO, BELARUS_SCO'
+	deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'), 
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'), 
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+            libs.barcode4j,
+            libs.javassist,
+            libs.logging
+    testCompile libs.junit
+}

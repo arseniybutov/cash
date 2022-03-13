@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for Set5-DC-Seller module</comment>
+
+    <entry key="client.id.title">номер анкеты</entry>
+    <entry key="enter.client.id.msg">введите номер анкеты</entry>
+    <entry key="offline.error">Сервер недоступен. Карта добавлена не будет.</entry>
+    <entry key="card.number.is.empty">Номер карты пуст!</entry>
+    
+</properties>

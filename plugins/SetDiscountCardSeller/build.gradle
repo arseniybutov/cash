@@ -1,0 +1,18 @@
+description = 'Дефолтная (SET10) версия обработчика, что помогает в процессе продажи ДК (Дисконтной Карты)'
+
+// DC == Discount Card
+jar.archiveName = "set10-dc-seller.jar"
+
+packaging {
+    type = 'plugin'
+	deployPath = 'modules/cards/'
+    jarInclude = '*.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+	project(':SetRetail10_Cash:modules:Cards'),
+    libs.logging
+    
+    testCompile libs.junit
+}

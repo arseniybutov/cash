@@ -1,0 +1,7 @@
+jar.archiveName = 'keyboard-geg_kraftwaykb78m12.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:KeyboardModule'),
+            libs.logging
+    testCompile libs.junit
+}

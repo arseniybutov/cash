@@ -1,0 +1,13 @@
+jar.archiveName = "bank-inpas.jar"
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:BankModule'),
+            project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+            libs.io,
+            libs.io_jssc,
+            libs.logging
+    testCompile libs.junit,
+                libs.fest
+}
+

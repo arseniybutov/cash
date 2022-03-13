@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://crystals.ru/cash/services/cyberplat/numcapacity"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:element name="numcapacity">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="range" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="id" type="xsd:int" minOccurs="0"
+								maxOccurs="unbounded" />
+							<xsd:element name="name" type="xsd:string" />
+							<xsd:element name="company" type="xsd:string" />
+							<xsd:element name="region" type="xsd:string" />
+						</xsd:sequence>
+						<xsd:attribute name="from" type="xsd:long" />
+						<xsd:attribute name="to" type="xsd:long" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

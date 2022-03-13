@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig 
+		xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" 
+		settingsGroup="equipment" 
+		visible="true" 
+		description="BIRCH DSP 800 II FB4"
+		xmlns="http://crystals.ru/cash/settings" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<property key="provider" value="birch_dsp800fb4"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.birch.dsp800fb4.CustomerDisplayBirchPluginImpl"/>
+    <property key="port" value="COM3" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="false" description="Скорость (бит/с)"/>
+    <property key="dataBits" value="8"/>
+    <property key="stopBits" value="1"/>
+    <property key="parity" value="0"/><!--NONE-->
+    <property key="rowsCount" value="2"/>
+    <property key="columnsCount" value="20"/>
+    <property key="encoding" value="cp866"/>
+    <property key="physicalDeviceDescription" value="BIRCH DSP 800 II FB4"/>
+    <property key="physicalDeviceName" value="BIRCH DSP 800 II FB4"/>
+</moduleConfig>

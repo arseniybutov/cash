@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project default="create_plugin" name="Builder for PaymentsGiftCardPlugin">
+
+	<property name="version" value="10.0.2" />
+	<property name="pathUpdate" value="../../modules/CashLoader/update/" />
+	<property name="path" value="${pathUpdate}payments-giftCard" />
+	<property name="config" value="payments-giftCard-config.xml" />
+
+	<target name="create_plugin">
+		<mkdir dir="${path}" />
+		<jar destfile="${path}/payments-giftCard-${version}.jar" filesetmanifest="mergewithoutmain">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Class-Path" value="." />
+			</manifest>
+			<fileset dir="bin">
+				<exclude name="**/*.bat" />
+				<exclude name="**/*config.xml" />
+			</fileset>
+			<fileset dir="src">
+				<include name="**/*.java" />
+			</fileset>
+		</jar>
+		<copy file="src/${config}" tofile="${path}/${config}" />
+	</target>
+
+</project>

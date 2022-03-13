@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+                             "jpos/res/jcl.dtd">
+<JposEntries>
+<!--Saved by JavaPOS jpos.config/loader (JCL) version 2.2.0 on 3/1/18 5:34 PM-->
+    
+    <JposEntry logicalName="LineDisplay.1">
+        <creation factoryClass="com.ncr.retail.jpos.NCRJposServiceInstanceFactory" serviceClass="com.ncr.retail.jpos.services.linedisplay.LineDisplayService"/>
+        <vendor name="NCR" url="http://www.ncr.com"/>
+        <jpos category="LineDisplay" version="1.7"/>
+        <product description="LineDisplay" name="LineDisplay" url="http://www.ncr.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="IO.IONModel" type="String" value=""/>
+        <prop name="IO.DevUsagePage" type="String" value="65407"/>
+        <prop name="IO.Reports" type="String" value="2"/>
+        <prop name="sModelClassName" type="String" value="NCR59762x20LineDisplay"/>
+        <prop name="Version" type="String" value="1.10.0"/>
+        <prop name="ScreenSaver" type="String" value="0"/>
+        <prop name="Brightness" type="String" value="100"/>
+        <prop name="IO.VendorID" type="String" value="1028"/>
+        <prop name="IO.DevUsage" type="String" value="6"/>
+        <prop name="IO.ProductID" type="String" value="824"/>
+        <prop name="ModelDescription" type="String" value="NCR 5976 2x20 Line Display"/>
+        <prop name="DeviceWindows" type="String" value="5"/>
+        <prop name="ConnectionType" type="String" value="U"/>
+        <prop name="CodePage" type="String" value="866"/>
+        <prop name="ModelVersion" type="String" value="3.15.1.0"/>
+        <prop name="IO.ClearAfterRead" type="String" value="T"/>
+        <prop name="Description" type="String" value="NCR JavaPOS LineDisplay Device Service"/>
+        <prop name="IO.DevPath" type="String" value=""/>
+</JposEntry>
+    
+</JposEntries>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="purchases">
+        <xs:annotation>
+            <xs:documentation>
+                Корневой элемент документа &quot;Список чеков&quot;.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="purchase" type="purchaseType" maxOccurs="unbounded" form="qualified">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Список чеков в этом документе
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="count" type="xs:long">
+                <xs:annotation>
+                    <xs:documentation>
+                        Количество чеков в этом списке
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="card-typeType">
+        <xs:annotation>
+            <xs:documentation>
+                Список поддерживаемых типов карт
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INTERNAL">
+                <xs:annotation>
+                    <xs:documentation>
+                        внутренняя карта
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="EXTERNAL">
+                <xs:annotation>
+                    <xs:documentation>
+                        внешняя карта
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRESENT">
+                <xs:annotation>
+                    <xs:documentation>
+                        подарочная карта
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BONUS">
+                <xs:annotation>
+                    <xs:documentation>
+                        бонусная карта
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="COUPON_CARD">
+                <xs:annotation>
+                    <xs:documentation>
+                        купон (вырезанный из газетки?)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="COUPON_RECEIPT">
+                <xs:annotation>
+                    <xs:documentation>
+                        купон (распечатанный на чеке продажи?)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="COUPON_PROCESSING">
+                <xs:annotation>
+                    <xs:documentation>
+                        купон (возвратный)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="COUPON_UNIQUE">
+                <xs:annotation>
+                    <xs:documentation>
+                        купон (уникальный)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="UNKNOWN">
+                <xs:annotation>
+                    <xs:documentation>
+                        купон (уникальный)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="positionsType">
+        <xs:annotation>
+            <xs:documentation>
+                Просто контейнер для хранения списка позиций
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="position" type="positionType" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Сам список позиций
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="paymentsType">
+        <xs:annotation>
+            <xs:documentation>
+                Просто контейнер для хранения списка оплат
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="payment" type="paymentType" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Сам список оплат
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="discountType">
+        <xs:attribute name="positionId" type="xs:long" use="required"/>
+        <xs:attribute name="goodCode" type="xs:string"/>
+        <xs:attribute name="amount" type="xs:double" use="required"/>
+        <xs:attribute name="isDiscountPurchase" type="xs:boolean" use="required"/>
+        <xs:attribute name="AdvertActGUID" type="xs:long" use="required"/>
+        <xs:attribute name="AdvertActExternalCode" type="xs:string"/>
+        <xs:attribute name="advertType" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="bonusDiscountType">
+        <xs:annotation>
+            <xs:documentation>
+                Информация по транзакции списания бонусов в качестве скидки
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="type" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Тип бонусной системы, в настоящей версии поддерживается только одно значение - CRM
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="transaction-id" type="xs:base64Binary" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Идентификатор транзакции, в рамках которой произошло списание бонусов
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="purchaseType">
+        <xs:annotation>
+            <xs:documentation>
+                Чек
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="positions" type="positionsType" minOccurs="0" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список позиций в этом чеке
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="payments" type="paymentsType" minOccurs="0" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список оплат, что были применены при ... оплате этого чека
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="discounts" type="discountsType" minOccurs="0" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список скидок, что сработали для этого чека
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="discountCards" type="discountCardsType" minOccurs="0" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Скидочные карты, что были использованы при оплате этого чека
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="card" type="cardType" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список карт, использованных при оплате этой покупки. Фактически более
+                        детализированная версия содержимого элемента &quot;discountCards&quot;
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="original-purchase" type="purchaseType" minOccurs="0" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Заполняется только для чеков возврата: хранит ссылку на оригинальный чек продажи.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="bonus-discount" type="bonusDiscountType" minOccurs="0" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Информация по транзакции списания бонусов в качестве скидки
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="tabNumber" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>
+                    табельный номер кассира, что родил этот документ
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="userName" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>
+                    имя кассира, что родил этот документ
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="operationType" type="xs:boolean" default="true">
+            <xs:annotation>
+                <xs:documentation>
+                    тип операции: продажа/возврат == true/false
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="operDay" type="xs:date" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    дата опердня, к которому относится этот чек
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="shop" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    номер магазина, на котором был пробит этот чек
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="cash" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Номер кассы, на котором был пробит этот чек
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="shift" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Номер смены, в которую был пробит этот чек
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="number" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Номер этого чека (в течение смены)
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="saletime" type="xs:dateTime">
+            <xs:annotation>
+                <xs:documentation>
+                    Дата и время фискализации этого чека
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="begintime" type="xs:dateTime">
+            <xs:annotation>
+                <xs:documentation>
+                    Дата создания чека (добавления первого товара)
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="amount" type="xs:double">
+            <xs:annotation>
+                <xs:documentation>
+                    Сумма по чеку, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="discountAmount" type="xs:double">
+            <xs:annotation>
+                <xs:documentation>
+                    Полная сумма скидки по чеку, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="denyPrintToDocuments" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>
+                    Запрет печати сопроводительных документов
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="clientType" type="client_Type">
+            <xs:annotation>
+                <xs:documentation>
+                    тип клиента
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="client_guid" type="xs:long">
+            <xs:annotation>
+                <xs:documentation>
+                    код клиента
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="discountCardsType">
+        <xs:annotation>
+            <xs:documentation>
+                Просто контейнер для хранения списка скидочных карт
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="discountCard" type="xs:string" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Сам список скидочных карт
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="discountsType">
+        <xs:annotation>
+            <xs:documentation>
+                Просто контейнер для хранения списка скидок
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="discount" type="discountType" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Сам список скидок
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="positionType">
+        <xs:annotation>
+            <xs:documentation>
+                Описание позиции в чеке
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="plugin-property" type="plugin-propertyType"
+                        minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список "плагинных" (расширенных, не базовых)
+                        свойств этой позиции. Может отсутствовать.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="order" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Порядковый номер позиции в чеке
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="departNumber" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Номер отдела, в котором продан товар в позиции
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="goodsCode" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Артикул товара
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="barCode" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Штрих код товара
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="count" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Количество товара, в кг/шт
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="cost" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Цена без учёта скидки, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="nds" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    НДС, в процентах
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ndsClass" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Класс-тип налога (НДС)
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ndsSum" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Сумма НДС, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="discountValue" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Значение скидки на позицию, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="costWithDiscount" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Цена (с учётом скидок на позицию и размазанной скидки чека, если таковая была), в
+                    &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="amount" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Сумма по позиции, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="softCheckNumber" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>
+                    Номер мягкого чека из которого была добавлена позиция
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="cardType">
+        <xs:annotation>
+            <xs:documentation>
+                карта (примененная при покупке)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="type" type="card-typeType">
+            <xs:annotation>
+                <xs:documentation>
+                    Тип примененной карты. Может отсутствовать
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="card_type_guid" type="xs:long">
+            <xs:annotation>
+                <xs:documentation>
+                    код категории карты
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="number" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Номер примененной карты. Поле обязательно
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="plugin-propertyType">
+        <xs:annotation>
+            <xs:documentation>
+                Свойство. Может содержать вложения.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="plugin-property" type="plugin-propertyType" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список вложенных свойств.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="key" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Ключ свойства. Обязателен.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="value" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>
+                    Значение свойства. Может отсутствовать
+                    (особенно
+                    если список &quot;property&quot; не пуст).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="paymentType">
+        <xs:annotation>
+            <xs:documentation>
+                Класс описывающий сущность вида оплаты (урезанная версия для отправки в ERP)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="plugin-property" type="plugin-propertyType" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                <xs:annotation>
+                    <xs:documentation>
+                        Список &quot;плагинных&quot; (расширенных, не базовых)
+                        свойств этого типа оплаты. Может отсутствовать.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="typeClass" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Имя класса типа оплаты
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="amount" type="xs:double" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Сумма оплаты по данному виду платежа, в &quot;рублях&quot;
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="description" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>
+                    Описание - Дополнительные данные по платежу
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:simpleType name="client_Type">
+        <xs:annotation>
+            <xs:documentation>
+                Список поддерживаемых типов клиентов
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PRIVATE">
+                <xs:annotation>
+                    <xs:documentation>
+                        физическое лицо
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="JURISTIC_PERSON">
+                <xs:annotation>
+                    <xs:documentation>
+                        Юридическое лицо
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

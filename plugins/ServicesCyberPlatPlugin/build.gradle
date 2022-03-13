@@ -1,0 +1,17 @@
+jar.archiveName = 'services-cyberplat.jar'
+
+packaging {
+     type = 'plugin'
+     deployPath = 'modules/services/plugins'
+}
+
+dependencies {
+    compile libs.cyberplat, 
+            project(':SetRetail10_Commons:DataStructsModule'), 
+            libs.xml, 
+            libs.parsers,
+            project(':SetRetail10_Cash:modules:CashDS'), 
+            project(':SetRetail10_Cash:modules:Services'),
+            libs.logging
+    testCompile libs.junit
+}

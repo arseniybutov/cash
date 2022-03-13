@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xmlns="http://crystals.ru/pos/customerdisplay/ksdp01/templates/parser"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://crystals.ru/pos/customerdisplay/ksdp01/templates/parser viki-templates.xsd">
+	<screen name="addPositionStart">
+  		<item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+     <item type="element" x="1" y="1"
+			  zOrder="2" width="254" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productName"/>
+     <item type="element" x="1" y="17"
+			  zOrder="4" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productPrice"/>
+     <item type="text" x="1" y="38"
+		      zOrder="7" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Итого"/>
+     <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>
+  	</screen>
+  	<screen name="addPositionEnd">
+    	<item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    	<item type="element" x="1" y="1"
+			  zOrder="2" width="254" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productName"/>
+    	<item type="element" x="1" y="17"
+			  zOrder="4" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productPrice"/>
+    <item type="text" x="90" y="17"
+			  zOrder="3" width="12" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="center" element="x"/>
+    <item type="element" x="102" y="17"
+			  zOrder="1" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productQnty"/>
+    <item type="element" x="170" y="17"
+			  zOrder="5" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="positionSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="7" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Итого"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>
+  </screen>
+  <screen name="discountNotification">
+    	<item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="100" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Скидка"/>
+    <item type="element" x="170" y="1"
+			  zOrder="4" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="discountSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="1" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Итого"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkTotalSumm"/>
+  </screen>
+  <screen name="addPaymentStart">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="100" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Сумма чека"/>
+    <item type="element" x="170" y="1"
+			  zOrder="4" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="checkTotalSumm"/>
+    <item type="element" x="1" y="17"
+			  zOrder="1" width="200" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="paymentName"/>
+    <item type="text" x="1" y="38"
+		      zOrder="3" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="К оплате"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="toPaySumm"/>
+  </screen>
+  <screen name="addPaymentEnd">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="100" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Сумма чека"/>
+    <item type="element" x="170" y="1"
+			  zOrder="4" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="checkTotalSumm"/>
+    <item type="element" x="1" y="17"
+			  zOrder="1" width="155" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="paymentName"/>
+    <item type="element" x="170" y="17"
+			  zOrder="3" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="paymentSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="5" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="К оплате"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="toPaySumm"/>
+  </screen>
+  <screen name="checkTotalNotification">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="100" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Сумма чека"/>
+    <item type="element" x="170" y="1"
+			  zOrder="1" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="checkTotalSumm"/>
+    <item type="text" x="1" y="17"
+			  zOrder="4" width="148" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Всего оплачено"/>
+    <item type="element" x="170" y="17"
+			  zOrder="3" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="paymentSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="5" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Сдача"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="changeSum"/>
+  </screen>
+  <screen name="addPositionReturnStart">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="100" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Сумма чека"/>
+    <item type="element" x="170" y="1"
+			  zOrder="4" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="checkTotalSumm"/>
+    <item type="element" x="1" y="17"
+			  zOrder="1" width="155" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="paymentName"/>
+    <item type="text" x="1" y="38"
+		      zOrder="7" width="126" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="К возврату"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="toPaySumm"/>
+  </screen>
+  <screen name="addPositionReturnEnd">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    	<item type="element" x="1" y="1"
+			  zOrder="2" width="254" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productName"/>
+    	<item type="element" x="1" y="17"
+			  zOrder="4" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productPrice"/>
+    <item type="text" x="90" y="17"
+			  zOrder="3" width="12" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="center" element="x"/>
+    <item type="element" x="102" y="17"
+			  zOrder="1" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productQnty"/>
+    <item type="element" x="170" y="17"
+			  zOrder="5" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="positionSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="7" width="126" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="К возврату"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>
+  </screen>
+  <screen name="addPositionReturnByPos">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    	<item type="element" x="1" y="1"
+			  zOrder="2" width="254" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productName"/>
+    	<item type="element" x="1" y="17"
+			  zOrder="4" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productPrice"/>
+    <item type="text" x="90" y="17"
+			  zOrder="3" width="12" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="center" element="x"/>
+    <item type="element" x="102" y="17"
+			  zOrder="1" width="80" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productQnty"/>
+    <item type="element" x="170" y="17"
+			  zOrder="5" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="positionSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="7" width="250" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Возврат позиции"/>
+  </screen>
+  <screen name="addPaymentReturnEnd">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="100" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Сумма чека"/>
+    <item type="element" x="170" y="1"
+			  zOrder="4" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="checkTotalSumm"/>
+    <item type="element" x="1" y="17"
+			  zOrder="1" width="155" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="paymentName"/>
+    <item type="element" x="170" y="17"
+			  zOrder="3" width="83" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element="paymentSumm"/>
+    <item type="text" x="1" y="38"
+		      zOrder="5" width="130" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="К возврату"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="toPaySumm"/>
+  </screen>
+  <screen name="CheckTotalReturnNotification">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    
+    <item type="text" x="1" y="38"
+		      zOrder="1" width="126" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Возврат"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0" 
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkTotalSumm"/>
+  </screen>
+  <screen name="deletePosition">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="38"
+		      zOrder="7" width="126" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Итого"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>
+  </screen>
+  <screen name="deletePositionReturn">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="38"
+		      zOrder="7" width="126" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="К возврату"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>
+  </screen>
+  <screen name="addProductNotification">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="element" x="7" y="2"
+			  zOrder="2" width="245" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productName"/>
+    <item type="element" x="7" y="22"
+			  zOrder="4" width="245" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="message"/>
+    <item type="text" x="7" y="42"
+		      zOrder="1" width="106" height="21"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Итого"/>
+    <item type="element" x="133" y="42"
+			  zOrder="6" width="120" height="21"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>
+  </screen>
+  <screen name="productInformation">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="element" x="1" y="1"
+			  zOrder="2" width="254" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="productName"/>
+    <item type="text" x="1" y="38"
+		      zOrder="1" width="106" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Цена"/>
+    <item type="element" x="135" y="38"
+			  zOrder="6" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="productPrice"/>
+  </screen>
+  <screen name="checkCanceledNotification">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="245" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Аннулирование чека"/>
+   <item type="text" x="1" y="38"
+			  zOrder="2" width="150" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Сумма чека"/>
+	<item type="element" x="133" y="38"
+			  zOrder="2" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>	
+  </screen>
+  <screen name="checkDeferredNotification">
+    <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="245" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Чек откладывается"/>
+   <item type="text" x="1" y="38"
+			  zOrder="2" width="150" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Сумма чека"/>
+	<item type="element" x="133" y="38"
+			  zOrder="2" width="120" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="checkSumm"/>		  
+  </screen>
+  <screen name="welcomeNotification">
+  <item type="text" x="0" y="36"
+			  zOrder="0" width="256" height="28"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS10x16"
+			  align="right" element=""/>
+	<!--
+    <item type="element" x="1" y="1"
+		      zOrder="1" width="100" height="16" 
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16" 
+			  align="left" element="date"/>
+    <item type="element" x="130" y="1"
+              zOrder="1" width="50" height="16"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16" 
+			  align="left" element="time"/>
+	-->
+    <item type="text" x="1" y="38"
+			  zOrder="2" width="250" height="24"
+			  backgroundcolor="15" textcolor="0"
+			  font="viki" fontsize="FS12x24"
+			  align="left" element="Добро пожаловать!"/>
+  </screen>
+  <screen name="serviceNotification">
+    <item type="text" x="1" y="1"
+			  zOrder="2" width="245" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="Извините,"/>
+    <item type="text" x="1" y="17"
+			  zOrder="4" width="245" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="касса не работает"/>
+  </screen>
+  <screen name="textNotification">
+    <item type="element" x="0" y="1"
+			  zOrder="2" width="256" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="str1"/>
+    <item type="element" x="0" y="17"
+			  zOrder="4" width="256" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="str2"/>
+	<item type="element" x="0" y="33"
+			  zOrder="2" width="256" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="str3"/>
+    <item type="element" x="0" y="49"
+			  zOrder="4" width="256" height="12"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS10x16"
+			  align="left" element="str4"/>		  
+  </screen>
+  <screen name="phoneNotification">
+	<item type="element" x="0" y="1"
+			  zOrder="4" width="256" height="14"
+			  backgroundcolor="0" textcolor="15"
+			  font="viki" fontsize="FS12x24"
+			  align="right" element="phone"/>
+  </screen>
+</templates>	
+
+
+

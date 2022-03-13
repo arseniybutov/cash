@@ -1,0 +1,14 @@
+jar.archiveName = 'documentPrinter-system.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'), 
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.barcode4j,
+            libs.logging
+    testCompile libs.junit
+}

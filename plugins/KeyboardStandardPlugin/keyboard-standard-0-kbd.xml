@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard-data Model="standard" LocalizedName="Стандартная"
+	CountX="12" CountY="7">
+
+	<!-- Escape -->
+	<kbdControl>
+		<ScanCode X="1" Y="1">27</ScanCode>
+		<Command>kbdCancel</Command>
+	</kbdControl>
+
+	<!-- Enter -->
+	<kbdControl>
+		<ScanCode X="14" Y="3">10</ScanCode>
+		<Command>kbdEnter</Command>
+	</kbdControl>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="2" Y="2">49</ScanCode>
+		<Ch>1</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="3" Y="2">50</ScanCode>
+		<Ch>2</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="4" Y="2">51</ScanCode>
+		<Ch>3</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="5" Y="2">52</ScanCode>
+		<Ch>4</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="6" Y="2">53</ScanCode>
+		<Ch>5</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="7" Y="2">54</ScanCode>
+		<Ch>6</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="8" Y="2">55</ScanCode>
+		<Ch>7</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="9" Y="2">56</ScanCode>
+		<Ch>8</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="10" Y="2">57</ScanCode>
+		<Ch>9</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="11" Y="2">48</ScanCode>
+		<Ch>0</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdAlphaNumeric>
+		<ScanCode X="9" Y="7">44</ScanCode>
+		<Ch>,</Ch>
+	</kbdAlphaNumeric>
+
+	<kbdControl>
+		<ScanCode X="2" Y="4">38</ScanCode>
+		<Command>kbdUp</Command>
+	</kbdControl>
+
+	<kbdControl>
+		<ScanCode X="2" Y="6">40</ScanCode>
+		<Command>kbdDown</Command>
+	</kbdControl>
+
+	<kbdControl>
+		<ScanCode X="1" Y="7">37</ScanCode>
+		<Command>kbdLeft</Command>
+	</kbdControl>
+
+	<kbdControl>
+		<ScanCode X="3" Y="7">39</ScanCode>
+		<Command>kbdRight</Command>
+	</kbdControl>
+
+	<!-- Space -->
+	<kbdFunction>
+		<ScanCode X="12" Y="2">32</ScanCode>
+		<Command>kbdSubtotal</Command>
+	</kbdFunction>
+
+	<!-- Q -->
+	<kbdFunction>
+		<ScanCode X="1" Y="3">81</ScanCode>
+		<Command>kbdBox</Command>
+	</kbdFunction>
+
+	<!-- C -->
+	<kbdFunction>
+		<ScanCode X="8" Y="2">67</ScanCode>
+		<Command>kbdCurrency</Command>
+	</kbdFunction>
+
+	<!-- Home -->
+	<kbdFunction>
+		<ScanCode X="10" Y="2">36</ScanCode>
+		<Command>kbdCatalog</Command>
+	</kbdFunction>
+
+	<!-- ~ -->
+	<kbdControl>
+		<ScanCode X="1" Y="1">192</ScanCode>
+		<Command>kbdExit</Command>
+	</kbdControl>
+
+	<!-- Delete -->
+	<kbdControl>
+		<ScanCode X="11" Y="1">127</ScanCode>
+		<Command>kbdDel</Command>
+	</kbdControl>
+
+	<!-- Insert -->
+	<kbdFunction>
+		<ScanCode X="11" Y="1">155</ScanCode>
+		<Command>kbdCheck</Command>
+	</kbdFunction>
+
+	<!-- = -->
+	<kbdFunction>
+		<ScanCode X="12" Y="2">61</ScanCode>
+		<Command>kbdDeferCheck</Command>
+	</kbdFunction>
+
+	<!-- A -->
+	<kbdFunction>
+		<ScanCode X="12" Y="1">65</ScanCode>
+		<Command>kbdAdmin</Command>
+	</kbdFunction>
+
+	<!-- D -->
+	<kbdFunction>
+		<ScanCode X="11" Y="2">68</ScanCode>
+		<Command>kbdDiscount</Command>
+	</kbdFunction>
+
+	<!-- I -->
+	<kbdFunction>
+		<ScanCode X="11" Y="4">73</ScanCode>
+		<Command>kbdProductInfo</Command>
+	</kbdFunction>
+
+	<!-- P -->
+	<kbdFunction>
+		<ScanCode X="11" Y="3">80</ScanCode>
+		<Command>kbdPaymentType</Command>
+	</kbdFunction>
+
+	<!-- M -->
+	<!-- <kbdFunction> <ScanCode X="11" Y="3">77</ScanCode> <GoodsCode>TN000000000000000</GoodsCode> 
+		<Command>kbdMobile</Command> </kbdFunction> -->
+
+	<!-- S -->
+	<kbdFunction>
+		<ScanCode X="11" Y="3">83</ScanCode>
+		<Command>kbdSeller</Command>
+	</kbdFunction>
+
+	<!-- F -->
+	<kbdFunction>
+		<ScanCode X="7" Y="2">70</ScanCode>
+		<Command>kbdReturnCheck</Command>
+	</kbdFunction>
+
+	<kbdGoods>
+		<ScanCode X="11" Y="3">103</ScanCode>
+		<GoodsCode>3456</GoodsCode>
+	</kbdGoods>
+
+	<kbdGoods>
+		<ScanCode X="11" Y="3">104</ScanCode>
+		<GoodsCode>
+			TN000000000000000 <!-- 5349626645000 -->
+		</GoodsCode>
+	</kbdGoods>
+
+	<kbdGoods>
+		<ScanCode X="11" Y="3">105</ScanCode>
+		<GoodsCode>3756</GoodsCode>
+	</kbdGoods>
+
+	<!-- W -->
+	<kbdFunction>
+		<ScanCode X="10" Y="2">87</ScanCode>
+		<Command>kbdMenu1</Command>
+	</kbdFunction>
+
+	<!-- E -->
+	<kbdFunction>
+		<ScanCode X="10" Y="2">69</ScanCode>
+		<Command>kbdMenu2</Command>
+	</kbdFunction>
+
+	<!-- R -->
+	<kbdFunction>
+		<ScanCode X="10" Y="2">82</ScanCode>
+		<Command>kbdMenu3</Command>
+	</kbdFunction>
+
+	<!-- T -->
+	<kbdFunction>
+		<ScanCode X="10" Y="2">84</ScanCode>
+		<Command>kbdGoods</Command>
+	</kbdFunction>
+
+</Keyboard-data>

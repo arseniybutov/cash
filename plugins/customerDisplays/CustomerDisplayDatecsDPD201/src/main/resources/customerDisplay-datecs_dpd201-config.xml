@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig 
+		xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" 
+		settingsGroup="equipment" 
+		visible="true" 
+		description="Datecs DPD-201" 
+		xmlns="http://crystals.ru/cash/settings" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<property key="provider" value="datecs_dpd201"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.datecs.CustomerDisplayDatecsDPD201PluginImpl"/>
+    <property key="port" value="/dev/ttyS1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="rowsCount" value="2"/>
+    <property key="encoding" value="cp850"/>
+    <property key="physicalDeviceDescription" value="Datecs Line Display"/>
+    <property key="physicalDeviceName" value="Datecs Line Display"/>
+</moduleConfig>

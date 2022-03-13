@@ -1,0 +1,15 @@
+jar.archiveName = 'documentPrinter-epson.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'), 
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:modules:configurator:NativeUtils'),
+            project(':SetRetail10_Cash:plugins:DocumentPrinterSystem'),
+            libs.logging
+    testCompile libs.junit
+}

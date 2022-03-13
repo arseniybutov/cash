@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment"
+	visible="true" description="Весы Mettler Toledo Tiger" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <property key="provider" value="mt_tiger_e"/>
+    <property key="serviceClass" value="ru.crystals.pos.scale.mt.ToledoTigerImpl"/>
+    
+    <property key="port" value="COM2"/>
+    <property key="baudRate" value="4800" description="Скорость (бит/с)"/>
+    <property key="dataBits" value="8"/>
+    <property key="stopBits" value="1"/>
+    <property key="parity" value="2"/>
+    
+</moduleConfig>

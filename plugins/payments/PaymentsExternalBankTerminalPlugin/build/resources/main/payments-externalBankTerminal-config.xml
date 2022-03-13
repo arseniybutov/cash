@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns="http://crystals.ru/cash/settings">				
+
+	<property key="paymentTypeClass" value="ru.crystals.pos.payments.ExternalBankTerminalPaymentEntity"/>
+	<property key="paymentTypeName" value="Внешний банковский терминал"/>
+	<property key="paymentTypeFiscalNum" value="6"/>
+	<property key="paymentTypeNameFFD100" value="БЕЗНАЛИЧНЫМИ"/>
+	<property key="paymentTypeFiscalNumFDD100" value="1"/>
+	<property key="useCashDrawer" value="false"/>
+	<property key="changePaymentAmount" value="true"/>
+  	<property key="returnPossible" value="true"/>
+  	<property key="paymentTypeQuantity" value="-1"/>
+   	<property key="paymentTypeAmount" value="-1"/>
+   	<property key="dimension" value="2"/>
+  	
+  	<property key="visualContainer" value="ru.crystals.pos.visualization.payments.externalbankterminal.ExtBankTerminalPaymentView"/>
+  	<property key="visualRangList" value="1"/>
+	
+</moduleConfig>

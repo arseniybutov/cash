@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document xmlns="http://crystals.ru/pos/fiscalprinter/templates/parser"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://crystals.ru/pos/fiscalprinter/templates/parser templates.xsd">
+	<section id="header">
+		<line font="normal">
+			<text align="center" value="Наименование ТСП" width="0"
+				filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="center" value="Фактический адрес ТСП"
+				width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="center" value="ЗАО &quot;Райффайзенбанк&quot;" width="0" filler="space" clip="true" />
+		</line>
+        <line font="normal">
+            <text align="left" value="Дата и время"
+                    width="0" filler="space" clip="true" />
+            <element align="right" value="date" width="22"
+                    filler="space" clip="true"/>
+        </line>
+        <line font="normal">
+            <text align="left" value=" "
+                    width="0" filler="space" clip="true" />
+		</line>
+        <line font="normal">
+            <text align="left" value="Тип операции"
+                    width="0" filler="space" clip="true" />
+            <element align="right" value="operationtype" width="15"
+                    filler="space" clip="true"/>
+        </line>
+        
+        <line font="normal">
+            <text align="left" value="Код ответа"
+                    width="0" filler="space" clip="true" />
+            <element align="right" value="code" width="24"
+                    filler="space" clip="true"/>
+        </line>
+        <line font="normal">
+            <text align="left" value=" "
+                    width="0" filler="space" clip="true" />
+		</line>
+        <line font="normal">
+            <element align="center" value="resp" width="34"
+                    filler="space" clip="true"/>
+        </line>
+	</section>
+</document>

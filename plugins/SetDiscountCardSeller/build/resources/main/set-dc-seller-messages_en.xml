@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for Set-DC-Seller module</comment>
+
+    <entry key="client.id.title">application Number</entry>
+    <entry key="enter.client.id.msg">enter the applicaton number</entry>
+    
+    <entry key="client.guid.has.to.be.a.number">Client GUID has to be a number</entry>
+    <entry key="client.by.guid.is.absent">Client [GUID: {0}] does NOT exist</entry>
+
+    <entry key="internal.card.activated">This card was already activated. Scan an other card</entry>
+</properties>

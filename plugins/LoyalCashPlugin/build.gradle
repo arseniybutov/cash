@@ -1,0 +1,26 @@
+jar.archiveName = 'loyalty-cash.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:Loyal:SET-LoyalStructures'),
+            project(':SetRetail10_Commons:Loyal:SET-LoyalCalculation'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:modules:Registry'),
+            project(':SetRetail10_Commons:SET-Transport'),
+            project(':SetRetail10_Commons:PaymentsBankCardEntity'),
+            project(':SetRetail10_Cash:modules:LoyalBridgeModule'),
+            project(':SetRetail10_Utils:JDBCMapper'),
+            project(':SetRetail10_Cash:plugins:LoyalCashApi'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+            project(':SetRetail10_Cash:modules:CatalogGoods'),
+            libs.spring,
+            libs.logging,
+            libs.hibernate
+    testCompile libs.junit,
+            libs.fest,
+            loyalty_plugins,
+            project(':SetRetail10_Commons:Loyal:SET-LoyalCalculation-Test'),
+            project(':SetRetail10_Cash:plugins:LoyalCashSet'),
+            project(':SetRetail10_Cash:modules:SetLoyaltyRestrictionsBridge'),
+            project(':SetRetail10_Commons:SET-Loyalty-Exporter-API'),
+            project(':SetRetail10_Commons:TestUtils')
+}

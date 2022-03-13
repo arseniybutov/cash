@@ -1,0 +1,49 @@
+{
+  "eventName": "ONCARD",
+  "properties": {
+    "hash": "",
+    "track1": "1000",
+    "track2": "0",
+    "track3": "129663",
+    "PAN": "************8261",
+    "cardType": "Visa",
+    "currencyCode": "978",
+    "additionalCurrencyCodes": [
+      "840"
+    ],
+    "loyCard": false,
+    "allowAuthorize": true,
+    "allowPreAuthorize": true,
+    "allowRefund": true,
+    "fullAmountOnly": false,
+    "noDiscounts": false,
+    "reqPANL4Digit": false,
+    "reqOriginalData": false,
+    "reqOriginalRRN": true,
+    "allowCashBack": false,
+    "allowInstallmentIssuer": false,
+    "installmentFormIssuer": null,
+    "allowInstallmentMerchant": true,
+    "installmentFormMerchant": {
+      "min": 4,
+      "max": 10,
+      "listOfPossibleValues": [
+        4,
+        5,
+        7,
+        9,
+        10
+      ]
+    },
+    "allowInstallmentAcquirer": true,
+    "installmentFormAcquirer": {
+      "min": 3,
+      "max": 9
+    }
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

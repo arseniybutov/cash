@@ -1,0 +1,16 @@
+jar.archiveName = 'payments-externalServicePlugin.jar'
+
+packaging {
+    branch = 'POS, BELARUS, LENTA';
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:VisualInterface'),
+            project(':SetRetail10_Cash:modules:Payments'),
+            project(':SetRetail10_Cash:modules:VisualizationApiImpl'),
+            project(':SetRetail10_Commons:SET-PluginAdapter'),
+            libs.logging,
+            server_libs.setxapi
+            
+    testCompile libs.junit
+}

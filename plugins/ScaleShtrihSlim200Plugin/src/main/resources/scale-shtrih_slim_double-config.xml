@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment"
+	visible="true" description="Весы Штрих Слим 200" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <property key="provider" value="shtrih_slim_double"/>
+    <property key="serviceClass" value="ru.crystals.pos.scale.shtrih.slim200.ShtrihSlimDoubleImpl"/>
+
+    <property key="minimalWeight" value="6"/>
+</moduleConfig>

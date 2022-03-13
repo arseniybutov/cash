@@ -1,0 +1,51 @@
+{
+  "masks": [
+    {
+      "description": "Весовой товар 21",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "21"
+        },
+        {
+          "name": "barcode",
+          "length": 5
+        },
+        {
+          "name": "weight",
+          "length": 5
+        },
+        {
+          "name": "_",
+          "length": 1
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "function",
+            "value": {
+              "name": "join",
+              "parameters": [
+                {
+                  "source": "field",
+                  "value": "prefix"
+                },
+                {
+                  "source": "field",
+                  "value": "barcode"
+                }
+              ]
+            }
+          }
+        },
+        "position": {
+          "quantity": {
+            "source": "field",
+            "value": "weight"
+          }
+        }
+      }
+    }
+  ]
+}

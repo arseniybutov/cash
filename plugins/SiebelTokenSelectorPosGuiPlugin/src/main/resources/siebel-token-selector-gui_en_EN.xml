@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="table.column.token.amount">Tokens</entry>
+    <entry key="table.column.token.price">Price</entry>
+    <entry key="label.token.balance">Balance</entry>
+    <entry key="token.selector.header">Select token amount below</entry>
+    <entry key="token.selector.best.offer">BestOffer</entry>
+</properties>

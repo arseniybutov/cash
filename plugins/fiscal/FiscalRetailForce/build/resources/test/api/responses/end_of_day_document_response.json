@@ -1,0 +1,135 @@
+{
+    "uniqueClientId": "32eda796-038e-46bd-ba9a-9c03d29b46cf",
+    "additionalFields": {
+        "Customer count": "5",
+        "Item count": "6"
+    },
+    "documentGuid": "00846948-45b5-4bff-9f23-e3895df20f94",
+    "documentId": null,
+    "createDate": "2021-04-26T12:32:53.0720394+03:00",
+    "bookDate": "2021-04-26T12:32:53.0720404+03:00",
+    "documentNumber": "20210426_1",
+    "cancellationDocument": false,
+    "documentReference": null,
+    "isTraining": false,
+    "documentType": "[99] = EndOfDay",
+    "documentTypeCaption": "EndOfDay",
+    "user": null,
+    "allocationGroups": [],
+    "partner": null,
+    "fiscalResponse": null,
+    "fiscalDocumentNumber": 0,
+    "fiscalDocumentRevision": 0,
+    "positions": [
+        {
+            "type": "[3] = Booking",
+            "caption": "Revenue 19",
+            "identifier": null,
+            "businessTransactionType": "[0] = Revenue",
+            "vatIdentification": 1,
+            "vatPercent": 19.0,
+            "netValue": 1644.82,
+            "grossValue": 1957.32,
+            "taxValue": 312.50,
+            "accountingIdentifier": null,
+            "positionNumber": 0,
+            "positionReference": null,
+            "cancellationPosition": false
+        },
+        {
+            "type": "[3] = Booking",
+            "caption": "Returns 19",
+            "identifier": null,
+            "businessTransactionType": "[0] = Revenue",
+            "vatIdentification": 1,
+            "vatPercent": 19.0,
+            "netValue": -209.63,
+            "grossValue": -249.46,
+            "taxValue": -39.83,
+            "accountingIdentifier": null,
+            "positionNumber": 1,
+            "positionReference": null,
+            "cancellationPosition": false
+        },
+        {
+            "type": "[3] = Booking",
+            "caption": "Pay in",
+            "identifier": null,
+            "businessTransactionType": "[11] = PayIn",
+            "vatIdentification": 5,
+            "vatPercent": 0.0,
+            "netValue": 1000.0,
+            "grossValue": 1000.0,
+            "taxValue": 0.0,
+            "accountingIdentifier": null,
+            "positionNumber": 2,
+            "positionReference": null,
+            "cancellationPosition": false
+        },
+        {
+            "type": "[3] = Booking",
+            "caption": "Pay out",
+            "identifier": null,
+            "businessTransactionType": "[10] = PayOut",
+            "vatIdentification": 5,
+            "vatPercent": 0.0,
+            "netValue": -100.0,
+            "grossValue": -100.0,
+            "taxValue": 0.0,
+            "accountingIdentifier": null,
+            "positionNumber": 3,
+            "positionReference": null,
+            "cancellationPosition": false
+        },
+        {
+            "type": "[9] = SubTotal",
+            "baseValue": 2607.86,
+            "value": 2607.86,
+            "discounts": [],
+            "caption": "Expected balance",
+            "positionNumber": 4,
+            "positionReference": null,
+            "cancellationPosition": false
+        },
+        {
+            "type": "[9] = SubTotal",
+            "baseValue": 2607.86,
+            "value": 2607.86,
+            "discounts": [],
+            "caption": "Actual balance",
+            "positionNumber": 5,
+            "positionReference": null,
+            "cancellationPosition": false
+        },
+        {
+            "type": "[10] = Total",
+            "baseValue": 2607.86,
+            "value": 2607.86,
+            "discounts": [],
+            "caption": "Closing balance",
+            "positionNumber": 6,
+            "positionReference": null,
+            "cancellationPosition": false
+        }
+    ],
+    "payments": [
+        {
+            "amount": 1784.54,
+            "isCash": false,
+            "currencyIsoCode": "EUR",
+            "caption": null,
+            "uniqueReadablePaymentIdentifier": null,
+            "foreignAmount": 0.0,
+            "foreignAmountExchangeRate": 0.0
+        },
+        {
+            "amount": 823.32,
+            "isCash": true,
+            "currencyIsoCode": "EUR",
+            "caption": null,
+            "uniqueReadablePaymentIdentifier": null,
+            "foreignAmount": 0.0,
+            "foreignAmountExchangeRate": 0.0
+        }
+    ]
+}

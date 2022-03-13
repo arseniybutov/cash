@@ -1,0 +1,9 @@
+{
+  "header": {
+    "command": "CLOSEDAY"
+  },
+  "params": {
+    "operatorId": "оператор",
+    "operatorName": "Имя, фамилия"
+  }
+}

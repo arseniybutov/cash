@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="Эмулятор"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="provider" value="nonfiscalmode_emulator" />
+	<property key="serviceClass" value="ru.crystals.pos.fiscalprinter.nonfiscalmode.emulator.FiscalPrinterEmulatorImpl" />
+
+	<property key="maxCharRow" value="46" />
+	<property key="printLineInterval" value="1" />
+	<property key="closeCheckInterval" value="1" />
+	<property key="manualExceptionPort" value="8890" />
+	<property key="printPreviewPort" value="8889" />
+	<property key="zOnClosedShift" value="false" />
+	<property key="recreatePrinterFileOnShiftOpen" value="false" />
+	<property key="showPrinterFrame" value="false" />
+
+	<!-- Флаг позволяет показать окно предпросмотра чеков без использования RMI (полезно во время разработки, упрощенная альтернатива showPrinterFrame) -->
+	<property key="createPrinterFrame" value="false"/>
+
+
+	<property key="printPreviewHost" value="127.0.0.1" />
+    <property key="controlTapeMaxSize" value="5000"/>
+	<!-- Флаг включает эмуляцию ФР с ФН-->
+	<property key="ofdMode" value="true"/>
+</moduleConfig>

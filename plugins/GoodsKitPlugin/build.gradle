@@ -1,0 +1,13 @@
+jar.archiveName = 'goods-kit.jar'
+
+packaging {
+    branch = 'POS, BELARUS, LENTA';
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:modules:VisualInterface'),
+            project(':SetRetail10_Commons:GoodsKitEntity'),
+            libs.logging
+    testCompile libs.junit
+}

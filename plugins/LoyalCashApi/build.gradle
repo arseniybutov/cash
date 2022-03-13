@@ -1,0 +1,15 @@
+description = 'Некий API для [чисто] кассовой лояльности'
+
+jar.archiveName = 'loyalty-cash-api.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:Loyal:SET-LoyalStructures'),
+            project(':SetRetail10_Commons:Loyal:SET-LoyalCalculation'),
+            project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+            project(':SetRetail10_Commons:PaymentsBankCardEntity'),
+            libs.apacheCommons,
+            libs.logging
+    testCompile libs.junit
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="card.activation">Card activation</entry>
+    <entry key="input.card.number">Input card number</entry>
+    <entry key="input.questionnaire.number">Input questionnaire number</entry>
+    <entry key="new.card.number">New card number</entry>
+    <entry key="no.card.product.found">Discount card product not found</entry>
+    <entry key="not.ml.card">%s is not valid Manzana card number</entry>
+    <entry key="old.card.number">Old card number</entry>
+    <entry key="questionnaire.number">Questionnaire number</entry>
+    <entry key="questionnaire.required">Required questionnaire</entry>
+    <entry key="replace.card.question">Do you want to replace card?</entry>
+    <entry key="search.contact">Search contact</entry>
+    <entry key="service.not.available">Can't replace card. Service is not available</entry>
+    <entry key="phone.number">Input mobile phone number</entry>
+    <entry key="replace.card.approach">Do replace card by mobile phone number?</entry>
+    <entry key="not.valid.phone.number">%s is not valid mobile phone number</entry>
+    <entry key="replace.by.phone.number">Yes</entry>
+    <entry key="replace.by.card.number">Card number</entry>
+</properties>

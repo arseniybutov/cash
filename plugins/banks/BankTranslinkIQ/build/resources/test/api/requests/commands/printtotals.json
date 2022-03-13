@@ -1,0 +1,9 @@
+{
+  "header": {
+    "command": "PRINTTOTALS"
+  },
+  "params": {
+    "operatorId": "оператор",
+    "operatorName": "Имя, фамилия"
+  }
+}

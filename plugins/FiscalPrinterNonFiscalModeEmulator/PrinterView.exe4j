@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="4.5" transformSequenceNumber="1">
+  <directoryPresets config="D:/SVNAll/SetRetail10/SetRetail10_Cash/lib/logging" />
+  <application name="PrinterView" distributionSourceDir="./">
+    <languages>
+      <principalLanguage id="en" customLocalizationFile="" />
+    </languages>
+  </application>
+  <executable name="PrinterView" type="2" iconSet="false" iconFile="" executableDir="." redirectStderr="true" stderrFile="PrinterView Error.log" stderrMode="overwrite" redirectStdout="true" stdoutFile="PrinterView Output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false" amd64="false">
+    <messageSet />
+    <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" companyName="" productVersion="" />
+  </executable>
+  <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
+    <text>
+      <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+      <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+    </text>
+  </splashScreen>
+  <java mainClass="ru.crystals.pos.fiscalprinter.nonfiscalmode.emulator.preview.PrinterFrame" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true" minVersion="1.6" maxVersion="" allowBetaVM="false" jdkOnly="false">
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <classPath>
+      <archive location="D:/SVNAll/SetRetail10/SetRetail10_Cash/plugins/FiscalPrinterNonFiscalModeEmulator/EmulatorException.jar" failOnError="false" />
+      <archive location="../../../../../home/d_alex/7/dataStruct.jar" failOnError="false" />
+      <archive location="../../lib/barcode4j/barcode4j.jar" failOnError="false" />
+      <archive location="../../lib/logging/commons-lang-2.6.jar" failOnError="false" />
+    </classPath>
+    <nativeLibraryDirectories />
+  </java>
+  <includedFiles />
+  <unextractableFiles />
+</exe4j>
+

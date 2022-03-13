@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="card.activation">Активация карты</entry>
+    <entry key="input.card.number">Введите номер карты</entry>
+    <entry key="input.phone.number">Введите номер телефона</entry>
+    <entry key="input.questionnaire.number">Введите номер анкеты</entry>
+    <entry key="new.card.number">Номер новой карты</entry>
+    <entry key="no.card.product.found">Не найден товар дисконтной карты</entry>
+    <entry key="not.ml.card">%s не является номером карты Manzana</entry>
+    <entry key="old.card.number">Номер старой карты</entry>
+    <entry key="questionnaire.number">Номер анкеты</entry>
+    <entry key="questionnaire.required">Требуется ввести анкету клиента</entry>
+    <entry key="replace.card.question">Выполнить замену карты?</entry>
+    <entry key="search.contact">Поиск клиента</entry>
+    <entry key="service.not.available">Невозможно заменить карту. Сервис недоступен</entry>
+    <entry key="phone.number">Мобильный номер</entry>
+    <entry key="replace.card.approach">Заменить карту по номеру телефона?</entry>
+    <entry key="not.valid.phone.number">Номер %s не валиден</entry>
+    <entry key="replace.by.phone.number">Да</entry>
+    <entry key="replace.by.card.number">Нет, номер карты</entry>
+</properties>

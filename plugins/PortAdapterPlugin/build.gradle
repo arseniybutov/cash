@@ -1,0 +1,15 @@
+jar.archiveName='portAdapter.jar'
+
+packaging {
+    type = 'library'
+    deployPath = 'lib/utils';
+}
+
+dependencies {
+    compile libs.io_x64,
+            libs.io,
+            libs.io_jssc,
+            libs.apacheCommons,
+            libs.logging
+    testCompile libs.junit
+}

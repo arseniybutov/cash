@@ -1,0 +1,8 @@
+{
+  "header": {
+    "command": "LOCKDEVICE"
+  },
+  "params": {
+    "idleText": "Вставьте карту"
+  }
+}

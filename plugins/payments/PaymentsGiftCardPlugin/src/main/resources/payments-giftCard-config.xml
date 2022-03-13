@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns="http://crystals.ru/cash/settings">				
+
+	<property key="paymentTypeClass" value="ru.crystals.pos.payments.GiftCardPaymentEntity"/>
+	<property key="paymentTypeName" value="Подарочная карта"/>
+  	<property key="paymentTypeFiscalNum" value="4"/>
+	<property key="paymentTypeNameFFD100" value="ПРЕДВАРИТЕЛЬНАЯ ОПЛАТА (АВАНС)"/>
+	<property key="paymentTypeFiscalNumFDD100" value="13"/>
+  	<property key="useCashDrawer" value="true"/>
+  	<property key="changePaymentAmount" value="true"/>
+  	<property key="returnPossible" value="true"/>
+  	<property key="paymentTypeQuantity" value="-1"/>
+   	<property key="paymentTypeAmount" value="-1"/>
+   	<property key="dimension" value="2"/>
+  	
+  	<property key="visualContainer" value="ru.crystals.pos.visualization.payments.giftcard.GiftCardPaymentContainer"/>
+  	<property key="visualRangList" value="2"/>
+	<!--   Допускается ли ввод кассиром --> 
+	<property key="allowUserInput" value="false" />
+	<!-- Допускается ли сканирование подарочной карты по штрихкоду -->
+	<property key="allowBarcodeScan" value="true" />
+	<property key="giftCardPaymentExcessGoodMarking" value=""/>
+</moduleConfig>

@@ -1,0 +1,41 @@
+<OperationResultRs>
+<ResultCode>0</ResultCode>
+<ResultText>ВЫПОЛНЕНО УСПЕШНО</ResultText>
+<ChequeText>
+             Visa
+Магазин "Пчёлка" №3
+г.Минск, ул.Ленина, №1
+тел. 323-45-67
+УНП: 111111111
+ТЕРМИНАЛ: S5000S66
+     КАРТ-ЧЕК N 088/0011
+            ОПЛАТА
+25.09.2020               12:13
+XXXXXXXXXXXX6830
+
+СУММА                 0.50 BYN
+КОД АВТ.: 121330  026912000445
+
+           КОД: 000
+      ВЫПОЛНЕНО УСПЕШНО
+
+ОПЕРАЦИЯ БЕЗ ПИН-КОДА
+
+           ___________________
+           (ПОДПИСЬ ДЕРЖАТЕЛЯ)
+
+</ChequeText>
+<TerminalId>S5000S66</TerminalId>
+<DateTime>200925121328</DateTime>
+<ChequeCount>2</ChequeCount>
+<CardNo>4177 53** **** 6830</CardNo>
+<ExpDate>0518</ExpDate>
+<OriginalCode>11</OriginalCode>
+<Amount>50</Amount>
+<Currency>933</Currency>
+<Commission>0</Commission>
+<AuthCode>121330</AuthCode>
+<RRN>026912000445</RRN>
+<BDD>200924</BDD>
+<BDDN>088</BDDN>
+</OperationResultRs>

@@ -1,0 +1,13 @@
+jar.archiveName = 'customerDisplay-epson-dm110.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CustomerDisplayModule'),
+            libs.logging
+    testCompile libs.junit
+}
+
+jar.doLast {
+    if (project.hasProperty("distrPath")) {
+        dist.deployFiles('common', 'templates', 'modules/customerDisplay/templates', ['**/*.*'],[]);
+    }
+}

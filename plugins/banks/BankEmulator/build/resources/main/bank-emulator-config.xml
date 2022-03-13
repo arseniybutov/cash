@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="bank" visible="true" description="Эмулятор"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="bankEmulator"/>
+    <property key="serviceClass" value="ru.crystals.pos.bank.emulator.BankEmulatorServiceImpl"/>
+    <property key="dailyLog" value="false" />
+    <property key="slipsCount" value="2" />
+    <property key="propertiesPath" value="bank_emulator_properties.json" />
+
+</moduleConfig>

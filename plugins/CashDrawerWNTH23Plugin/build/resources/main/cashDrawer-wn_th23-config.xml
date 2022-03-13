@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true"
+              description="Плагин денежного ящика для подключения через кассовый блок WN TH 23"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="wn_th23"/>
+    <property key="serviceClass" value="ru.crystals.pos.cashdrawer.wn.th23.Wnth23CashDrawerServiceImpl"/>
+
+</moduleConfig>

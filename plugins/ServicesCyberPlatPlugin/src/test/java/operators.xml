@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators xmlns="http://crystals.ru/cash/services/cyberplat/operators">
+	<operator id="777">
+		<name>Тестовая система</name>
+		<processor>
+			<request name="check">
+				<url>https://payment.cyberplat.ru/cgi-bin/es/es_pay_check.cgi</url>
+			</request>
+			<request name="payment">
+				<url>https://payment.cyberplat.ru/cgi-bin/es/es_pay.cgi</url>
+			</request>
+			<request name="status">
+				<url>https://payment.cyberplat.ru/cgi-bin/es/es_pay_status.cgi</url>
+			</request>
+		</processor>
+		<receipts />
+	</operator>
+</operators>

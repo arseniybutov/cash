@@ -1,0 +1,19 @@
+description = 'ML POS (Manzana Loyalty) версия обработчика, что помогает в процессе продажи ДК (Дисконтной Карты)'
+
+// DC == Discount Card
+jar.archiveName = "ml-dc-seller.jar"
+
+packaging {
+    type = 'plugin'
+	deployPath = 'modules/cards/'
+    jarInclude = '*.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+    project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+	project(':SetRetail10_Cash:modules:MLBridge'),
+    libs.logging
+    
+    testCompile libs.junit
+}

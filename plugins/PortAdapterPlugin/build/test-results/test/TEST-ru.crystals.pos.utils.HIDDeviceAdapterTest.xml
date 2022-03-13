@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.crystals.pos.utils.HIDDeviceAdapterTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-09-28T10:16:04" hostname="DESKTOP-5JCC8T1" time="0.043">
+  <properties/>
+  <testcase name="writeWithOneEmptyArg" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.027"/>
+  <testcase name="testClose" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.001"/>
+  <testcase name="testCloseDeviceIsNull" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.001"/>
+  <testcase name="writeWithThreeEmptyArg" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.003"/>
+  <testcase name="testCloseThrowException" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.001"/>
+  <testcase name="writeWithThreeArg" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.003"/>
+  <testcase name="writeWithOneArg" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.002"/>
+  <testcase name="writeWhenDeviceIsNotSet" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.001"/>
+  <testcase name="writeThreeWithWrongPrefix" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.002"/>
+  <testcase name="writeThreeWhenDeviceIsNotSet" classname="ru.crystals.pos.utils.HIDDeviceAdapterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

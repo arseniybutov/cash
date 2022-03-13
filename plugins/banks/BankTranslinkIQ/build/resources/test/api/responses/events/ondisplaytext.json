@@ -1,0 +1,11 @@
+{
+  "eventName": "ONDISPLAYTEXT",
+  "properties": {
+    "displayText": "Информационное сообщение"
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="NCR XR7"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="ncr_xr7"/>
+    <property key="serviceClass" value="ru.crystals.pos.keyboard.ncr.xr7.NCRXR7ServiceImpl"/>
+
+    <property key="useKeyLockMap" value="true"/>
+
+    <property key="cardPrefix">
+        <property value="61"/>
+    </property>
+
+    <property key="cardSufix">
+        <property value="63"/>
+        <property value="10"/>
+    </property>
+
+    <property key="cardPrefix2">
+        <property value="59"/>
+    </property>
+
+    <property key="cardSufix2">
+        <property value="63"/>
+        <property value="10"/>
+    </property>
+
+</moduleConfig>

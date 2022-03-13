@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true" description="ATOL" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="atol52f_ffd105"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.atol3.AtolService52FImpl"/>
+    <property key="port" value="/dev/ttyACM0" type="port" visible="true" description="ATOL"/>
+    <property key="baudRate" value="115200" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="useFlowControl" value="false"/>
+    <property key="invertDrawerState" value="false"/>
+    <!--Cотояние денежного ящика (для некоторых моделей денежных ящиков может быть инвертировано)-->
+    <property key="qrCodeScaleFactor" value="8" description="Масштабирование QR-кода при печати: каждая точка оригинального QR-кода будет увеличена в это количество раз"/>
+    <property key="serviceExec" value="/home/tc/storage/3rd-party/atol/EthOverUsb.sh"/>
+</moduleConfig>

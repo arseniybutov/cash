@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xmlns="http://crystals.ru/cash/settings">
+    <property key="paymentTypeClass" value="ru.crystals.pos.payments.CFTEGCPaymentEntity"/>
+    <property key="paymentTypeName" value="Электронный подарочный сертификат ЦФТ"/>
+    <property key="paymentTypeFiscalNum" value="4"/>
+    <property key="paymentTypeNameFFD100" value="ПРЕДВАРИТЕЛЬНАЯ ОПЛАТА (АВАНС)"/>
+    <property key="paymentTypeFiscalNumFDD100" value="13"/>
+    <property key="useCashDrawer" value="false"/>
+    <property key="changePaymentAmount" value="true"/>
+    <property key="returnPossible" value="true"/>
+    <property key="paymentTypeQuantity" value="-1"/>
+    <property key="paymentTypeAmount" value="-1"/>
+    <property key="dimension" value="2"/>
+    <property key="visualContainer"
+              value="ru.crystals.pos.visualization.payments.cftegc.integration.CFTEGCPaymentPluginAdapter"/>
+    <property key="visualRangList" value="5"/>
+    <!--   Допускается ли ввод кассиром -->
+    <property key="allowUserInput" value="false"/>
+</moduleConfig>

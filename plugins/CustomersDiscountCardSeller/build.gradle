@@ -1,0 +1,17 @@
+description = 'Интегрированная с процессингом Покупатели версия обработчика, что помогает в процессе продажи ДК (Дисконтной Карты)'
+
+jar.archiveName = "customers-dc-seller.jar"
+
+packaging {
+    type = 'plugin'
+	deployPath = 'modules/cards/'
+    jarInclude = '*.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+	project(':SetRetail10_Cash:modules:Cards'),
+    libs.logging
+    
+    testCompile libs.junit
+}

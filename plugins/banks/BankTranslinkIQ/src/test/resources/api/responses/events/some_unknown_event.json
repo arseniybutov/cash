@@ -1,0 +1,12 @@
+{
+  "eventName": "ON_SOME_NEW_NOT_SUPPORTED_EVENT",
+  "properties": {
+    "someField": "Введите 4 последние цифры номера карты",
+    "inputMask": "NNNN"
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Ok",
+    "resultTime": "20200508093958"
+  }
+}

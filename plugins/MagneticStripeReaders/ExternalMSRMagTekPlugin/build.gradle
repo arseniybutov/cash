@@ -1,0 +1,8 @@
+jar.archiveName = 'externalMSR-magtek.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), 
+            project(':SetRetail10_Cash:modules:ExternalMSRModule'),
+            libs.logging
+    testCompile project(':SetRetail10_Cash:modules:KeyboardModule'), libs.junit
+}

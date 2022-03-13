@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document xmlns="http://crystals.ru/pos/fiscalprinter/templates/parser" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://crystals.ru/pos/fiscalprinter/templates/parser templates.xsd">
+	<section id="header">
+		<line font="normal">
+			<text align="center" value="Наименование ТСП" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="center" value="Фактический адрес ТСП" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="center" value="ЗАО &quot;Райффайзенбанк&quot;" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Номер терминала" width="0" filler="space" clip="true" />
+			<element align="right" value="termid" width="19" filler="space" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Дата и время" width="0" filler="space" clip="true" />
+			<element align="right" value="date" width="22" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value=" " width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Тип операции" width="0" filler="space" clip="true" />
+			<element align="right" value="operationtype" width="15" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Сумма" width="5" filler="space" clip="true" />
+			<element precision="2" align="right" value="amount" width="10" filler="space" clip="true" />
+			<text align="right" value=" руб." width="5" filler="space" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Номер карты" width="0" filler="space" clip="true" />
+			<element align="right" value="card" width="23" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Тип карты" width="0" filler="space" clip="true" />
+			<element align="right" value="applabel" width="25" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<condition name="isPayPass">
+				<operand key="equal">
+					<varLogical>
+						<logicalElement value="isPayPass" width="0" align="left" />
+					</varLogical>
+					<varLogical>
+						<boolean value="true" />
+					</varLogical>
+				</operand>
+			</condition>
+			<text align="right" value="PayPass" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Номер ссылки (RRN)" width="0" filler="space" clip="true" />
+			<element align="right" value="rrn" width="16" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Номер транзакции" width="0" filler="space" clip="true" />
+			<element align="right" value="trace" width="18" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Код авторизации" width="0" filler="space" clip="true" />
+			<element align="right" value="auth" width="19" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value="Код ответа" width="0" filler="space" clip="true" />
+			<element align="right" value="code" width="24" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value=" " width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<element align="center" value="resp" width="34" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value=" " width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<condition name="hasCardHolder">
+				<operand key="equal">
+					<varLogical>
+						<logicalElement value="hasCardHolder" width="0" align="left" />
+					</varLogical>
+					<varLogical>
+						<boolean value="true" />
+					</varLogical>
+				</operand>
+			</condition>
+			<text align="left" value="Владелец карты" width="27" filler="space" clip="true" />
+			<element align="right" value="cardholder" width="20" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<condition name="hasAID">
+				<operand key="equal">
+					<varLogical>
+						<logicalElement value="hasAID" width="0" align="left" />
+					</varLogical>
+					<varLogical>
+						<boolean value="true" />
+					</varLogical>
+				</operand>
+			</condition>
+			<text align="left" value="AID" width="0" filler="space" clip="true" />
+			<element align="right" value="aid" width="31" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<condition name="hasTrancert">
+				<operand key="equal">
+					<varLogical>
+						<logicalElement value="hasTrancert" width="0" align="left" />
+					</varLogical>
+					<varLogical>
+						<boolean value="true" />
+					</varLogical>
+				</operand>
+			</condition>
+			<text align="left" value="TC" width="0" filler="space" clip="true" />
+			<element align="right" value="trancert" width="20" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value=" " width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<condition name="needCredentials">
+				<operand key="equal">
+					<varLogical>
+						<logicalElement value="needCredentials" width="0" align="left" />
+					</varLogical>
+					<varLogical>
+						<boolean value="true" />
+					</varLogical>
+				</operand>
+			</condition>
+			<text align="center" value="_______________________________________________________" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<condition name="needCredentials">
+				<operand key="equal">
+					<varLogical>
+						<logicalElement value="needCredentials" width="0" align="left" />
+					</varLogical>
+					<varLogical>
+						<boolean value="true" />
+					</varLogical>
+				</operand>
+			</condition>
+			<text align="center" value="Подпись покупателя" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="left" value=" " width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="center" value="_______________________________________________________" width="0" filler="space" clip="true" />
+		</line>
+		<line font="normal">
+			<text align="center" value="Подпись кассира" width="0" filler="space" clip="true" />
+		</line>
+	</section>
+	<collectionConditions>
+		<condition name="isPayPass">
+			<operand key="equal">
+				<varLogical>
+					<logicalElement value="isPayPass" width="0" align="left" />
+				</varLogical>
+				<varLogical>
+					<boolean value="true" />
+				</varLogical>
+			</operand>
+		</condition>
+		<condition name="hasCardHolder">
+			<operand key="equal">
+				<varLogical>
+					<logicalElement value="hasCardHolder" width="0" align="left" />
+				</varLogical>
+				<varLogical>
+					<boolean value="true" />
+				</varLogical>
+			</operand>
+		</condition>
+		<condition name="needCredentials">
+			<operand key="equal">
+				<varLogical>
+					<logicalElement value="needCredentials" width="0" align="left" />
+				</varLogical>
+				<varLogical>
+					<boolean value="true" />
+				</varLogical>
+			</operand>
+		</condition>
+		<condition name="hasTrancert">
+			<operand key="equal">
+				<varLogical>
+					<logicalElement value="hasTrancert" width="0" align="left" />
+				</varLogical>
+				<varLogical>
+					<boolean value="true" />
+				</varLogical>
+			</operand>
+		</condition>
+		<condition name="hasAID">
+			<operand key="equal">
+				<varLogical>
+					<logicalElement value="hasAID" width="0" align="left" />
+				</varLogical>
+				<varLogical>
+					<boolean value="true" />
+				</varLogical>
+			</operand>
+		</condition>
+	</collectionConditions>
+</document>

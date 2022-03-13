@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>i18n support for Customers-DC-Seller module</comment>
+
+    <entry key="client.id.title">номер анкеты</entry>
+    <entry key="enter.client.id.msg">введите номер анкеты</entry>
+
+    <entry key="error.invalid.range">Номер не входит в допустимый диапазон карт</entry>
+    <entry key="error.card.exists">Карта уже зарегистрирована</entry>
+    <entry key="error.virtual.card">Номер карты из диапазона виртуальных карт</entry>
+    <entry key="error.offline">Сервис недоступен</entry>
+    <entry key="error.other">Карта не может быть продана</entry>
+</properties>

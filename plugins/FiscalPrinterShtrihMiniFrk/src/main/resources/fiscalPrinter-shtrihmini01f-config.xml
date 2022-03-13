@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="ШТРИХ-МИНИ-01Ф"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="shtrihmini01f" />
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.shtrihminifrk.ShtrihServiceFN100" />
+
+    <property key="jposName" value="shtrih-mini-01f" />
+    <property key="port" value="COM1" />
+    <property key="baudRate" value="9600" />
+
+    <property key="needRevertBytes" value="true" description="Переворачивать байты при печати штрихкода"/>
+
+    <!-- файл с настройками, загружаемыми при инициализации этой модели ФР -->
+    <property key="parametersFilePath" value="lib/jpos/shtrih/shtrih-mini-01f.csv"/>
+
+    <!-- Номер строки в пикселях с которой печатать картинку. -->
+    <property key="imageFirstLine" value="1"/>
+    <!-- Номер строки в пикселях по которую печатать картинку.
+        Печать логотипа только в случает если указаны оба параметра и (imageLastLine > imageFirstLine)-->
+    <property key="imageLastLine" value="1"/>
+
+    <!-- Высота одномерных (т.е., не 2D-, не QR-) ШК, в мм -->
+    <property key="barcodeHeight" value="7"/>
+    <!-- Печатать графическую информацию (QR-коды, например) с высоким качеством (но ооооочень медленно) -->
+    <property key="highQualityGraphics" value="true"/>
+    <!-- Время, что требуется ФР для исполнения команды "Печать линии" (0xC5).
+        После исполнения этой команды надо тупо ждать и не пытаться больше ничего
+        печатать - иначе линия будет распечатана не корректно. В милисекундах
+    -->
+    <property key="printLineTime" value="50"/>
+    <!--
+        максимальное увеличение/масштабирование картинки при печати ШК; отрицательное значение распознается как отсутствие предела:
+        ШК будет максимально увеличен (до ширины чековой ленты)
+    -->
+    <property key="maxBarcodeScaleFactor" value="6"/>
+
+    <property key="maxLoadGraphicsLines" value="200" description="максимальное количество линий графики, что можно грузить в ФР по команде 'загрузка графики' (0xC0)" />
+
+    <property key="maxCharRow" value="42" />
+    <!--печатать штрих-код или нет -->
+    <property key="printBarcode" value="true" />
+    <property key="ofdDevice" value="true" />
+    <!--номер шрифта для печати нефискальных строк-->
+    <property key="printStringFont" value="1"/>
+</moduleConfig>

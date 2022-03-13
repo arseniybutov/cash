@@ -1,0 +1,10 @@
+{
+  "header": {
+    "command": "VOIDPARTIAL"
+  },
+  "params": {
+    "operationId": "A0000000041010",
+    "voidAmount": 1000,
+    "originalAmount": 2000
+  }
+}

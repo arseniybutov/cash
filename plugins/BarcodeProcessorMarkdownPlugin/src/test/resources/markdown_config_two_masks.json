@@ -1,0 +1,70 @@
+{
+  "masks": [
+    {
+      "description": "ШК уценки 997x, без причины, можно вводить вручную",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "997"
+        },
+        {
+          "name": "ean13",
+          "length": 13
+        },
+        {
+          "name": "price",
+          "length": 7
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "ean13"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          }
+        }
+      }
+    },
+    {
+      "description": "ШК уценки 997x, без причины, можно вводить вручную",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "998"
+        },
+        {
+          "name": "_",
+          "length": 2
+        },
+        {
+          "name": "ean13",
+          "length": 13
+        },
+        {
+          "name": "price",
+          "length": 7
+        }
+      ],
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "ean13"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+jar.archiveName = 'fiscalPrinter-wincor.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:plugins:FiscalPrinterMstar')
+}

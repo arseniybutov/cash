@@ -1,0 +1,15 @@
+jar.archiveName = 'fiscalPrinter-atol3.jar'
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.barcode4j,
+            libs.io,
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            libs.logging
+    testCompile libs.junit,
+            project(':SetRetail10_Commons:TestUtils')
+}
+
+packaging {
+    jarInclude = '**/*.class, *.properties'
+}

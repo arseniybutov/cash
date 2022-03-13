@@ -1,0 +1,12 @@
+{
+  "rq_uid": "39f791cbaa0b46a1a5340848c4edee53",
+  "rq_tm": "2020-06-22T16:51:00Z",
+  "member_id": "000001",
+  "partner_order_number":"2132562220200622165100",
+  "tid":"21325622",
+  "id_qr": "20305",
+  "pay_load": "https://sberbank.ru/qr/?ClientIdQr=40ac47c5ed7944cf8e0775a398552f2c&HashId=bf891fc9fb52ba8816cdd4c022fe6db5ec0d63296a7f3dafc17110180fadc303&TimeStamp=1592834161&online",
+  "amount":48000,
+  "currency":"643",
+  "operation_message":"-"
+}

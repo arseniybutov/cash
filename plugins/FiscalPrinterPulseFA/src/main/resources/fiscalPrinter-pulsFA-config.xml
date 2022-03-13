@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="Puls FA"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="pulsFA"/>
+    <property key="serviceClass" value="ru.crystals.sco.fiscalprinter.pulse.PulseFAServiceImpl"/>
+    <property key="ipAddress" value="192.168.0.136"/>
+    <property key="tcpPort" value="50003"/>
+
+    <property key="printPosNum" value="true"/>
+    <property key="printGoodsName" value="true"/>
+    <property key="printItem" value="false"/>
+
+    <property key="useBeep" value="false"/>
+
+    <property key="goodNameMaxLength" value="128"/>
+
+</moduleConfig>

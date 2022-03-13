@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="Wintec Swipe Reader"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="poslab2"/>
+    <property key="serviceClass" value="ru.crystals.pos.emsr.poslab2.Poslab2MsrServiceImpl"/>
+</moduleConfig>

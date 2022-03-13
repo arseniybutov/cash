@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="equipment" visible="true" description="NFD"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="nfd"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.nfd.NFDServiceImpl" />
+
+    <!--
+        Реализация принтера:
+        - для Senor - ru.crystals.pos.fiscalprinter.documentprinter.senor.DocumentPrinterSenor
+        - для Пирит - ru.crystals.pos.fiscalprinter.documentprinter.axiohm.DocumentPrinterNFDAxiohm
+        - для CustomVKP80ii - ru.crystals.pos.fiscalprinter.documentprinter.custom.CustomVKPII
+        - для Citizen CTS310II - ru.crystals.pos.fiscalprinter.documentprinter.citizen.DocumentPrinterCitizen
+        - для FEC - ru.crystals.pos.fiscalprinter.documentprinter.fec.DocumentPrinterFec
+    -->
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.axiohm.DocumentPrinterNFDAxiohm"/>
+
+    <property key="port" value="/dev/usbPIRIT0" type="port" description="Порт"/>
+
+    <property key="baudRate" value="9600" type="integer" description="Скорость (бит/с)"/>
+
+    <property key="printerEncoding" value="cp866" description="Кодировка в которой работает принтер чеков"/>
+
+    <property key="token" value="" description="Токен ОФД"/>
+
+    <property key="nfdUri" value="http://172.29.16.145:1234/NFDService" description="URI NFD"/>
+
+    <property key="useRounding" value="false" description="Использовать округление"/>
+
+</moduleConfig>

@@ -1,0 +1,43 @@
+{
+  "masks": [
+    {
+      "description": "ШК уценки 15 цифр, Верный",
+      "fields": [
+        {
+          "name": "prefix",
+          "value": "99"
+        },
+        {
+          "name": "ean13",
+          "length": 6
+        },
+        {
+          "name": "price",
+          "length": 7
+        }
+      ],
+      "inputRestrictions": {
+        "scannerOnly": true,
+        "allowedRights": [
+          "SALE_CORRECTION_VALUE"
+        ],
+        "canChangeQuantity": true
+      },
+      "result": {
+        "productRef": {
+          "barcode": {
+            "source": "field",
+            "value": "ean13"
+          }
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          },
+          "correctionReasonCode": 10
+        }
+      }
+    }
+  ]
+}

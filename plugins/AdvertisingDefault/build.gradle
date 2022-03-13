@@ -1,0 +1,9 @@
+jar.archiveName = 'advertising-default.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:AdvertisingModule'),
+            libs.logging
+
+    testCompile libs.junit,
+            project(':SetRetail10_Commons:TestUtils')
+}

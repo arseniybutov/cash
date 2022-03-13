@@ -1,0 +1,14 @@
+{
+  "header": {
+    "command": "REFUND"
+  },
+  "params": {
+    "amount": 1000,
+    "currencyCode": "643",
+    "documentNr": "129663",
+    "panL4Digit": "8261",
+    "time": "20120212151211",
+    "STAN": "8261",
+    "RRN": "933315462707"
+  }
+}

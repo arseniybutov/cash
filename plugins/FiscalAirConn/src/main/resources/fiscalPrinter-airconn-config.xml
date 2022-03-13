@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="equipment" visible="true" description="AirConn"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <property key="provider" value="airconn"/>
+    <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.SplitFiscalPlugin"/>
+    <property key="port" value="COM1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="115200" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="feedLength" value="80" type="integer" description="Длинна промотки перед отрезкой (0-255)"/>
+    <property key="fullCut" value="true" type="boolean" description="Тип отрезки"/>
+
+    <property key="tokenAddress" value="127.0.0.1:6712" description="Token TCP Address and Port. Set 'off_line' to enable emulator"/>
+    <property key="pin" value="" description="Pin"/>
+    <property key="userRole" value="user" description="User login role"/>
+    <property key="cashRegisterFactoryNumber" value="" description="Cash register factory number"/>
+
+    <property key="fiscalConnectorClass" value="ru.crystals.pos.fiscalprinter.az.airconn.AirConnConnector" description="connector class"/>
+    <property key="printerClass" value="ru.crystals.pos.fiscalprinter.documentprinter.axiohm.DocumentPrinterWincor" description="document printer class"/>
+
+    <property key="qrSize" value="10"/>
+</moduleConfig>
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Конфигурационный файл плагина модуля считывателя NFC-карт модели ACR122S -->
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true"
+              description="Считыватель NFC-меток модели ACR122S"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Класс, содержащий реализацию плагина. Это должен быть ru.crystals.pos.nfc.acr122.NfcReaderACR122SPlugin. -->
+    <property key="serviceClass" value="ru.crystals.pos.nfc.acr122.NfcReaderACR122SPlugin" type="string"/>
+    <!-- Порт, на котором работает железка. -->
+    <property key="port" value="/dev/ttyS0" type="port" visible="true" description="Порт"/>
+    <!-- Бодрейт, на котором работает железка. Для ACR122S по умолчанию использует скорость 9600 бод. -->
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <!-- Булево свойство, определяет, следует ли железке пикать после считывания карты.
+         Если установлено в false, железка издаёт единичный писк длительностью 100мс всякий раз, когда считает карту.
+         Если установлено в true, железка не издаёт звуков.
+    -->
+    <property key="silent" value="false" type="boolean" visible="false" description="Не пикать"/>
+    <!--
+        Задержка между опросом карт. Определяет период времени в миллисекундах, в течении которого железка не будет предпринимать попыток задетектить карту после прошлой
+        попытки задетектить карту.
+        Значение по умолчанию - 1900, что соответствует 1.9с.
+    -->
+    <property key="pollDelayMs" value="1900" type="integer" visible="false" description="Задержка между повторным считыванием карты (мс)"/>
+    <!-- Формат результата считывания UID -->
+    <property key="resultFormat" value="DECIMAL" type="string" visible="false" description="Формат результата считывания UID"/>
+</moduleConfig>

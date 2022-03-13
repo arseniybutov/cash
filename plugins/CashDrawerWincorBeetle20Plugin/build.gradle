@@ -1,0 +1,8 @@
+jar.archiveName = 'cashDrawer-wincor_beetle20.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), 
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.logging
+    testCompile libs.junit
+}

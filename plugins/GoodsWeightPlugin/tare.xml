@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tares>
+    <tare name ="Без тары" weight = "0"/>
+    <tare name ="Пакет" weight = "2"/>
+    <tare name ="Пакет с ручкой" weight = "8"/>
+    <tare name ="Лоток" weight = "14"/>
+    <tare name ="Стакан" weight = "15"/>
+    <tare name ="Стакан с крышкой" weight = "16"/>
+    <tare name ="Контейнер маленький" weight = "18"/>
+    <tare name ="Контейнер большой" weight = "22"/>
+</tares>

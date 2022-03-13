@@ -1,0 +1,17 @@
+jar.archiveName='payments-siebelBonusesForGift.jar'
+
+packaging {
+    type = 'plugin'
+    branch = 'POS';
+    deployPath = 'modules/payments/plugins'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:VisualInterface'),
+            project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:Payments'),
+            project(':SetRetail10_Commons:PaymentSiebelBonusesForGiftEntity'),
+            project(':SetRetail10_Cash:modules:SiebelBridge'),
+            libs.logging
+    testCompile libs.junit
+}

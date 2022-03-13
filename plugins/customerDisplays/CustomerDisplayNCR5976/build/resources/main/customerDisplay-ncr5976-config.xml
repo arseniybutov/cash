@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig
+        xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+        settingsGroup="equipment"
+        visible="true"
+        description="NCR"
+        xmlns="http://crystals.ru/cash/settings"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="ncr5976"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.ncr5976.CustomerDisplayPluginImplNCR5976"/>
+    <property key="rowsCount" value="2"/>
+    <property key="columnsCount" value="20"/>
+    <property key="encoding" value="cp866"/>
+    <property key="physicalDeviceDescription" value="NCR Line Display"/>
+    <property key="physicalDeviceName" value="NCR Line Display"/>
+    <property key="servicePath" value="/home/tc/storage/3rd-party/ncr/bin/NCRRetail.sh"/>
+</moduleConfig>

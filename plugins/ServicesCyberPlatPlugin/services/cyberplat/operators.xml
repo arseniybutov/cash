@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators xmlns="http://crystals.ru/cash/services/cyberplat/operators">
+    <operator id="10176">
+        <name>МегаФон (Сибирь)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ms/ms_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ms/ms_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ms/ms_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5407213185"/>
+            <parameter name="OPERATOR_NAME" value="Сибирский филиал ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="14">
+        <name>Смартс (Ярославль)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sy/sy_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sy/sy_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sy/sy_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Ярославль - GSM&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(4852) 72-10-72, 121"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="8">
+        <name>МегаФон (Центр)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ce/ce_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ce/ce_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ce/ce_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="3664044522"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Мобиком-Центр&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500,0500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="61">
+        <name>Ульяновск GSM</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/63</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/63</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7303022888"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Ульяновск GSM&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8422-41-41-41"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="1">
+        <name>МегаФон (Москва)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/me/me_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/me/me_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/me/me_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7715222950"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;СОНИК ДУО&quot;"/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="22">
+        <name>НТК</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/nk/nk_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/nk/nk_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/nk/nk_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Новая Телефонная Компания&quot;"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+            <parameter name="OPERATOR_PHONE" value="8-4232-510-510"/>
+        </receipts>
+    </operator>
+    <operator id="51">
+        <name>СкайЛинк (Новосибирск)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/up/up_pay_check.cgi/251</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/up/up_pay.cgi/251</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/up/up_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5406138175"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Новосибирская сотовая связь-450&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(383) 219-22-22"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="456">
+        <name>Ё (Ульяновск)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sm/sm_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sm/sm_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sm/sm_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6311008571"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;СМАРТС&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="СМАРТС-121, Ё-110"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="17">
+        <name>Смартс (Волгоград)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sv/sv_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sv/sv_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sv/sv_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Волгоград - GSM&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8_902-363-2000, 92-20-00"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10174">
+        <name>МегаФон (Урал)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ural_gsm/ug_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ural_gsm/ug_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ural_gsm/ug_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6664054389"/>
+            <parameter name="OPERATOR_NAME" value="Уральский филиал ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="170">
+        <name>Цифровая Эксп</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/181</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/181</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="3906044891"/>
+            <parameter name="OPERATOR_NAME" value="ООО &quot;Телесет Лтд.&quot;"/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="7">
+        <name>МегаФон (Поволжье)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mp/mp_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mp/mp_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mp/mp_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6454028103"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;МСС-Поволжье&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="26">
+        <name>Мотив</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mo/mo_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mo/mo_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mo/mo_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6661079603"/>
+            <parameter name="OPERATOR_NAME" value="ООО &quot;Екатеринбург-2000&quot;"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+            <parameter name="OPERATOR_PHONE" value="+7-343-269-00-00"/>
+        </receipts>
+    </operator>
+    <operator id="255">
+        <name>KCell Казахстан</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/na/na_pay_check.cgi/255</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/na/na_pay.cgi/255</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/na/na_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value=""/>
+            <parameter name="OPERATOR_NAME" value=""/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="48">
+        <name>СкайЛинк (Владимир)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/84</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/84</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="3329016088"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &amp;quot;Астарта&amp;quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8(4922)37-00-00"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10172">
+        <name>МегаФон (Поволжье)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mp/mp_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mp/mp_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mp/mp_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6454028103"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;МСС-Поволжье&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="5">
+        <name>МегаФон (Урал)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ural_gsm/ug_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ural_gsm/ug_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ural_gsm/ug_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6664054389"/>
+            <parameter name="OPERATOR_NAME" value="Уральский филиал ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="25">
+        <name>Utel - Универсальный оператор связи</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/us/us_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/us/us_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/us/us_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7303022888"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Уралсвязьинформ&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 300 1800"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="4091">
+        <name>МегаФон</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mb/mb_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mb/mb_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mb/mb_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7812014560"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="46">
+        <name>СкайЛинк (Н.Новгород)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/83</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/83</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5262063350"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Сотел-Нижний Новгород&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(831) 463-75-75"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="5001">
+        <name>МТС-XML (с доп.ком)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/es_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/es_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/es_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000076"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мобильные ТелеСистемы&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 333 0890"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="2">
+        <name>БиЛайн</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/b2/b2_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/b2/b2_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/b2/b2_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7713076301"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Вымпел-Коммуникации&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(495) 974-8888, 0611"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10">
+        <name>МегаФон (Кавказ)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mk/mk_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mk/mk_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mk/mk_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2308071777"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Мобиком-Кавказ&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="19">
+        <name>СкайЛинк (Москва)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mc/mc_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mc/mc_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mc/mc_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000012"/>
+            <parameter name="OPERATOR_NAME" value="ОАО МСС"/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="13">
+        <name>Смартс (Самара)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sm/sm_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sm/sm_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sm/sm_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6311008571"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;СМАРТС&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="СМАРТС-121, Ё-110"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="15">
+        <name>Смарт</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sc/sc_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sc/sc_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sc/sc_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Шупашкар - GSM&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="СМАРТС 8352-686868, Ё 8352-299999"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="49">
+        <name>СкайЛинк (Удмуртия)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/86</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/86</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="1831047296"/>
+            <parameter name="OPERATOR_NAME" value="ООО &quot;Удмуртские Сотовые Сети - 450&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(3412) 67 11 11"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="0">
+        <name>МТС (с доп.комиссией)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/es/es_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/es/es_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/es/es_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000076"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мобильные ТелеСистемы&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 333 0890"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="23">
+        <name>НСС (Нижний Новгород)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ns/ns_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ns/ns_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ns/ns_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5260053878"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Нижегородская Сотовая Связь&quot;"/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10177">
+        <name>МегаФон (Дальний Восток)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/md/md_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/md/md_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/md/md_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2721078247"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Мобиком-Хабаровск&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="21">
+        <name>TELE2</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/t2/t2_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/t2/t2_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/t2/t2_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6163025500"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Ростовская Сотовая Связь&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="611"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="453">
+        <name>СкайЛинк (Краснодар)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/329</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/329</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2308055687"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Краснодарская сотовая связь&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="+7 (861) 211-99-11"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="64">
+        <name>Байкалвестком</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/bv/bv_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/bv/bv_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/bv/bv_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="3812005230"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Байкалвестком&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(3952) 613-613, 000"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10170">
+        <name>МегаФон (Москва)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/me/me_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/me/me_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/me/me_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7715222950"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;СОНИК ДУО&quot;"/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="45">
+        <name>СкайЛинк (Северо-запад)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sp/sp_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sp/sp_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sp/sp_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Дельта Телеком&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(812) 715-15-15"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="42">
+        <name>НСС Татарстан (Татинком)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ti/ti_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ti/ti_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ti/ti_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ООО &quot;Татинком-Т&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(843) 2650000"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="171">
+        <name>НСС (Пенза)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ep/ep_pay_check.cgi/178</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ep/ep_pay.cgi/178</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ep/ep_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5836611509"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Пенза Мобайл&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="+79502324141"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="27">
+        <name>Матрикс Телеком</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ma/ma_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ma/ma_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ma/ma_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7705348953"/>
+            <parameter name="OPERATOR_NAME" value="ООО &quot;Матрикс Телеком&quot;"/>
+            <parameter name="OPERATOR_PHONE" value=""/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="372">
+        <name>БашСЕЛ (GSM)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/bc/bc_pay_check.cgi/241</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/bc/bc_pay.cgi/241</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/bc/bc_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="0274058115"/>
+            <parameter name="OPERATOR_PHONE" value="89173400756"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;БашСЕЛ&quot;"/>
+        </receipts>
+    </operator>
+    <operator id="10196">
+        <name>МТС</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/ee_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/ee_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/ee_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000076"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мобильные ТелеСистемы&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 333 0890"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="50">
+        <name>СкайЛинк (Рязань)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/301</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/301</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6230008213"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Рязанская сотовая связь&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="+7 (4912) 210-250"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10175">
+        <name>МегаФон (Центр)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ce/ce_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ce/ce_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ce/ce_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="3664044522"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Мобиком-Центр&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500,0500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="28">
+        <name>Енисей-Телеком</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/et/et_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/et/et_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/et/et_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Енисейтелеком&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8(391)2410041"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="9">
+        <name>МегаФон (Дальний Восток)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/md/md_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/md/md_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/md/md_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2721078247"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Мобиком-Хабаровск&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="16">
+        <name>Смартс (Астрахань)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/sa/sa_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/sa/sa_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/sa/sa_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Астрахань - GSM&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 908 610 0000,70-00-00, 121"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="5002">
+        <name>МТС-XML (без доп.ком)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/e2_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/e2_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/e2_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000076"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мобильные ТелеСистемы&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 333 0890"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="73">
+        <name>WellCom</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/65</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/65</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5407127828"/>
+            <parameter name="OPERATOR_NAME" value="Томский филиал ОАО &quot;Сибирьтелеком&quot; (Томсктелеком)"/>
+            <parameter name="OPERATOR_PHONE" value="52-38-63, 58-20-12"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="489">
+        <name>СкайЛинк (Кузбасс, Кемерово)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/326</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/326</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="4207043872"/>
+            <parameter name="OPERATOR_PHONE" value="8 901-929-0000"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+            <parameter name="OPERATOR_NAME" value="Кемеровский филиал ЗАО &quot;Скайлинк&quot;"/>
+        </receipts>
+    </operator>
+    <operator id="5000">
+        <name>МТС</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/es/es_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/es/es_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/es/es_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000076"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мобильные ТелеСистемы&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 333 0890"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="47">
+        <name>СкайЛинк (Екатеринбург)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/90</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/90</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6660011313"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Уралвестком&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="+7-343-3-767-000"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="41">
+        <name>АКОС</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ak/ak_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ak/ak_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ak/ak_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2540001972"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;АКОС&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(4232) 48-48-48"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="52">
+        <name>НСС (Респ. Мордовия)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/144</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/144</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="1325126022"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;РТКОМ&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 (8342) 22-00-00, 8 902 667 0000"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="188">
+        <name>НСС (Саратов)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/250</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/250</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="6452042656"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Саратов-Мобайл&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 (8452) 73-53-21,8 (8452) 73-53-21"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="83">
+        <name>НСС (Чувашия)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/99</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/99</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2129021096"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Чувашия Мобайл&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8(8352)60-00-00"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10194">
+        <name>МТС</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/er_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/er_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/xx/er_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7740000076"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Мобильные ТелеСистемы&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 333 0890"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="6">
+        <name>МегаФон (Сибирь)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ms/ms_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ms/ms_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ms/ms_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="5407213185"/>
+            <parameter name="OPERATOR_NAME" value="Сибирский филиал ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="18">
+        <name>Смартс (Пенза)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/pn/pn_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/pn/pn_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/pn/pn_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7710377540"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Пенза-GSM&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="77-11-11"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="435">
+        <name>Алло Инкогнито</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_check.cgi/306</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay.cgi/306</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/ge/ge_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7715296373"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;КантриКом&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="(495) 649-11-11"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10173">
+        <name>МегаФон (Кавказ)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/mk/mk_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/mk/mk_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/mk/mk_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="2308071777"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Мобиком-Кавказ&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="10171">
+        <name>МегаФон (Северо-Запад)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/nr/nr_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/nr/nr_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/nr/nr_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7812014560"/>
+            <parameter name="OPERATOR_NAME" value="Северо-Западный филиал ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+    <operator id="54">
+        <name>СТеК-GSM</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/st/st_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/st/st_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/st/st_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="4205022570"/>
+            <parameter name="OPERATOR_NAME" value="ЗАО &quot;Сотовый Телефон Кузбасса Джи Эс Эм&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 (3842) 595 000"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+        </receipts>
+    </operator>
+    <operator id="3">
+        <name>БиЛайн Интернет</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/b2/b2_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/b2/b2_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/b2/b2_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7713076301"/>
+            <parameter name="OPERATOR_PHONE" value="(495) 974-8888, 0611"/>
+            <parameter name="SERVICE_TYPE" value="Другие услуги"/>
+            <parameter name="OPERATOR_NAME" value="ОАО &quot;Вымпел-Коммуникации&quot;"/>
+        </receipts>
+    </operator>
+    <operator id="4">
+        <name>МегаФон (Северо-Запад)</name>
+        <processor>
+            <request name="check">
+                <url>https://service.cyberplat.ru/cgi-bin/nr/nr_pay_check.cgi</url>
+            </request>
+            <request name="payment">
+                <url>https://service.cyberplat.ru/cgi-bin/nr/nr_pay.cgi</url>
+            </request>
+            <request name="status">
+                <url>https://service.cyberplat.ru/cgi-bin/nr/nr_pay_status.cgi</url>
+            </request>
+        </processor>
+        <receipts>
+            <parameter name="OPERATOR_INN" value="7812014560"/>
+            <parameter name="OPERATOR_NAME" value="Северо-Западный филиал ОАО &quot;Мегафон&quot;"/>
+            <parameter name="OPERATOR_PHONE" value="8 800 3330500"/>
+            <parameter name="SERVICE_TYPE" value="Телекоммуникационные услуги"/>
+        </receipts>
+    </operator>
+</operators>

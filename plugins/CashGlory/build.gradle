@@ -1,0 +1,13 @@
+jar.archiveName = "cashMachineGlory.jar"
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/cashMachine/plugins'
+}
+
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+			project(':SetRetail10_Cash:modules:CashMachine'),			
+			libs.junit
+}

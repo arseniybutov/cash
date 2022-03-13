@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="bank" visible="true" description="United Card Service"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="concardis_ingenico_zvt"/>
+    <property key="serviceClass" value="ru.crystals.pos.bank.zvt.BankConcardisIngenicoZVT"/>
+
+    <property key="connectionType" value="TCP"/>
+    <property key="terminalIp" value="172.29.16.221"/>
+    <property key="terminalTcpPort" value="5577"/>
+
+    <property key="dailyLog" value="true"/>
+    <property key="password" value="000000"/>
+    <property key="timeoutT3" value="5"/>
+    <property key="timeoutT4" value="180"/>
+
+</moduleConfig>

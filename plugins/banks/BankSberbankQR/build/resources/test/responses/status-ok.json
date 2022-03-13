@@ -1,0 +1,26 @@
+{
+  "status": {
+    "rq_uid": "cbc72766-badd-4aa6-ab1e-b3dae39e281f",
+    "rq_tm": "2020-06-22T16:57:00Z",
+    "mid": "000001",
+    "tid": "21325622",
+    "id_qr": "20305",
+    "order_id": "10001000518956637",
+    "order_state": "PAID",
+    "error_code": "000000",
+    "order_operation_params": [
+      {
+        "operation_id": "10001HFYYR8956637",
+        "operation_date_time": "2020-06-22T16:57:05Z",
+        "rrn": "664773635423",
+        "operation_type": "PAY",
+        "operation_sum": 30000,
+        "operation_currency": "643",
+        "auth_code": "885967",
+        "response_code": "00",
+        "response_desc": ""
+      }
+    ],
+    "error_description": ""
+  }
+}

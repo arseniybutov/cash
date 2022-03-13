@@ -1,0 +1,14 @@
+jar.archiveName = 'externalMSR-emulator.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:ExternalMSRModule'),
+            libs.logging
+    testCompile libs.junit
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.crystals.pos.emsr.emulator.MSREmulatorClient'
+    }
+}

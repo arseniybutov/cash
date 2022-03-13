@@ -1,0 +1,13 @@
+jar.archiveName = 'fiscalPrinter-sp402frk.jar'
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'), 
+            project(':SetRetail10_Cash:modules:CashDS'),
+            libs.barcode4j, 
+            libs.io, 
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+            libs.logging
+    testCompile libs.junit
+}
+packaging {
+    jarInclude = 'deviceParameters.xml, **/*.class, *.properties'
+}

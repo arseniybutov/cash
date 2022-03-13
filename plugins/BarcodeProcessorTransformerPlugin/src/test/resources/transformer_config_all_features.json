@@ -1,0 +1,66 @@
+{
+  "masks": [
+    {
+      "description": "ШК трансформер",
+      "fields": [
+        {
+          "name": "operationCode",
+          "value": "999"
+        },
+        {
+          "name": "increment",
+          "length": 6
+        },
+        {
+          "name": "price",
+          "length": 8
+        }
+      ],
+      "inputRestrictions": {
+        "scannerOnly": true
+      },
+      "result": {
+        "productRef": {
+          "item": "1000000001"
+        },
+        "position": {
+          "price": {
+            "source": "field",
+            "value": "price"
+          },
+          "attributes": {
+            "canChangeQuantity": true,
+            "canChangePrice": true,
+            "allowDiscounts": false
+          },
+          "properties": [
+            {
+              "name": "Increment",
+              "value": {
+                "source": "field",
+                "value": "increment"
+              }
+            },
+            {
+              "name": "OpCode",
+              "value": {
+                "source": "function",
+                "value": {
+                  "name": "join",
+                  "parameters": [
+                    "AB",
+                    {
+                      "source": "field",
+                      "value": "operationCode"
+                    },
+                    "CD"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

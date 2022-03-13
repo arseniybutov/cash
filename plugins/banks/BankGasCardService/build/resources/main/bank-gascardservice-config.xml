@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+              settingsGroup="bank" visible="true" description="ГазКардСервис"
+              xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="gascardservice"/>
+    <property key="serviceClass" value="ru.crystals.pos.bank.gascardservice.BankGasCardService"/>
+    <property key="processing" value="banks/gascardservice/"/>
+    <property key="dailyLog" value="true"/>
+    <property key="printNegativeSlip" value="false"/>
+    <property key="innerSlipCount" value="2"/>
+</moduleConfig>

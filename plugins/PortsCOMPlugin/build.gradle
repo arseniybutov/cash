@@ -1,0 +1,20 @@
+jar.archiveName = 'portcom.jar'
+
+packaging {
+    type = 'library';
+    branch = 'TOUCH, SCO, LENTA_SCO, BELARUS_SCO, TOUCH2, BELARUS_TOUCH2, LENTA_TOUCH2'
+    deployPath = 'modules/ports/plugins';
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:interfaces:PortsModuleInterface'),
+            libs.io,
+            libs.logging
+}
+/*
+dependencies {
+//    compile project(':SetRetail10_Cash:interfaces:PortsModuleInterface'),
+compile libs.io,
+            libs.logging
+}
+*/

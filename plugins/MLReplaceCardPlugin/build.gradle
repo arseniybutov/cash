@@ -1,0 +1,19 @@
+description = 'ML POS (Manzana Loyalty) версия обработчика, что помогает в процессе замены ДК (Дисконтной Карты)'
+
+// DC == Discount Card
+jar.archiveName = "ml-replace-card.jar"
+
+packaging {
+    branch = 'POS, BELARUS, LENTA'
+    type = 'plugin'
+	deployPath = 'modules/cards/'
+    jarInclude = '*.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:CashDS'),
+    project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+	project(':SetRetail10_Cash:modules:MLBridge'),
+    project(':SetRetail10_Cash:modules:VisualInterface'),
+    libs.logging
+}

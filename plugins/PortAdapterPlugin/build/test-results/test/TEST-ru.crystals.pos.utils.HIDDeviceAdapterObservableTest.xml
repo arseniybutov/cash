@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-09-28T10:15:55" hostname="DESKTOP-5JCC8T1" time="8.693">
+  <properties/>
+  <testcase name="testRunObserver" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="4.669"/>
+  <testcase name="writeWithThreeArgException" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.011"/>
+  <testcase name="testRunObserverSuccess" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="4.005"/>
+  <testcase name="testOpenPort" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.001"/>
+  <testcase name="writeWithThreeArg" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.001"/>
+  <testcase name="writeWithOneArgDeviceIsNotAvailable" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.002"/>
+  <testcase name="writeWithOneArg" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.001"/>
+  <testcase name="writeWithThreeArgDeviceIsNotAvailable" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.001"/>
+  <testcase name="writeWithOneArgException" classname="ru.crystals.pos.utils.HIDDeviceAdapterObservableTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN ru.crystals.pos.utils.PortAdapter - Device is not available
+java.io.IOException
+[Test worker] WARN ru.crystals.pos.utils.PortAdapter - Device is not available
+java.io.IOException
+]]></system-err>
+</testsuite>

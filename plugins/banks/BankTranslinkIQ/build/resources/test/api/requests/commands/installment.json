@@ -1,0 +1,13 @@
+{
+  "header": {
+    "command": "INSTALLMENT"
+  },
+  "params": {
+    "amount": 1000,
+    "currencyCode": "643",
+    "installmentPaymentCount": 4,
+    "installmentProvider": "M",
+    "documentNr": "129663",
+    "panL4Digit": "8261"
+  }
+}

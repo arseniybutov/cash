@@ -1,0 +1,32 @@
+{
+  "eventName": "ONTRNSTATUS",
+  "properties": {
+    "operationId": "FCAB2EB6D0DFD12",
+    "amountAuthorized": 1000,
+    "documentNr": "129663",
+    "cryptogram": "4E6998DF9D9CD4CF70F90BA05160ED7D890F3134D8FA6C162FDF5B6C363085B0275AEC227F17DB99A45EB11C61925301DBEB71D759AA93925A9F382CD931309BF5864922B378AEEB4F6B0C0CC6C58EC",
+    "authCode": "047625",
+    "RRN": "936107031714",
+    "STAN": "2",
+    "cardType": "Visa",
+    "amountAdditional": [
+      {
+        "type": "CA",
+        "currencyCode": "978",
+        "amount": 14
+      },
+      {
+        "type": "40",
+        "currencyCode": "978",
+        "amount": 1
+      }
+    ],
+    "text": "000 - OK",
+    "state": "Approved"
+  },
+  "result": {
+    "resultCode": "OK",
+    "resultMessage": "Operation completed successfully",
+    "resultTime": "20200507164628"
+  }
+}

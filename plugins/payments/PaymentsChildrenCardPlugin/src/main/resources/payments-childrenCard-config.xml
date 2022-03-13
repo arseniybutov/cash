@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleConfig xmlns="http://crystals.ru/cash/settings">
+    <property key="returnPossible" value="true"/>
+    <property key="paymentTypeClass" value="ru.crystals.pos.payments.ChildrenCardPaymentEntity"/>
+    <property key="paymentTypeName" value="Детская карта"/>
+    <property key="paymentTypeFiscalNum" value="8"/>
+    <property key="paymentTypeNameFFD100" value="БЕЗНАЛИЧНЫМИ"/>
+    <property key="paymentTypeFiscalNumFDD100" value="1"/>
+    <property key="useCashDrawer" value="false"/>
+    <property key="changePaymentAmount" value="true"/>
+    <property key="paymentTypeQuantity" value="-1"/>
+    <property key="paymentTypeAmount" value="-1"/>
+    <property key="dimension" value="2"/>
+    <property key="visualContainer" value="ru.crystals.pos.visualization.payments.bankcard.ChildrenCardPaymentContainer"/>
+    <property key="visualRangList" value="1"/>
+</moduleConfig>

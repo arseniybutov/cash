@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true" description="Posiflex 6610" xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="posiflex_kb6610"/>
+    <property key="serviceClass" value="ru.crystals.pos.keyboard.plugin.v2.KeyboardPluginV2Impl"/>
+    <property key="keyboardTimeOut" value="90"/>
+    <property key="useKeyLockMap" value="true"/>
+    <property key="cardPrefix">
+        <property value="37"/>
+    </property>
+    <property key="cardSufix">
+        <property value="63"/>
+    </property>
+    <property key="cardPrefix2">
+        <property value="59"/>
+    </property>
+    <property key="cardSufix2">
+        <property value="63"/>
+    </property>
+    <property key="finalSuffix">
+        <property value="10"/>
+    </property>
+    <property key="keyLockPrefix">
+        <property value="8"/>
+    </property>
+    <property key="keyLockSufix">
+        <property value="8"/>
+    </property>
+    <property key="keyLockMap">
+        <property key="p" value="1"/>
+        <property key="0" value="1"/>
+        <property key="1" value="1"/>
+        <property key="2" value="2"/>
+        <property key="3" value="2"/>
+        <property key="4" value="2"/>
+    </property>
+</moduleConfig>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig 
+		xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" 
+		settingsGroup="equipment" 
+		visible="true" 
+		description="Partner"
+		xmlns="http://crystals.ru/cash/settings" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<property key="provider" value="poslab"/>
+    <property key="serviceClass" value="ru.crystals.pos.customerdisplay.poslab.CustomerDisplayPoslabImpl"/>
+    <property key="port" value="/dev/ttyS1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Скорость (бит/с)"/>
+    <property key="rowsCount" value="2"/>
+    <property key="encoding" value="cp866"/>
+    <property key="physicalDeviceDescription" value="Poslab Line Display"/>
+    <property key="physicalDeviceName" value="Poslab Line Display"/>
+</moduleConfig>

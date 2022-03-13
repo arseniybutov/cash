@@ -1,0 +1,6 @@
+jar.archiveName = 'keyboard-csi_hengyu.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:KeyboardModule'),
+            libs.logging
+}

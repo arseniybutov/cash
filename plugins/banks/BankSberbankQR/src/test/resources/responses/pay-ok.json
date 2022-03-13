@@ -1,0 +1,27 @@
+{
+  "PayRusClientQRRs":{
+    "status":{
+      "rq_tm":"2020-06-22T16:57:00Z",
+      "id_qr":"20305",
+      "order_operation_params":{
+        "operation_date_time":"2020-06-22T16:57:05Z",
+        "response_code":"00",
+        "operation_sum":48000,
+        "operation_type":"PAY",
+        "response_desc":"",
+        "operation_id":"34554d25398b4bcab5407dd67e1def9a",
+        "operation_currency":"643",
+        "rrn":"017491333930",
+        "auth_code":"223425"
+      },
+      "error_description":"",
+      "mid":"000001",
+      "error_code":"000000",
+      "partner_order_number":"2132562220200622165100",
+      "rq_uid":"34554d25398b4bcab5407dd67e1def9a",
+      "order_id":"63685a0e319149a9aec6adf98b5761cc",
+      "order_state":"PAID",
+      "tid":"21325622"
+    }
+  }
+}

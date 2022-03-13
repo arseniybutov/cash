@@ -1,0 +1,15 @@
+description = 'Отладочный провайдер лояльности, который выводит состояние чеки и расчет лояльности по нему в лог'
+
+jar.archiveName = 'debug-loy-provider.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:Loyal:SET-LoyalStructures'),
+            project(':SetRetail10_Commons:Loyal:SET-LoyalCalculation'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:plugins:LoyalCashApi'),
+            project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash_OSGi:OSGiDataStruct'),
+            libs.apacheCommons,
+            libs.logging
+    testCompile libs.junit
+}

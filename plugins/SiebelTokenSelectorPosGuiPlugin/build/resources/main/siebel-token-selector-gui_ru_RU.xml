@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="table.column.token.amount">Кол-во марок</entry>
+    <entry key="table.column.token.price">Цена продажи</entry>
+    <entry key="label.token.balance">Баланс марок</entry>
+    <entry key="token.selector.header">Выберите количество марок к списанию</entry>
+    <entry key="token.selector.best.offer">ЛУЧШИЙ ВЫБОР</entry>
+</properties>

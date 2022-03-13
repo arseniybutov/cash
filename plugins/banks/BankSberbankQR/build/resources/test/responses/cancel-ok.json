@@ -1,0 +1,19 @@
+{
+  "status": {
+    "rq_uid": "cbc72766-badd-4aa6-ab1e-b3dae39e281f",
+    "rq_tm": "2020-06-30T16:05:01Z",
+    "order_id": "10001000518956637",
+    "order_status": "REVERSED",
+    "operation_id": "10001HFYYR8956637",
+    "operation_date_time": "2020-06-30T15:05:01Z",
+    "operation_type": "Отмена",
+    "operation_sum": 30000,
+    "operation_currency": "643",
+    "auth_code": "885967",
+    "rrn": "664773635423",
+    "tid": "75863425",
+    "id_qr": "20305",
+    "error_code": "000000",
+    "error_description": ""
+  }
+}

@@ -1,0 +1,10 @@
+jar.archiveName='scale-mt_8217.jar'
+
+dependencies {
+    compile project(':SetRetail10_Commons:DataStructsModule'),
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:modules:ScaleModule'),
+            project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+            libs.logging
+    testCompile libs.junit
+}

@@ -1,0 +1,8 @@
+jar.archiveName = 'fiscalPrinter-cashboxsystem.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'), 
+            project(':SetRetail10_Cash:modules:CashDS'),
+            project(':SetRetail10_Cash:plugins:DocumentPrinterAxiohm')
+    testCompile libs.junit
+}

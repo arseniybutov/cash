@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd"
+	settingsGroup="bank" visible="true" description="United Card Service"
+	xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="provider" value="ucs_eftpos"/>
+    <property key="serviceClass" value="ru.crystals.pos.bank.ucs.BankUcsEftpos"/>
+
+    <property key="connectionType" value="COM"/>
+
+    <property key="port" value="COM1"/>
+    <property key="baudRate" value="9600"/>
+
+    <property key="terminalIp" value="172.16.17.18"/>
+    <property key="terminalTcpPort" value="4001"/>
+
+    <property key="terminalID" value="19999715"/>
+    <property key="useTerminalIDAutoDetection" value="true"/>
+
+    <property key="dailyLog" value="true"/>
+
+</moduleConfig>

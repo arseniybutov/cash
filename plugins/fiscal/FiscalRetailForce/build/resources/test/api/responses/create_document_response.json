@@ -1,0 +1,22 @@
+{
+  "fiscalCountry": "[0] = Germany",
+  "fiscalisationDocumentNumber": 8475,
+  "fiscalisationDocumentRevision": 1,
+  "errorDescription": null,
+  "signature": "mVSrLFpZwicIdSEccpZzKzKUaGjQFdurcUphm9HWW2vVHxbXibo5YBE/LXDJygbHymQ/u2HK4kOIACLyZEiutQ==",
+  "userMessage": null,
+  "requestTime": "2021-03-05T22:00:09.1595244+03:00",
+  "requestCompletionTime": "2021-03-05T22:00:09.6316611+03:00",
+  "AdditionalFields": {
+    "QrCodeDataString": null,
+    "TransactionStartTime": 1614970809,
+    "TransactionEndTime": 0,
+    "ProcessData": "",
+    "ProcessType": null,
+    "TseSerial": "e66573e9e6e52ddb63dc46de2a71d21e60f1e766f7468ebfd9c9acaa2befb4ef",
+    "TseTimeFormat": "utcTime",
+    "TseHashAlgorithm": "ecdsa-plain-SHA256",
+    "TsePublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsvma5yPJVe9k+skzDBzKHZ7GZtC12jsnnubUiZPaJycKuGeNx1GwX+pd/+UTpYGAyrvGRWXx5fbvf5zN1Pycuw==",
+    "TseSignatureCounter": 15987
+  }
+}

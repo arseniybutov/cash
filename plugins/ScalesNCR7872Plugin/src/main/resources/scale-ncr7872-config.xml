@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleConfig 
+		xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" 
+		settingsGroup="equipment" 
+		visible="true" 
+		description="NCR 7872"
+		xmlns="http://crystals.ru/cash/settings" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+    <property key="provider" value="ncr7872"/>
+    <property key="serviceClass" value="ru.crystals.scales.ncr7872.ScalesNCR7872Impl"/>
+    
+    <property key="port" value="COM1" type="port" visible="true" description="Порт"/>
+    <property key="baudRate" value="9600" type="integer" visible="true" description="Скорость (бит/с)"/>
+	<property key="dataBits" value="7" type="integer" visible="true" description="Биты данных"/>
+	<property key="stopBits" value="1" type="integer" visible="true" description="Стоповые биты"/>
+	<property key="parity" value="1" type="integer" visible="true" description="Четность"/>
+</moduleConfig>

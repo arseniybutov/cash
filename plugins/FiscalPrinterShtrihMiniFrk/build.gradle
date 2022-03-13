@@ -1,0 +1,20 @@
+jar.archiveName = 'fiscalPrinter-shtrihminifrk.jar'
+
+packaging {
+    jarInclude = 'fiscal-printer-shtrih-commands.xml, fiscal-printer-shtrih-errors.xml, **/*.class, *.properties'
+}
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:FiscalPrinterModule'),
+    project(':SetRetail10_Cash:modules:CashDS'),
+    project(':SetRetail10_Cash:plugins:PortAdapterPlugin'),
+    libs.xml,
+    libs.shtrih,
+    libs.jpos,
+    libs.logging,
+    libs.barcode4j
+
+    testCompile libs.junit,
+                libs.fest,
+                project(':SetRetail10_Commons:TestUtils')
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><moduleConfig xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="weightCatalog" visible="true" description="Catalog">
+  <property key="provider" value="glory"/>
+  <property key="serviceClass" value="ru.crystals.pos.cash_glory.GloryPlugin"/>
+  <property key="ip" value="192.168.0.25"/>
+  <property key="eventPort" value="55565"/>
+</moduleConfig>

@@ -1,0 +1,9 @@
+description = 'Плагин для клавиатур семейства NCR XR7'
+jar.archiveName = 'keyboard-ncr_xr7.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:KeyboardModule'),
+			project(':SetRetail10_Commons:DataStructsModule'),
+            libs.logging
+    testCompile libs.junit
+}

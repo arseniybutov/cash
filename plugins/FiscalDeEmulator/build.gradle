@@ -1,0 +1,18 @@
+jar.archiveName = 'fiscalPrinter-de-emulator.jar'
+
+packaging {
+    type = 'plugin'
+    deployPath = 'modules/fiscalPrinter/plugins'
+}
+
+dependencies {
+    compile libs.apacheCommons,
+            project(':SetRetail10_Cash:modules:FiscalPrinterModule'), 
+            project(':SetRetail10_Cash:modules:CashDS'), 
+            libs.io,
+            libs.logging,
+            server_libs.jsonTransportClient,
+            server_libs.jackson,
+            server_libs.set10dto
+    testCompile libs.junit
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><moduleConfig xmlns="http://crystals.ru/cash/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://crystals.ru/cash/settings ../../module-config.xsd" settingsGroup="equipment" visible="true" description="ПИРИТ 1Ф">
+  <property key="provider" value="pirit1f"/>
+  <property key="serviceClass" value="ru.crystals.pos.fiscalprinter.pirit.PiritFN"/>
+  <property key="port" value="/dev/usbPIRIT2F" type="port" visible="true" description="Порт"/>
+  <property key="serviceIni" value="/home/tc/storage/comproxy/ComProxy.ini"/>
+  <property key="baudRate" value="57600" type="integer" visible="true" description="Скорость (бит/с)"/>
+  <property key="useFlowControl" value="false"/>
+  <property key="printPosNum" value="true"/>
+  <property key="printGoodsName" value="true"/>
+  <property key="printItem" value="false"/>
+  <property key="useBeep" value="false"/>
+</moduleConfig>

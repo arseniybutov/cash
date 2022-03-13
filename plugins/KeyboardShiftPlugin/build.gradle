@@ -1,0 +1,7 @@
+jar.archiveName = 'keyboard-shift.jar'
+
+dependencies {
+    compile project(':SetRetail10_Cash:modules:KeyboardModule'),
+            libs.logging
+    testCompile libs.junit
+}
